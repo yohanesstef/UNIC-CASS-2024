@@ -2,12 +2,12 @@
 This repository contains SAR ADC Analog IC simulation and layout for UNIC CASS 2024 held by IEEE Solid-State Circuits Society (SSCS) 
 
 ## Sample and Hold Bootstrap Circuit
-This circuit is used for holding the input voltage at the given period base on the clock sampling frequency. Then, the output voltage will charge output capacitor so the voltage value will be fixed to read for the comparator circuit.
+This circuit is used to hold the input voltage for a given period based on the clock sampling frequency. Then, the output voltage will charge an output capacitor outside this circuit, so the voltage value will be fixed for the comparator circuit to read.
 
 ### Schematic
 ![image](https://github.com/user-attachments/assets/ba60d1a8-755e-47bb-bc13-16f59aac06d7)
 
-The topology use bootstrap circuit to charge a bootstrap capacitor so the voltage at the NMOS switch doubled from the VDD value.
+The topology uses bootstrap circuit to charge a bootstrap capacitor so the voltage at the NMOS switch is doubled from the VDD value.
 
 **Pre layout simulation result:**
 ![image](https://github.com/user-attachments/assets/3285501e-2585-4548-bfe2-cf06336ca43d)
