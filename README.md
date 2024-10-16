@@ -1,4 +1,7 @@
 # SAR ADC Analog IC projects for UNIC-CASS-2024
+
+**All technology of this IC Design are open source technologies, which  Skywater 130nm PDK**
+
 This repository contains SAR ADC Analog IC simulation and layout for UNIC CASS 2024 held by IEEE Solid-State Circuits Society (SSCS) 
 
 ## Sample and Hold Bootstrap Circuit
@@ -8,6 +11,14 @@ This circuit is used for holding the input voltage at the given period base on t
 ![image](https://github.com/user-attachments/assets/ba60d1a8-755e-47bb-bc13-16f59aac06d7)
 
 The topology use bootstrap circuit to charge a bootstrap capacitor so the voltage at the NMOS switch doubled from the VDD value.
+
+**Transistor sizes:**
+- width PMOS: 1.26 um
+- widht NMOS: 0.42 um
+- length : 0.15 um
+
+- width NMOS switch: 5 um
+- length NMOS switch: 0.84 um
 
 **Pre layout simulation result:**
 ![image](https://github.com/user-attachments/assets/3285501e-2585-4548-bfe2-cf06336ca43d)
