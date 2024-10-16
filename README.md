@@ -1,6 +1,6 @@
 # SAR ADC Analog IC projects for UNIC-CASS-2024
 
-**All technology of this IC Design are open source technologies, which  Skywater 130nm PDK**
+**All technology of this IC Design are open source technologies, which is Skywater 130nm PDK**
 
 This repository contains SAR ADC Analog IC simulation and layout for UNIC CASS 2024 held by IEEE Solid-State Circuits Society (SSCS) 
 
