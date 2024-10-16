@@ -13,8 +13,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=0
-x2=0.001
+x1=0.00015572429
+x2=0.00048970096
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -35,8 +35,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=0
-x2=0.001
+x1=0.00015572429
+x2=0.00048970096
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -56,8 +56,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=0
-x2=0.001
+x1=0.00015572429
+x2=0.00048970096
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -70,15 +70,15 @@ logx=0
 logy=0
 }
 B 2 980 -1100 1780 -700 {flags=graph
-y1=0
-y2=0.01
+y1=-0.054
+y2=2.8
 ypos1=0
 ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=0
-x2=0.001
+x1=0.00015572429
+x2=0.00048970096
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -143,30 +143,5 @@ C {devices/lab_pin.sym} 410 -160 0 0 {name=p2 sig_type=std_logic lab=Vdata}
 C {devices/lab_pin.sym} 410 -140 0 0 {name=p3 sig_type=std_logic lab=VDD}
 C {devices/lab_pin.sym} 410 -120 0 0 {name=p4 sig_type=std_logic lab=GND}
 C {devices/lab_pin.sym} 770 -180 0 1 {name=p5 sig_type=std_logic lab=Vout}
-C {devices/param.sym} 15 -290 0 0 {name=s1 value="
-+wpboot=1.26
-+lpboot=0.15
-+wnboot=0.42
-+lnboot=0.15
-+wnboot2=0.84
-+
-+wpinv=1.26
-+lpinv=0.15
-+wninv=0.42
-+lninv=0.15
-+
-+wcboot=8
-+lcboot=6.25
-+
-+wnsw=5
-+lnsw=0.3
-+
-+wnsw2=1
-+wpsw=2
-+
-
-"
-
-
-only_toplevel=true}
 C {sample-n-hold-layout.sym} 560 -150 0 0 {name=x1}
+C {devices/title.sym} 360 -30 0 0 {name=l1 author="Yohanes Stefanus"}
