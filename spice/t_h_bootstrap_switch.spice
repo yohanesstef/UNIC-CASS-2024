@@ -1,0 +1,28 @@
+** sch_path: /home/yohanes/gits/UNIC-CASS-2024/xschem/t_h_bootstrap_switch.sch
+.subckt t_h_bootstrap_switch clk vdata VDD GND Vout
+*.PININFO clk:I Vout:O vdata:I VDD:I GND:I
+.param wpboot=1.26 lpboot=0.15 wnboot=0.42 lnboot=0.15 wnboot2=1 wpinv=1.26 lpinv=0.15 wninv=0.42 lninv=0.15 wcboot=8 lcboot=6.25
++ wnsw=5 lnsw=0.3 wnsw2=1 wpsw=2
+
+
+XM1 VDD boot2 boot1 GND sky130_fd_pr__nfet_01v8 L=lnboot W=wnboot nf=1 m=1
+XM2 Vboot net3 net1 net1 sky130_fd_pr__pfet_01v8 L=lpboot W=wpsw nf=1 m=1
+XC1 boot1 clkb sky130_fd_pr__cap_mim_m3_1 W=8 L=6.25 m=1
+XC2 boot2 clkboot sky130_fd_pr__cap_mim_m3_1 W=8 L=6.25 m=1
+XM4 VDD boot1 net1 GND sky130_fd_pr__nfet_01v8 L=lnboot W=wnboot2 nf=1 m=1
+XM5 net2 clkb GND GND sky130_fd_pr__nfet_01v8 L=lnboot W=wnboot nf=1 m=1
+XC3 net1 net2 sky130_fd_pr__cap_mim_m3_1 W=25 L=20 m=1
+XM6 net3 clkboot VDD VDD sky130_fd_pr__pfet_01v8 L=lpinv W=wpinv nf=1 m=1
+XM7 net3 clkboot net2 GND sky130_fd_pr__nfet_01v8 L=lninv W=wninv nf=1 m=1
+XM8 Vboot VDD net4 GND sky130_fd_pr__nfet_01v8 L=lnboot W=wnboot nf=1 m=1
+XM9 net4 clkb GND GND sky130_fd_pr__nfet_01v8 L=lnboot W=wnboot nf=1 m=1
+XM10 net3 Vboot net2 GND sky130_fd_pr__nfet_01v8 L=lnboot W=wnboot nf=1 m=1
+XM11 vdata Vboot net2 GND sky130_fd_pr__nfet_01v8 L=lnboot W=wnsw2 nf=1 m=1
+XM12 Vout Vboot vdata GND sky130_fd_pr__nfet_01v8 L=lnsw W=wnsw nf=1 m=1
+XM13 clkb clk VDD VDD sky130_fd_pr__pfet_01v8 L=lpinv W=wpinv nf=1 m=1
+XM14 clkb clk GND GND sky130_fd_pr__nfet_01v8 L=lninv W=wninv nf=1 m=1
+XM15 clkboot clkb VDD VDD sky130_fd_pr__pfet_01v8 L=lpinv W=wpinv nf=1 m=1
+XM16 clkboot clkb GND GND sky130_fd_pr__nfet_01v8 L=lninv W=wninv nf=1 m=1
+XM3 VDD boot1 boot2 GND sky130_fd_pr__nfet_01v8 L=lnboot W=wnboot nf=1 m=1
+.ends
+.end

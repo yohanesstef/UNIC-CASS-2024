@@ -1,0 +1,89 @@
+
+Circuit 1 cell sky130_fd_pr__pfet_01v8 and Circuit 2 cell sky130_fd_pr__pfet_01v8 are black boxes.
+Warning: Equate pins:  cell sky130_fd_pr__pfet_01v8 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_pr__pfet_01v8 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_pr__pfet_01v8         |Circuit 2: sky130_fd_pr__pfet_01v8         
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_pr__pfet_01v8 and sky130_fd_pr__pfet_01v8 are equivalent.
+
+Circuit 1 cell sky130_fd_pr__nfet_01v8 and Circuit 2 cell sky130_fd_pr__nfet_01v8 are black boxes.
+Warning: Equate pins:  cell sky130_fd_pr__nfet_01v8 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_pr__nfet_01v8 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_pr__nfet_01v8         |Circuit 2: sky130_fd_pr__nfet_01v8         
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_pr__nfet_01v8 and sky130_fd_pr__nfet_01v8 are equivalent.
+
+Circuit 1 cell sky130_fd_pr__cap_mim_m3_1 and Circuit 2 cell sky130_fd_pr__cap_mim_m3_1 are black boxes.
+Warning: Equate pins:  cell sky130_fd_pr__cap_mim_m3_1 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_pr__cap_mim_m3_1 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_pr__cap_mim_m3_1      |Circuit 2: sky130_fd_pr__cap_mim_m3_1      
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_pr__cap_mim_m3_1 and sky130_fd_pr__cap_mim_m3_1 are equivalent.
+Flattening unmatched subcell sky130_fd_pr__pfet_01v8_LCNWMQ in circuit sample-n-hold-layout (0)(3 instances)
+Flattening unmatched subcell sky130_fd_pr__nfet_01v8_L78EGD in circuit sample-n-hold-layout (0)(9 instances)
+Flattening unmatched subcell sky130_fd_pr__nfet_01v8_TK2CNP in circuit sample-n-hold-layout (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__pfet_01v8_M4BBJH in circuit sample-n-hold-layout (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__nfet_01v8_7XY3PK in circuit sample-n-hold-layout (0)(2 instances)
+Flattening unmatched subcell sky130_fd_pr__cap_mim_m3_1_5XYVA6 in circuit sample-n-hold-layout (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__cap_mim_m3_1_5XY9G7 in circuit sample-n-hold-layout (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__cap_mim_m3_1_QEFW4K in circuit sample-n-hold-layout (0)(1 instance)
+
+Subcircuit summary:
+Circuit 1: sample-n-hold-layout            |Circuit 2: t_h_bootstrap_switch            
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__pfet_01v8 (4)                |sky130_fd_pr__pfet_01v8 (4)                
+sky130_fd_pr__nfet_01v8 (12)               |sky130_fd_pr__nfet_01v8 (12)               
+sky130_fd_pr__cap_mim_m3_1 (3)             |sky130_fd_pr__cap_mim_m3_1 (3)             
+Number of devices: 19                      |Number of devices: 19                      
+Number of nets: 14                         |Number of nets: 14                         
+---------------------------------------------------------------------------------------
+Netlists match uniquely with property errors.
+sky130_fd_pr__cap_mim_m3_1_5XYVA6:XC1/sky130_fd_pr__cap_mim_m3_1:0 vs. sky130_fd_pr__cap_mim_m3_1:C1:
+ w circuit1: 7.07   circuit2: 8   (delta=12.3%, cutoff=1%)
+ l circuit1: 7.07   circuit2: 6.25   (delta=12.3%, cutoff=1%)
+sky130_fd_pr__cap_mim_m3_1_5XY9G7:XC2/sky130_fd_pr__cap_mim_m3_1:0 vs. sky130_fd_pr__cap_mim_m3_1:C2:
+ w circuit1: 7.07   circuit2: 8   (delta=12.3%, cutoff=1%)
+ l circuit1: 7.07   circuit2: 6.25   (delta=12.3%, cutoff=1%)
+sky130_fd_pr__cap_mim_m3_1_QEFW4K:XC3/sky130_fd_pr__cap_mim_m3_1:0 vs. sky130_fd_pr__cap_mim_m3_1:C3:
+ w circuit1: 22.31   circuit2: 25   (delta=11.4%, cutoff=1%)
+ l circuit1: 22.31   circuit2: 20   (delta=10.9%, cutoff=1%)
+
+Subcircuit pins:
+Circuit 1: sample-n-hold-layout            |Circuit 2: t_h_bootstrap_switch            
+-------------------------------------------|-------------------------------------------
+Vout                                       |Vout                                       
+GND                                        |GND                                        
+VDD                                        |VDD                                        
+vdata                                      |vdata                                      
+clk                                        |clk                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sample-n-hold-layout and t_h_bootstrap_switch are equivalent.
+
+Final result: Circuits match uniquely.
+Property errors were found.
+
+The following cells had property errors:
+ sample-n-hold-layout
