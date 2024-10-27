@@ -108,7 +108,7 @@ C {devices/simulator_commands.sym} 10 -590 0 0 {name=COMMANDS
 simulator=ngspice
 only_toplevel=true 
 value="  
-  .include "~/gits/UNIC-CASS-2024/spice/sample-n-hold-layout.spice"
+  .include ~/gits/UNIC-CASS-2024/spice/sample-n-hold-layout.spice
   .param fin=10e3
   .param fclk=\{fin*10\} tclk=\{1/fclk\} thclk=\{tclk/2\}
   .option wnflag=1
