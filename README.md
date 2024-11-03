@@ -26,7 +26,8 @@ The topology uses bootstrap circuit to charge a bootstrap capacitor so the volta
 The tracking signal (vout) match with the input signal (left bottom graph) when in the tracking mode. When sampling clock is 0, the circuit begin to hold the last voltage value from input signal, thus this mode is called hold mode. The boostraped signal can be seen in the top right graph. As can be seen, the circuit always preserve the Vgs (gate source voltage) from the switch transistor so the switch can always active properly.
 
 ### Layout
-![image](https://github.com/user-attachments/assets/79be5c9b-be99-48ff-8492-c58ed8ac61f8)
+![image](https://github.com/user-attachments/assets/6fddb7c6-fe53-42bf-b9bf-3845cb0193e4)
+
 
 The purpose of surrounding the PMOS and NMOS transistors is to suppress noise from other rails, thus minimizing coupling signal problems.
 
