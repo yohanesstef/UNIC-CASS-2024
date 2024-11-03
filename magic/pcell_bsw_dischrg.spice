@@ -1,0 +1,17 @@
+* NGSPICE file created from pcell_bsw_dischrg.ext - technology: sky130A
+
+.subckt sky130_fd_pr__pfet_01v8_275TTJ a_n15_n76# w_n109_n112# a_n73_n50# a_15_n50#
+X0 a_15_n50# a_n15_n76# a_n73_n50# w_n109_n112# sky130_fd_pr__pfet_01v8 ad=0.145 pd=1.58 as=0.145 ps=1.58 w=0.5 l=0.15
+.ends
+
+.subckt pcell_bsw_dischrg VPBT3 SWITCHING VBOOT
+Xsky130_fd_pr__pfet_01v8_275TTJ_6 VPBT3 VPBT3 VPBT3 VBOOT sky130_fd_pr__pfet_01v8_275TTJ
+Xsky130_fd_pr__pfet_01v8_275TTJ_7 VPBT3 VPBT3 VBOOT VPBT3 sky130_fd_pr__pfet_01v8_275TTJ
+XXM1 SWITCHING VPBT3 VPBT3 VBOOT sky130_fd_pr__pfet_01v8_275TTJ
+Xsky130_fd_pr__pfet_01v8_275TTJ_0 SWITCHING VPBT3 VBOOT VPBT3 sky130_fd_pr__pfet_01v8_275TTJ
+Xsky130_fd_pr__pfet_01v8_275TTJ_1 SWITCHING VPBT3 VPBT3 VBOOT sky130_fd_pr__pfet_01v8_275TTJ
+Xsky130_fd_pr__pfet_01v8_275TTJ_2 SWITCHING VPBT3 VBOOT VPBT3 sky130_fd_pr__pfet_01v8_275TTJ
+Xsky130_fd_pr__pfet_01v8_275TTJ_3 VPBT3 VPBT3 VPBT3 VBOOT sky130_fd_pr__pfet_01v8_275TTJ
+Xsky130_fd_pr__pfet_01v8_275TTJ_4 VPBT3 VPBT3 VBOOT VPBT3 sky130_fd_pr__pfet_01v8_275TTJ
+.ends
+

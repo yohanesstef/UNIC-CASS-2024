@@ -1,0 +1,441 @@
+timestamp 1730641970
+version 8.3
+tech sky130A
+style ngspice()
+scale 1000 1 500000
+resistclasses 4400000 2200000 950000 3050000 120000 197000 114000 191000 120000 197000 114000 191000 48200 319800 2000000 48200 48200 12800 125 125 47 47 29 5
+use pcell_bsw_dischrg pcell_bsw_dischrg_1 1 0 1748 0 1 -420
+use ncell_bsw_dischrg ncell_bsw_dischrg_1 -1 0 2198 0 -1 -1730
+use sky130_fd_sc_hd__inv_1 sky130_fd_sc_hd__inv_1_0 1 0 3884 0 1 -1909
+use cap_bsw cap_bsw_1 0 -1 516 1 0 -3419
+use ncell_bsw_sw ncell_bsw_sw_1 -1 0 2593 0 -1 -4705
+use ncell_bsw ncell_bsw_1 1 0 -1493 0 1 -281
+port "VO" 6 2405 -2485 2405 -2485 m2
+port "VI" 4 2287 -2485 2287 -2485 m2
+port "CLKSB" 3 1746 -2485 1746 -2485 m2
+port "CLKS" 2 3850 -2485 3850 -2485 m2
+port "VSSA" 5 4101 -656 4101 -656 m1
+port "VDDA" 1 4102 -926 4102 -926 m1
+node "VO" 2 104.987 2405 -2485 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 53924 2178 0 0 0 0 0 0 0 0
+node "VI" 2 114.012 2287 -2485 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 52624 2128 0 0 0 0 0 0 0 0
+node "m2_2657_n598#" 3 311.128 2657 -598 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 73268 2922 0 0 0 0 0 0 0 0
+node "m1_1509_n2085#" 7 407.521 1509 -2085 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 117572 4626 23492 1108 10000 400 14076 588 0 0 0 0
+node "m1_942_n2005#" 7 721.781 942 -2005 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 122616 4820 24060 1130 10000 400 14640 602 0 0 0 0
+node "m1_2721_n2405#" 7 552.114 2721 -2405 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 67184 2792 82108 3366 0 0 0 0 0 0 0 0
+node "m1_2111_n1449#" 2 176.586 2111 -1449 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 3016 220 40820 1674 0 0 0 0 0 0 0 0
+node "m1_1094_n1221#" 3 469.105 1094 -1221 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 47594 2148 9552 468 6688 328 0 0 0 0 0 0
+node "CLKSB" 14 1008.48 1746 -2485 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 134574 5428 134976 5604 13500 568 0 0 0 0 0 0
+node "m1_1729_n1041#" 6 745.16 1729 -1041 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 87620 3578 16732 848 10000 400 32884 1214 0 0 0 0
+node "m1_2140_n842#" 2 158.135 2140 -842 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 22832 1320 0 0 0 0 0 0 0 0 0 0
+node "m1_2061_n481#" 6 716.69 2061 -481 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 99038 3642 87880 2700 0 0 0 0 0 0 0 0
+node "li_4059_n1688#" 20 509.284 4059 -1688 v0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1156 136 71604 2962 68588 2846 0 0 0 0 0 0 0 0
+node "CLKS" 23 773.306 3850 -2485 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1156 136 147212 5870 48084 2054 19152 754 0 0 0 0 0 0
+node "VSSA" 54 246.592 4101 -656 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4896 356 50700 962 0 0 0 0 0 0 0 0 0 0
+node "w_3894_n1612#" 3019 11.964 3894 -1612 nw 0 0 0 0 3988 296 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "VDDA" 3699 706.207 4102 -926 m1 0 0 0 0 39424 928 0 0 6188 432 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 6188 432 127362 2548 24076 1030 0 0 0 0 0 0 0 0
+node "w_2591_n842#" 3366 22.494 2591 -842 nw 0 0 0 0 7498 418 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+substrate "VSUBS" 0 0 -1073741817 -1073741817 space 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+cap "m1_2721_n2405#" "VSSA" 0.0866378
+cap "VDDA" "m1_1509_n2085#" 10.2449
+cap "m1_2061_n481#" "m1_942_n2005#" 22.0571
+cap "m2_2657_n598#" "CLKSB" 2.58394
+cap "w_3894_n1612#" "CLKS" 1.27657
+cap "VDDA" "m1_1729_n1041#" 3.80241
+cap "m1_1094_n1221#" "m1_942_n2005#" 56.0452
+cap "m1_2721_n2405#" "m1_2061_n481#" 0.707095
+cap "m1_2140_n842#" "m1_1729_n1041#" 48.9118
+cap "VDDA" "li_4059_n1688#" 22.2105
+cap "m1_2061_n481#" "CLKS" 0.184027
+cap "VO" "m1_1509_n2085#" 38.6072
+cap "VDDA" "CLKSB" 0.0104864
+cap "m1_1094_n1221#" "CLKS" 0.292231
+cap "m1_2140_n842#" "CLKSB" 2.11536
+cap "m1_1729_n1041#" "VO" 1.02006
+cap "w_3894_n1612#" "m2_2657_n598#" 0.0148048
+cap "m2_2657_n598#" "VSSA" 1.44758
+cap "m1_2111_n1449#" "m1_942_n2005#" 4.5682
+cap "VO" "li_4059_n1688#" 0.0778423
+cap "m1_1729_n1041#" "m1_1509_n2085#" 7.45325
+cap "VO" "CLKSB" 39.288
+cap "m1_2111_n1449#" "m1_2721_n2405#" 6.58064
+cap "m2_2657_n598#" "m1_2061_n481#" 429.841
+cap "m1_2140_n842#" "VI" 0.0293222
+cap "m1_2111_n1449#" "CLKS" 0.141117
+cap "VDDA" "w_3894_n1612#" 1.34329
+cap "m1_1509_n2085#" "li_4059_n1688#" 47.0318
+cap "m1_1094_n1221#" "m2_2657_n598#" 0.0486659
+cap "VDDA" "VSSA" 83.5649
+cap "CLKSB" "m1_1509_n2085#" 967.15
+cap "m1_1729_n1041#" "li_4059_n1688#" 0.2444
+cap "m1_2140_n842#" "VSSA" 1.99832
+cap "VO" "VI" 401.587
+cap "m1_1729_n1041#" "CLKSB" 238.657
+cap "VDDA" "m1_2061_n481#" 47.2589
+cap "m1_2140_n842#" "m1_2061_n481#" 209.176
+cap "CLKSB" "li_4059_n1688#" 270.694
+cap "m1_2111_n1449#" "m2_2657_n598#" 17.8971
+cap "VI" "m1_1509_n2085#" 39.9625
+cap "m1_2721_n2405#" "m1_942_n2005#" 51.5466
+cap "VO" "m1_2061_n481#" 0.264311
+cap "m1_1729_n1041#" "VI" 0.914707
+cap "m1_942_n2005#" "CLKS" 55.506
+cap "VI" "li_4059_n1688#" 0.0553361
+cap "m1_2721_n2405#" "CLKS" 496.973
+cap "VDDA" "m1_2111_n1449#" 0.0188989
+cap "VI" "CLKSB" 130.718
+cap "m1_2061_n481#" "m1_1509_n2085#" 19.6243
+cap "m1_2140_n842#" "m1_2111_n1449#" 28.3153
+cap "m1_2140_n842#" "w_2591_n842#" 4.83246
+cap "w_3894_n1612#" "CLKSB" 0.0996226
+cap "m1_1094_n1221#" "m1_1509_n2085#" 0.855984
+cap "m1_1729_n1041#" "m1_2061_n481#" 648.985
+cap "m1_2061_n481#" "li_4059_n1688#" 0.136826
+cap "m2_2657_n598#" "m1_942_n2005#" 0.999688
+cap "m1_1094_n1221#" "m1_1729_n1041#" 37.1738
+cap "m1_2111_n1449#" "VO" 0.190536
+cap "CLKSB" "m1_2061_n481#" 13.7663
+cap "m1_2721_n2405#" "m2_2657_n598#" 35.5004
+cap "m1_1094_n1221#" "CLKSB" 226.015
+cap "m2_2657_n598#" "CLKS" 0.00713774
+cap "m1_2111_n1449#" "m1_1509_n2085#" 0.211228
+cap "m1_1729_n1041#" "m1_2111_n1449#" 79.1127
+cap "w_2591_n842#" "m1_1729_n1041#" 7.86038e-18
+cap "VI" "m1_2061_n481#" 2.62666
+cap "VDDA" "m1_2721_n2405#" 0.982614
+cap "w_3894_n1612#" "m1_2061_n481#" 0.313567
+cap "VDDA" "CLKS" 43.224
+cap "m1_2061_n481#" "VSSA" 0.0282155
+cap "m1_2111_n1449#" "CLKSB" 119.82
+cap "VO" "m1_942_n2005#" 46.0016
+cap "m1_2721_n2405#" "VO" 135.603
+cap "m1_942_n2005#" "m1_1509_n2085#" 1111.48
+cap "VO" "CLKS" 47.548
+cap "m1_1094_n1221#" "m1_2061_n481#" 0.0680414
+cap "m1_1729_n1041#" "m1_942_n2005#" 47.1354
+cap "VDDA" "m2_2657_n598#" 0.573222
+cap "m1_2721_n2405#" "m1_1509_n2085#" 44.6387
+cap "m1_2140_n842#" "m2_2657_n598#" 0.907995
+cap "m1_1509_n2085#" "CLKS" 411.144
+cap "m1_942_n2005#" "li_4059_n1688#" 110.692
+cap "m1_1729_n1041#" "m1_2721_n2405#" 1.90279
+cap "CLKSB" "m1_942_n2005#" 316.344
+cap "m1_1729_n1041#" "CLKS" 1.59891
+cap "m1_2721_n2405#" "li_4059_n1688#" 684.481
+cap "m1_2111_n1449#" "m1_2061_n481#" 114.462
+cap "CLKS" "li_4059_n1688#" 655.48
+cap "m1_2721_n2405#" "CLKSB" 166.478
+cap "m1_1094_n1221#" "m1_2111_n1449#" 20.7533
+cap "CLKSB" "CLKS" 1118.7
+cap "m2_2657_n598#" "m1_1509_n2085#" 0.0887413
+cap "VI" "m1_942_n2005#" 47.0053
+cap "m1_1729_n1041#" "m2_2657_n598#" 88.8149
+cap "m1_2721_n2405#" "VI" 0.160305
+cap "m1_2140_n842#" "VO" 0.0716479
+cap "m2_2657_n598#" "li_4059_n1688#" 13.7566
+cap "VI" "CLKS" 46.1178
+cap "w_3894_n1612#" "m1_2721_n2405#" 0.539669
+cap "ncell_bsw_dischrg_1/VDDA" "cap_bsw_1/VNBT3" 0.0395765
+cap "pcell_bsw_dischrg_1/SWITCHING" "cap_bsw_1/VPBT1" 54.5848
+cap "ncell_bsw_dischrg_1/VSSA" "cap_bsw_1/VPBT2" 10.5556
+cap "pcell_bsw_dischrg_1/VPBT3" "pcell_bsw_dischrg_1/SWITCHING" 1.34082
+cap "ncell_bsw_sw_1/VO" "cap_bsw_1/CLKS" 1.92915
+cap "cap_bsw_1/VPBT1" "ncell_bsw_sw_1/VO" -0.0153985
+cap "ncell_bsw_dischrg_1/VDDA" "cap_bsw_1/CLKS" 0.66801
+cap "ncell_bsw_dischrg_1/CLKSB" "cap_bsw_1/VNBT3" 55.73
+cap "ncell_bsw_sw_1/VI" "cap_bsw_1/CLKS" 12.379
+cap "cap_bsw_1/VNBT3" "cap_bsw_1/VPBT2" 1.15673
+cap "ncell_bsw_dischrg_1/CLKSB" "pcell_bsw_dischrg_1/VBOOT" -22.4979
+cap "cap_bsw_1/VPBT1" "ncell_bsw_sw_1/VI" -0.0179806
+cap "pcell_bsw_dischrg_1/SWITCHING" "ncell_bsw_sw_1/VO" -0.0695071
+cap "pcell_bsw_dischrg_1/VBOOT" "cap_bsw_1/VPBT2" 1.07853
+cap "ncell_bsw_dischrg_1/CLKSB" "cap_bsw_1/CLKS" 151.125
+cap "cap_bsw_1/VPBT2" "cap_bsw_1/CLKS" 111.559
+cap "ncell_bsw_dischrg_1/VSSA" "cap_bsw_1/VNBT3" 34.0272
+cap "ncell_bsw_dischrg_1/CLKSB" "cap_bsw_1/VPBT1" 132.565
+cap "ncell_bsw_dischrg_1/VDDA" "pcell_bsw_dischrg_1/SWITCHING" 0.66623
+cap "cap_bsw_1/VPBT1" "cap_bsw_1/VPBT2" -0.340116
+cap "pcell_bsw_dischrg_1/VPBT3" "ncell_bsw_dischrg_1/CLKSB" 1.42109e-14
+cap "ncell_bsw_dischrg_1/VSSA" "pcell_bsw_dischrg_1/VBOOT" 0.0549077
+cap "pcell_bsw_dischrg_1/SWITCHING" "ncell_bsw_sw_1/VI" 11.9968
+cap "pcell_bsw_dischrg_1/VPBT3" "cap_bsw_1/VPBT2" -3.44742
+cap "ncell_bsw_dischrg_1/VSSA" "cap_bsw_1/CLKS" 39.7026
+cap "ncell_bsw_dischrg_1/VSSA" "cap_bsw_1/VPBT1" 43.046
+cap "ncell_bsw_dischrg_1/CLKSB" "pcell_bsw_dischrg_1/SWITCHING" 277.441
+cap "pcell_bsw_dischrg_1/SWITCHING" "cap_bsw_1/VPBT2" 9.09407
+cap "ncell_bsw_dischrg_1/VSSA" "pcell_bsw_dischrg_1/VPBT3" 0.110198
+cap "ncell_bsw_dischrg_1/CLKSB" "ncell_bsw_sw_1/VO" -0.89955
+cap "pcell_bsw_dischrg_1/VBOOT" "cap_bsw_1/VNBT3" 0.638758
+cap "ncell_bsw_dischrg_1/CLKSB" "ncell_bsw_dischrg_1/VDDA" -0.0338473
+cap "ncell_bsw_sw_1/VO" "cap_bsw_1/VPBT2" 1.28745
+cap "cap_bsw_1/VNBT3" "cap_bsw_1/CLKS" 75.5626
+cap "ncell_bsw_dischrg_1/VSSA" "pcell_bsw_dischrg_1/SWITCHING" -11.619
+cap "ncell_bsw_dischrg_1/VDDA" "cap_bsw_1/VPBT2" 0.0146913
+cap "pcell_bsw_dischrg_1/VBOOT" "cap_bsw_1/CLKS" 16.0621
+cap "cap_bsw_1/VPBT1" "cap_bsw_1/VNBT3" -16.0606
+cap "ncell_bsw_dischrg_1/CLKSB" "ncell_bsw_sw_1/VI" -16.4845
+cap "pcell_bsw_dischrg_1/VPBT3" "cap_bsw_1/VNBT3" -1.65927
+cap "ncell_bsw_dischrg_1/VSSA" "ncell_bsw_sw_1/VO" 0.0923303
+cap "ncell_bsw_sw_1/VI" "cap_bsw_1/VPBT2" 4.04545
+cap "cap_bsw_1/VPBT1" "cap_bsw_1/CLKS" 68.9951
+cap "pcell_bsw_dischrg_1/VPBT3" "pcell_bsw_dischrg_1/VBOOT" 0.0396366
+cap "pcell_bsw_dischrg_1/VPBT3" "cap_bsw_1/CLKS" 12.0781
+cap "ncell_bsw_dischrg_1/CLKSB" "cap_bsw_1/VPBT2" 10.5001
+cap "pcell_bsw_dischrg_1/SWITCHING" "cap_bsw_1/VNBT3" 79.4806
+cap "pcell_bsw_dischrg_1/VPBT3" "cap_bsw_1/VPBT1" 0.0158189
+cap "ncell_bsw_dischrg_1/VSSA" "ncell_bsw_sw_1/VI" 0.127129
+cap "pcell_bsw_dischrg_1/VBOOT" "pcell_bsw_dischrg_1/SWITCHING" 1.0374
+cap "ncell_bsw_dischrg_1/VSSA" "ncell_bsw_dischrg_1/CLKSB" 84.3651
+cap "pcell_bsw_dischrg_1/SWITCHING" "cap_bsw_1/CLKS" 38.7836
+cap "sky130_fd_sc_hd__inv_1_0/VGND" "ncell_bsw_sw_1/VO" -19.6925
+cap "VSSA" "VDDA" 69.2588
+cap "ncell_bsw_sw_1/VI" "sky130_fd_sc_hd__inv_1_0/A" 0.774949
+cap "ncell_bsw_dischrg_1/CLKSB" "ncell_bsw_sw_1/VO" 31.9296
+cap "VDDA" "sky130_fd_sc_hd__inv_1_0/A" 0.0172463
+cap "pcell_bsw_dischrg_1/SWITCHING" "cap_bsw_1/VPBT1" 333.91
+cap "pcell_bsw_dischrg_1/VBOOT" "sky130_fd_sc_hd__inv_1_0/VGND" 303.257
+cap "pcell_bsw_dischrg_1/VPBT3" "pcell_bsw_dischrg_1/SWITCHING" 0.614912
+cap "VSSA" "cap_bsw_1/VPBT2" 6.75689
+cap "ncell_bsw_dischrg_1/CLKSB" "pcell_bsw_dischrg_1/VBOOT" -20.6872
+cap "cap_bsw_1/VPBT1" "ncell_bsw_sw_1/VO" -3.26777
+cap "ncell_bsw_sw_1/VI" "sky130_fd_sc_hd__inv_1_0/VGND" -30.5863
+cap "VSSA" "sky130_fd_sc_hd__inv_1_0/A" 1.13314
+cap "pcell_bsw_dischrg_1/VPBT3" "ncell_bsw_sw_1/VO" 3.19402
+cap "VDDA" "sky130_fd_sc_hd__inv_1_0/VGND" 1.59502
+cap "pcell_bsw_dischrg_1/VBOOT" "cap_bsw_1/VPBT1" -3.16836
+cap "ncell_bsw_dischrg_1/CLKSB" "ncell_bsw_sw_1/VI" 16.9566
+cap "VDDA" "ncell_bsw_dischrg_1/CLKSB" 5.80219
+cap "pcell_bsw_dischrg_1/VPBT3" "pcell_bsw_dischrg_1/VBOOT" 5.35661
+cap "cap_bsw_1/VPBT2" "sky130_fd_sc_hd__inv_1_0/VGND" 0.254931
+cap "pcell_bsw_dischrg_1/SWITCHING" "ncell_bsw_sw_1/VO" 38.2924
+cap "cap_bsw_1/VPBT1" "ncell_bsw_sw_1/VI" 1.80824
+cap "VSSA" "sky130_fd_sc_hd__inv_1_0/VGND" -4.4623
+cap "VDDA" "cap_bsw_1/VPBT1" 357.228
+cap "ncell_bsw_dischrg_1/CLKSB" "cap_bsw_1/VPBT2" 0.211004
+cap "pcell_bsw_dischrg_1/VBOOT" "pcell_bsw_dischrg_1/SWITCHING" -14.3477
+cap "pcell_bsw_dischrg_1/VPBT3" "ncell_bsw_sw_1/VI" 7.83776
+cap "pcell_bsw_dischrg_1/VPBT3" "VDDA" -2.29661
+cap "VSSA" "ncell_bsw_dischrg_1/CLKSB" -9.42031
+cap "sky130_fd_sc_hd__inv_1_0/VGND" "sky130_fd_sc_hd__inv_1_0/A" 0.153224
+cap "cap_bsw_1/VPBT2" "cap_bsw_1/VPBT1" 11.8265
+cap "ncell_bsw_dischrg_1/CLKSB" "sky130_fd_sc_hd__inv_1_0/A" 0.3128
+cap "pcell_bsw_dischrg_1/SWITCHING" "ncell_bsw_sw_1/VI" 51.9497
+cap "pcell_bsw_dischrg_1/VBOOT" "ncell_bsw_sw_1/VO" 2.82253
+cap "VDDA" "pcell_bsw_dischrg_1/SWITCHING" 41.3551
+cap "VSSA" "cap_bsw_1/VPBT1" 113.586
+cap "VSSA" "pcell_bsw_dischrg_1/VPBT3" 23.4668
+cap "cap_bsw_1/VPBT1" "sky130_fd_sc_hd__inv_1_0/A" -0.345551
+cap "ncell_bsw_sw_1/VI" "ncell_bsw_sw_1/VO" -14.1947
+cap "VDDA" "ncell_bsw_sw_1/VO" 0.135872
+cap "pcell_bsw_dischrg_1/SWITCHING" "cap_bsw_1/VPBT2" 0.379633
+cap "ncell_bsw_dischrg_1/CLKSB" "sky130_fd_sc_hd__inv_1_0/VGND" 79.1226
+cap "pcell_bsw_dischrg_1/VBOOT" "ncell_bsw_sw_1/VI" 77.9853
+cap "VSSA" "pcell_bsw_dischrg_1/SWITCHING" 59.7851
+cap "VDDA" "pcell_bsw_dischrg_1/VBOOT" 3.8303
+cap "cap_bsw_1/VPBT1" "sky130_fd_sc_hd__inv_1_0/VGND" -7.08044
+cap "pcell_bsw_dischrg_1/SWITCHING" "sky130_fd_sc_hd__inv_1_0/A" 0.299592
+cap "VSSA" "ncell_bsw_sw_1/VO" 6.66501
+cap "pcell_bsw_dischrg_1/VPBT3" "sky130_fd_sc_hd__inv_1_0/VGND" 144.908
+cap "ncell_bsw_dischrg_1/CLKSB" "cap_bsw_1/VPBT1" 8.01481
+cap "pcell_bsw_dischrg_1/VBOOT" "cap_bsw_1/VPBT2" 0.660951
+cap "VDDA" "ncell_bsw_sw_1/VI" 1.584
+cap "pcell_bsw_dischrg_1/VPBT3" "ncell_bsw_dischrg_1/CLKSB" 71.0093
+cap "VSSA" "pcell_bsw_dischrg_1/VBOOT" 4.20646
+cap "pcell_bsw_dischrg_1/SWITCHING" "sky130_fd_sc_hd__inv_1_0/VGND" 11.6568
+cap "pcell_bsw_dischrg_1/VBOOT" "sky130_fd_sc_hd__inv_1_0/A" 1.05746
+cap "cap_bsw_1/VPBT2" "ncell_bsw_sw_1/VI" 0.470852
+cap "VDDA" "cap_bsw_1/VPBT2" -8.68763
+cap "pcell_bsw_dischrg_1/VPBT3" "cap_bsw_1/VPBT1" -16.387
+cap "ncell_bsw_dischrg_1/CLKSB" "pcell_bsw_dischrg_1/SWITCHING" 197.343
+cap "VSSA" "ncell_bsw_sw_1/VI" 10.3744
+cap "sky130_fd_sc_hd__inv_1_0/VGND" "sky130_fd_sc_hd__inv_1_0/A" 45.0537
+cap "VDDA" "ncell_bsw_1/VPBT2" 148.711
+cap "pcell_bsw_dischrg_1/VPBT3" "ncell_bsw_1/VPBT1" 2.84217e-14
+cap "ncell_bsw_1/VPBT2" "sky130_fd_sc_hd__inv_1_0/VGND" 3.48474
+cap "pcell_bsw_dischrg_1/VBOOT" "sky130_fd_sc_hd__inv_1_0/A" 0.137748
+cap "ncell_bsw_1/VPBT1" "ncell_bsw_sw_1/VNBT1" 0.260775
+cap "VSSA" "sky130_fd_sc_hd__inv_1_0/A" 22.384
+cap "sky130_fd_sc_hd__inv_1_0/VGND" "ncell_bsw_sw_1/VO" 0.0271265
+cap "ncell_bsw_sw_1/VI" "sky130_fd_sc_hd__inv_1_0/A" 0.0460036
+cap "VSSA" "ncell_bsw_1/VPBT2" 19.4811
+cap "pcell_bsw_dischrg_1/VPBT3" "pcell_bsw_dischrg_1/SWITCHING" 1.48597
+cap "pcell_bsw_dischrg_1/VPBT3" "VDDA" 46.9575
+cap "VDDA" "ncell_bsw_sw_1/VNBT1" 0.0759844
+cap "ncell_bsw_sw_1/VNBT1" "sky130_fd_sc_hd__inv_1_0/VGND" 0.0727119
+cap "ncell_bsw_1/VPBT2" "sky130_fd_sc_hd__inv_1_0/A" 58.7755
+cap "ncell_bsw_1/VPBT1" "ncell_bsw_sw_1/sky130_fd_pr__nfet_01v8_6J3TAM_4/a_15_n50#" 0.00734346
+cap "pcell_bsw_dischrg_1/SWITCHING" "ncell_bsw_1/VPBT1" 0.564643
+cap "VSSA" "pcell_bsw_dischrg_1/VPBT3" 5.08077
+cap "ncell_bsw_sw_1/VO" "sky130_fd_sc_hd__inv_1_0/A" -0.0032017
+cap "VDDA" "ncell_bsw_1/VPBT1" 22.3055
+cap "ncell_bsw_1/VPBT1" "sky130_fd_sc_hd__inv_1_0/VGND" 0.553958
+cap "pcell_bsw_dischrg_1/VBOOT" "ncell_bsw_1/VPBT1" 0.00114688
+cap "pcell_bsw_dischrg_1/VPBT3" "sky130_fd_sc_hd__inv_1_0/A" 0.728018
+cap "ncell_bsw_sw_1/VNBT1" "sky130_fd_sc_hd__inv_1_0/A" -1.75814
+cap "VDDA" "pcell_bsw_dischrg_1/SWITCHING" 3.84309
+cap "VSSA" "ncell_bsw_1/VPBT1" 2.43246
+cap "pcell_bsw_dischrg_1/SWITCHING" "sky130_fd_sc_hd__inv_1_0/VGND" 83.1702
+cap "ncell_bsw_1/VPBT1" "ncell_bsw_sw_1/VI" 0.12664
+cap "VDDA" "sky130_fd_sc_hd__inv_1_0/VGND" -29.3258
+cap "VSSA" "pcell_bsw_dischrg_1/SWITCHING" 7.06828
+cap "ncell_bsw_1/VPBT1" "sky130_fd_sc_hd__inv_1_0/A" -0.115615
+cap "ncell_bsw_1/VPBT2" "ncell_bsw_1/VPBT1" -0.534728
+cap "VSSA" "VDDA" 60.7147
+cap "pcell_bsw_dischrg_1/VPBT3" "ncell_bsw_sw_1/VNBT1" 1.3686
+cap "VSSA" "sky130_fd_sc_hd__inv_1_0/VGND" 39.9725
+cap "ncell_bsw_sw_1/VI" "sky130_fd_sc_hd__inv_1_0/VGND" 0.0131694
+cap "pcell_bsw_dischrg_1/SWITCHING" "sky130_fd_sc_hd__inv_1_0/A" -6.12377
+cap "ncell_bsw_1/VPBT1" "ncell_bsw_sw_1/VO" 0.0399699
+cap "pcell_bsw_dischrg_1/SWITCHING" "ncell_bsw_1/VPBT2" 5.49119
+cap "VDDA" "sky130_fd_sc_hd__inv_1_0/A" 15.4345
+cap "pcell_bsw_dischrg_1/SWITCHING" "cap_bsw_1/VNBT3" 2.07134
+cap "ncell_bsw_dischrg_1/VSSA" "ncell_bsw_dischrg_1/CLKSB" 16.6977
+cap "pcell_bsw_dischrg_1/VPBT3" "cap_bsw_1/VPBT2" -3.50078
+cap "pcell_bsw_dischrg_1/VBOOT" "pcell_bsw_dischrg_1/SWITCHING" 0.449473
+cap "ncell_bsw_dischrg_1/CLKSB" "pcell_bsw_dischrg_1/SWITCHING" 0.705942
+cap "ncell_bsw_dischrg_1/VDDA" "cap_bsw_1/VNBT3" 16.2521
+cap "pcell_bsw_dischrg_1/VBOOT" "ncell_bsw_dischrg_1/VDDA" 0.109261
+cap "ncell_bsw_dischrg_1/VSSA" "pcell_bsw_dischrg_1/SWITCHING" 0.0290993
+cap "ncell_bsw_dischrg_1/CLKSB" "ncell_bsw_dischrg_1/VDDA" 1.4555
+cap "ncell_bsw_dischrg_1/VDDA" "cap_bsw_1/CLKS" 0.0061354
+cap "ncell_bsw_dischrg_1/VDDA" "cap_bsw_1/VPBT1" 0.0145145
+cap "pcell_bsw_dischrg_1/VPBT3" "cap_bsw_1/VNBT3" 135.897
+cap "pcell_bsw_dischrg_1/VPBT3" "pcell_bsw_dischrg_1/VBOOT" 48.0138
+cap "ncell_bsw_dischrg_1/VSSA" "ncell_bsw_dischrg_1/VDDA" 0.200013
+cap "pcell_bsw_dischrg_1/VPBT3" "ncell_bsw_dischrg_1/CLKSB" 1.1183
+cap "pcell_bsw_dischrg_1/VBOOT" "cap_bsw_1/VPBT2" 0.0235583
+cap "pcell_bsw_dischrg_1/VPBT3" "cap_bsw_1/CLKS" 12.8894
+cap "ncell_bsw_dischrg_1/CLKSB" "cap_bsw_1/VPBT2" 0.00441718
+cap "ncell_bsw_dischrg_1/VDDA" "pcell_bsw_dischrg_1/SWITCHING" 0.223739
+cap "pcell_bsw_dischrg_1/VPBT3" "cap_bsw_1/VPBT1" -0.465446
+cap "ncell_bsw_dischrg_1/sky130_fd_pr__nfet_01v8_6J3TAM_3/a_n73_n50#" "cap_bsw_1/VNBT3" 6.24086
+cap "ncell_bsw_dischrg_1/VSSA" "pcell_bsw_dischrg_1/VPBT3" 65.0875
+cap "pcell_bsw_dischrg_1/VPBT3" "pcell_bsw_dischrg_1/SWITCHING" 0.982096
+cap "ncell_bsw_dischrg_1/CLKSB" "ncell_bsw_dischrg_1/sky130_fd_pr__nfet_01v8_6J3TAM_3/a_n73_n50#" 0.120938
+cap "pcell_bsw_dischrg_1/VBOOT" "cap_bsw_1/VNBT3" 40.8385
+cap "ncell_bsw_dischrg_1/CLKSB" "cap_bsw_1/VNBT3" 31.4076
+cap "cap_bsw_1/VNBT3" "cap_bsw_1/CLKS" -3.71765
+cap "pcell_bsw_dischrg_1/VPBT3" "ncell_bsw_dischrg_1/VDDA" 4.73585
+cap "ncell_bsw_dischrg_1/CLKSB" "pcell_bsw_dischrg_1/VBOOT" 19.0749
+cap "cap_bsw_1/VPBT1" "cap_bsw_1/VNBT3" 0.00773669
+cap "pcell_bsw_dischrg_1/VBOOT" "cap_bsw_1/CLKS" 0.0187135
+cap "ncell_bsw_dischrg_1/VDDA" "cap_bsw_1/VPBT2" 0.0129939
+cap "ncell_bsw_dischrg_1/CLKSB" "cap_bsw_1/CLKS" 0.00350877
+cap "pcell_bsw_dischrg_1/VBOOT" "cap_bsw_1/VPBT1" 0.0267096
+cap "ncell_bsw_dischrg_1/CLKSB" "cap_bsw_1/VPBT1" 0.00500805
+cap "ncell_bsw_dischrg_1/VSSA" "cap_bsw_1/VNBT3" 39.0092
+cap "ncell_bsw_dischrg_1/VSSA" "pcell_bsw_dischrg_1/VBOOT" 5.02103
+cap "VDDA" "cap_bsw_1/VPBT1" 118.849
+cap "ncell_bsw_dischrg_1/CLKSB" "cap_bsw_1/VPBT2" 0.0129578
+cap "pcell_bsw_dischrg_1/VPBT3" "ncell_bsw_sw_1/VI" 0.160577
+cap "pcell_bsw_dischrg_1/VBOOT" "pcell_bsw_dischrg_1/SWITCHING" 93.3245
+cap "VSSA" "sky130_fd_sc_hd__inv_1_0/VGND" 0.454279
+cap "VSSA" "ncell_bsw_dischrg_1/CLKSB" 6.80214
+cap "pcell_bsw_dischrg_1/VPBT3" "VDDA" 157.556
+cap "cap_bsw_1/VPBT2" "cap_bsw_1/VPBT1" 0.0713552
+cap "pcell_bsw_dischrg_1/SWITCHING" "ncell_bsw_sw_1/VI" 0.140827
+cap "VDDA" "pcell_bsw_dischrg_1/SWITCHING" 5.67247
+cap "pcell_bsw_dischrg_1/VPBT3" "cap_bsw_1/VPBT2" 36.6756
+cap "VSSA" "cap_bsw_1/VPBT1" -2.75799
+cap "ncell_bsw_dischrg_1/CLKSB" "ncell_bsw_dischrg_1/sky130_fd_pr__nfet_01v8_6J3TAM_3/a_n73_n50#" 7.10543e-15
+cap "VSSA" "pcell_bsw_dischrg_1/VPBT3" 569.991
+cap "cap_bsw_1/VPBT1" "sky130_fd_sc_hd__inv_1_0/A" 0.0546571
+cap "pcell_bsw_dischrg_1/VBOOT" "ncell_bsw_sw_1/VI" 0.215908
+cap "pcell_bsw_dischrg_1/SWITCHING" "cap_bsw_1/VPBT2" 15.8585
+cap "pcell_bsw_dischrg_1/VPBT3" "sky130_fd_sc_hd__inv_1_0/A" -0.0189367
+cap "ncell_bsw_dischrg_1/CLKSB" "sky130_fd_sc_hd__inv_1_0/VGND" 0.338356
+cap "pcell_bsw_dischrg_1/VPBT3" "ncell_bsw_dischrg_1/sky130_fd_pr__nfet_01v8_6J3TAM_3/a_n73_n50#" 15.2449
+cap "VSSA" "pcell_bsw_dischrg_1/SWITCHING" 25.6899
+cap "VDDA" "pcell_bsw_dischrg_1/VBOOT" 261.557
+cap "cap_bsw_1/VPBT1" "sky130_fd_sc_hd__inv_1_0/VGND" 0.0431981
+cap "pcell_bsw_dischrg_1/SWITCHING" "sky130_fd_sc_hd__inv_1_0/A" 0.0124888
+cap "VDDA" "ncell_bsw_sw_1/VI" 1.59434
+cap "ncell_bsw_dischrg_1/sky130_fd_pr__nfet_01v8_6J3TAM_3/a_n73_n50#" "pcell_bsw_dischrg_1/SWITCHING" 0.055133
+cap "pcell_bsw_dischrg_1/VBOOT" "cap_bsw_1/VPBT2" 0.451224
+cap "pcell_bsw_dischrg_1/VPBT3" "sky130_fd_sc_hd__inv_1_0/VGND" 137.038
+cap "pcell_bsw_dischrg_1/VPBT3" "ncell_bsw_dischrg_1/CLKSB" 53.8944
+cap "VSSA" "pcell_bsw_dischrg_1/VBOOT" 30.3298
+cap "pcell_bsw_dischrg_1/VBOOT" "sky130_fd_sc_hd__inv_1_0/A" 0.00709047
+cap "pcell_bsw_dischrg_1/SWITCHING" "sky130_fd_sc_hd__inv_1_0/VGND" -0.78628
+cap "pcell_bsw_dischrg_1/VBOOT" "ncell_bsw_dischrg_1/sky130_fd_pr__nfet_01v8_6J3TAM_3/a_n73_n50#" 0.00605964
+cap "VDDA" "cap_bsw_1/VPBT2" 0.414513
+cap "ncell_bsw_dischrg_1/CLKSB" "pcell_bsw_dischrg_1/SWITCHING" 1.9692
+cap "pcell_bsw_dischrg_1/VPBT3" "cap_bsw_1/VPBT1" 15.9856
+cap "VSSA" "ncell_bsw_sw_1/VI" 0.0788381
+cap "VSSA" "VDDA" 174.046
+cap "pcell_bsw_dischrg_1/VBOOT" "sky130_fd_sc_hd__inv_1_0/VGND" 7.04395
+cap "pcell_bsw_dischrg_1/SWITCHING" "cap_bsw_1/VPBT1" 6.41
+cap "VSSA" "cap_bsw_1/VPBT2" 1.43693
+cap "VDDA" "ncell_bsw_dischrg_1/sky130_fd_pr__nfet_01v8_6J3TAM_3/a_n73_n50#" 0.470627
+cap "ncell_bsw_dischrg_1/CLKSB" "pcell_bsw_dischrg_1/VBOOT" 6.60454
+cap "pcell_bsw_dischrg_1/VPBT3" "pcell_bsw_dischrg_1/SWITCHING" 117.078
+cap "pcell_bsw_dischrg_1/VPBT3" "ncell_bsw_sw_1/VO" -0.796016
+cap "pcell_bsw_dischrg_1/VBOOT" "cap_bsw_1/VPBT1" 0.0101892
+cap "ncell_bsw_dischrg_1/sky130_fd_pr__nfet_01v8_6J3TAM_3/a_n73_n50#" "cap_bsw_1/VPBT2" 0.00265856
+cap "VSSA" "sky130_fd_sc_hd__inv_1_0/A" 0.0192983
+cap "VDDA" "sky130_fd_sc_hd__inv_1_0/VGND" 2.93897
+cap "pcell_bsw_dischrg_1/VPBT3" "pcell_bsw_dischrg_1/VBOOT" 215.444
+cap "VDDA" "ncell_bsw_dischrg_1/CLKSB" -10.9782
+cap "pcell_bsw_dischrg_1/SWITCHING" "ncell_bsw_1/VPBT1" 4.32542
+cap "VSSA" "pcell_bsw_dischrg_1/VPBT3" 2.16435
+cap "ncell_bsw_1/VPBT1" "sky130_fd_sc_hd__inv_1_0/VGND" 0.0651971
+cap "VDDA" "ncell_bsw_1/VPBT1" 51.188
+cap "pcell_bsw_dischrg_1/VBOOT" "ncell_bsw_1/VPBT1" 0.0173327
+cap "pcell_bsw_dischrg_1/VPBT3" "ncell_bsw_1/VPBT2" 0.632435
+cap "VDDA" "pcell_bsw_dischrg_1/SWITCHING" -0.0905678
+cap "VSSA" "ncell_bsw_1/VPBT1" 25.4075
+cap "VDDA" "sky130_fd_sc_hd__inv_1_0/VGND" 0.0186439
+cap "ncell_bsw_1/VPBT1" "sky130_fd_sc_hd__inv_1_0/A" 0.0824918
+cap "VDDA" "pcell_bsw_dischrg_1/VBOOT" -0.011368
+cap "VSSA" "pcell_bsw_dischrg_1/SWITCHING" -0.211235
+cap "ncell_bsw_1/VPBT2" "ncell_bsw_1/VPBT1" -0.418072
+cap "VSSA" "VDDA" 30.3176
+cap "VSSA" "pcell_bsw_dischrg_1/VBOOT" -0.999159
+cap "pcell_bsw_dischrg_1/SWITCHING" "ncell_bsw_1/VPBT2" 6.88022
+cap "VDDA" "sky130_fd_sc_hd__inv_1_0/A" 0.0237423
+cap "pcell_bsw_dischrg_1/VPBT3" "ncell_bsw_1/VPBT1" 0.0565434
+cap "VDDA" "ncell_bsw_1/VPBT2" 133.752
+cap "ncell_bsw_dischrg_1/CLKSB" "ncell_bsw_1/VPBT1" 0.0126246
+cap "VSSA" "ncell_bsw_1/VPBT2" 27.4272
+cap "pcell_bsw_dischrg_1/VPBT3" "VDDA" -0.884163
+cap "ncell_bsw_1/VPBT2" "sky130_fd_sc_hd__inv_1_0/A" 0.0345142
+cap "VDDA" "ncell_bsw_dischrg_1/CLKSB" -0.00510875
+merge "sky130_fd_sc_hd__inv_1_0/VNB" "VSSA" -1131.31 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -3168 -332 0 0 0 0 0 0 0 0 0 0 0 0
+merge "VSSA" "ncell_bsw_1/VSSA"
+merge "ncell_bsw_1/VSSA" "ncell_bsw_sw_1/VSSA"
+merge "ncell_bsw_sw_1/VSSA" "cap_bsw_1/VSUBS"
+merge "cap_bsw_1/VSUBS" "ncell_bsw_dischrg_1/VSSA"
+merge "ncell_bsw_dischrg_1/VSSA" "pcell_bsw_dischrg_1/VSUBS"
+merge "pcell_bsw_dischrg_1/VSUBS" "VSUBS"
+merge "ncell_bsw_sw_1/VBOOT" "ncell_bsw_dischrg_1/VBOOT" -576.441 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -8748 -696 -5408 -312 0 0 0 0 0 0 0 0
+merge "ncell_bsw_dischrg_1/VBOOT" "m1_2111_n1449#"
+merge "m1_2111_n1449#" "pcell_bsw_dischrg_1/VBOOT"
+merge "pcell_bsw_dischrg_1/VBOOT" "m1_2140_n842#"
+merge "sky130_fd_sc_hd__inv_1_0/VPWR" "sky130_fd_sc_hd__inv_1_0/VPB" -1046.65 0 0 0 0 -9972 -1034 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -50816 -2154 0 0 0 0 0 0 0 0 0 0
+merge "sky130_fd_sc_hd__inv_1_0/VPB" "w_3894_n1612#"
+merge "w_3894_n1612#" "ncell_bsw_1/VDDA"
+merge "ncell_bsw_1/VDDA" "VDDA"
+merge "VDDA" "ncell_bsw_dischrg_1/VDDA"
+merge "ncell_bsw_dischrg_1/VDDA" "m1_2061_n481#"
+merge "sky130_fd_sc_hd__inv_1_0/Y" "ncell_bsw_sw_1/SWITCHING" -791.822 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1156 -136 0 0 -18668 -1030 0 0 0 0 0 0 0 0
+merge "ncell_bsw_sw_1/SWITCHING" "li_4059_n1688#"
+merge "li_4059_n1688#" "pcell_bsw_dischrg_1/SWITCHING"
+merge "pcell_bsw_dischrg_1/SWITCHING" "m2_2657_n598#"
+merge "ncell_bsw_1/VPBT1" "cap_bsw_1/VPBT1" -567.695 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -6396 -350 0 0 -1020 -154 0 0 0 0
+merge "cap_bsw_1/VPBT1" "m1_942_n2005#"
+merge "ncell_bsw_sw_1/VNBT1" "cap_bsw_1/VNBT1" -384.319 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -15392 -800 -60 -122 0 0 0 0 0 0
+merge "cap_bsw_1/VNBT1" "ncell_bsw_dischrg_1/CLKSB"
+merge "ncell_bsw_dischrg_1/CLKSB" "CLKSB"
+merge "sky130_fd_sc_hd__inv_1_0/VGND" "ncell_bsw_sw_1/VNBT3" -590.963 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -3900 -358 -11700 -554 0 -304 0 0 0 0 0 0
+merge "ncell_bsw_sw_1/VNBT3" "m1_2721_n2405#"
+merge "m1_2721_n2405#" "cap_bsw_1/VNBT3"
+merge "cap_bsw_1/VNBT3" "m1_1094_n1221#"
+merge "ncell_bsw_1/VPBT2" "cap_bsw_1/VPBT2" -405.474 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -5720 -324 0 0 -480 -136 0 0 0 0
+merge "cap_bsw_1/VPBT2" "m1_1509_n2085#"
+merge "ncell_bsw_1/VPBT3" "cap_bsw_1/VPBT3" -978.705 0 0 0 0 -7498 -418 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -4454 -416 0 0 0 0 -18900 -750 0 0 0 0
+merge "cap_bsw_1/VPBT3" "pcell_bsw_dischrg_1/VPBT3"
+merge "pcell_bsw_dischrg_1/VPBT3" "m1_1729_n1041#"
+merge "m1_1729_n1041#" "w_2591_n842#"
+merge "sky130_fd_sc_hd__inv_1_0/A" "cap_bsw_1/CLKS" -231.35 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1156 -136 0 0 0 0 -720 -144 0 0 0 0 0 0
+merge "cap_bsw_1/CLKS" "CLKS"
+merge "ncell_bsw_sw_1/VI" "VI" -81.3494 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -6136 -340 0 0 0 0 0 0 0 0
+merge "ncell_bsw_sw_1/VO" "VO" -53.5489 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -7436 -390 0 0 0 0 0 0 0 0

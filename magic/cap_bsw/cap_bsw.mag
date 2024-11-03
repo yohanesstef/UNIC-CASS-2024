@@ -1,0 +1,38 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1730459124
+<< metal3 >>
+rect 2966 -654 3066 -566
+<< metal4 >>
+rect 2504 -915 2564 -435
+use sky130_fd_pr__cap_mim_m3_1_VCTT89  sky130_fd_pr__cap_mim_m3_1_VCTT89_0
+timestamp 1730459124
+transform 1 0 2680 0 1 -894
+box -386 -240 386 240
+use sky130_fd_pr__cap_mim_m3_1_VCTT89  sky130_fd_pr__cap_mim_m3_1_VCTT89_1
+timestamp 1730459124
+transform 1 0 2680 0 1 -326
+box -386 -240 386 240
+use sky130_fd_pr__cap_mim_m3_1_VCTT89  XC1
+timestamp 1730459124
+transform 1 0 1848 0 1 -326
+box -386 -240 386 240
+use sky130_fd_pr__cap_mim_m3_1_VCTT89  XC2
+timestamp 1730459124
+transform 1 0 1848 0 1 -894
+box -386 -240 386 240
+<< labels >>
+flabel metal4 s 1702 -326 1702 -326 0 FreeSans 320 0 0 0 VPBT1
+port 1 nsew
+flabel metal3 s 2038 -327 2038 -327 0 FreeSans 320 0 0 0 VNBT1
+port 2 nsew
+flabel metal4 s 1702 -894 1702 -894 0 FreeSans 320 0 0 0 VPBT2
+port 3 nsew
+flabel metal4 s 2534 -326 2534 -326 0 FreeSans 320 0 0 0 VPBT3
+port 4 nsew
+flabel metal3 s 2892 -326 2892 -326 0 FreeSans 320 0 0 0 VNBT3
+port 5 nsew
+flabel metal3 s 2023 -895 2023 -895 0 FreeSans 320 0 0 0 CLKS
+port 6 nsew
+<< end >>

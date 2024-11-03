@@ -1,0 +1,25 @@
+* NGSPICE file created from ncell_bsw.ext - technology: sky130A
+
+.subckt sky130_fd_pr__nfet_01v8_6J3TAM a_n15_n76# a_n73_n50# a_15_n50# VSUBS
+X0 a_15_n50# a_n15_n76# a_n73_n50# VSUBS sky130_fd_pr__nfet_01v8 ad=0.145 pd=1.58 as=0.145 ps=1.58 w=0.5 l=0.15
+.ends
+
+.subckt ncell_bsw VDDA VPBT1 VPBT2 VPBT3 VSSA
+Xsky130_fd_pr__nfet_01v8_6J3TAM_10 VPBT1 VDDA VPBT3 VSSA sky130_fd_pr__nfet_01v8_6J3TAM
+Xsky130_fd_pr__nfet_01v8_6J3TAM_12 VPBT2 VDDA VPBT1 VSSA sky130_fd_pr__nfet_01v8_6J3TAM
+Xsky130_fd_pr__nfet_01v8_6J3TAM_11 VPBT1 VPBT1 VPBT1 VSSA sky130_fd_pr__nfet_01v8_6J3TAM
+Xsky130_fd_pr__nfet_01v8_6J3TAM_13 VPBT1 VPBT2 VDDA VSSA sky130_fd_pr__nfet_01v8_6J3TAM
+Xsky130_fd_pr__nfet_01v8_6J3TAM_14 VPBT2 VPBT2 VPBT2 VSSA sky130_fd_pr__nfet_01v8_6J3TAM
+Xsky130_fd_pr__nfet_01v8_6J3TAM_15 VPBT1 VPBT1 VPBT1 VSSA sky130_fd_pr__nfet_01v8_6J3TAM
+Xsky130_fd_pr__nfet_01v8_6J3TAM_0 VDDA VDDA VDDA VSSA sky130_fd_pr__nfet_01v8_6J3TAM
+Xsky130_fd_pr__nfet_01v8_6J3TAM_1 VPBT1 VPBT2 VDDA VSSA sky130_fd_pr__nfet_01v8_6J3TAM
+Xsky130_fd_pr__nfet_01v8_6J3TAM_2 VPBT2 VDDA VPBT1 VSSA sky130_fd_pr__nfet_01v8_6J3TAM
+Xsky130_fd_pr__nfet_01v8_6J3TAM_3 VPBT2 VPBT2 VPBT2 VSSA sky130_fd_pr__nfet_01v8_6J3TAM
+Xsky130_fd_pr__nfet_01v8_6J3TAM_4 VPBT3 VPBT3 VPBT3 VSSA sky130_fd_pr__nfet_01v8_6J3TAM
+Xsky130_fd_pr__nfet_01v8_6J3TAM_5 VPBT1 VPBT3 VDDA VSSA sky130_fd_pr__nfet_01v8_6J3TAM
+Xsky130_fd_pr__nfet_01v8_6J3TAM_6 VDDA VDDA VDDA VSSA sky130_fd_pr__nfet_01v8_6J3TAM
+Xsky130_fd_pr__nfet_01v8_6J3TAM_7 VPBT3 VPBT3 VPBT3 VSSA sky130_fd_pr__nfet_01v8_6J3TAM
+Xsky130_fd_pr__nfet_01v8_6J3TAM_8 VDDA VDDA VDDA VSSA sky130_fd_pr__nfet_01v8_6J3TAM
+Xsky130_fd_pr__nfet_01v8_6J3TAM_9 VDDA VDDA VDDA VSSA sky130_fd_pr__nfet_01v8_6J3TAM
+.ends
+

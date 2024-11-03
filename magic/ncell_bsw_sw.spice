@@ -1,0 +1,29 @@
+* NGSPICE file created from ncell_bsw_sw.ext - technology: sky130A
+
+.subckt sky130_fd_pr__nfet_01v8_QS6TK8 a_30_n50# a_n30_n76# a_n88_n50# VSUBS
+X0 a_30_n50# a_n30_n76# a_n88_n50# VSUBS sky130_fd_pr__nfet_01v8 ad=0.145 pd=1.58 as=0.145 ps=1.58 w=0.5 l=0.3
+.ends
+
+.subckt sky130_fd_pr__nfet_01v8_6J3TAM a_n15_n76# a_n73_n50# a_15_n50# VSUBS
+X0 a_15_n50# a_n15_n76# a_n73_n50# VSUBS sky130_fd_pr__nfet_01v8 ad=0.145 pd=1.58 as=0.145 ps=1.58 w=0.5 l=0.15
+.ends
+
+.subckt ncell_bsw_sw VI VBOOT VNBT1 VNBT3 SWITCHING VSSA VO
+Xsky130_fd_pr__nfet_01v8_QS6TK8_0 VI VBOOT VNBT3 VSSA sky130_fd_pr__nfet_01v8_QS6TK8
+Xsky130_fd_pr__nfet_01v8_QS6TK8_1 VO VBOOT VI VSSA sky130_fd_pr__nfet_01v8_QS6TK8
+Xsky130_fd_pr__nfet_01v8_QS6TK8_2 VI VBOOT VO VSSA sky130_fd_pr__nfet_01v8_QS6TK8
+Xsky130_fd_pr__nfet_01v8_QS6TK8_4 VI VI VI VSSA sky130_fd_pr__nfet_01v8_QS6TK8
+Xsky130_fd_pr__nfet_01v8_QS6TK8_3 VNBT3 VBOOT VI VSSA sky130_fd_pr__nfet_01v8_QS6TK8
+Xsky130_fd_pr__nfet_01v8_QS6TK8_5 VI VI VI VSSA sky130_fd_pr__nfet_01v8_QS6TK8
+Xsky130_fd_pr__nfet_01v8_6J3TAM_10 SWITCHING SWITCHING SWITCHING VSSA sky130_fd_pr__nfet_01v8_6J3TAM
+Xsky130_fd_pr__nfet_01v8_QS6TK8_6 VO VBOOT VI VSSA sky130_fd_pr__nfet_01v8_QS6TK8
+Xsky130_fd_pr__nfet_01v8_QS6TK8_7 VI VBOOT VO VSSA sky130_fd_pr__nfet_01v8_QS6TK8
+Xsky130_fd_pr__nfet_01v8_6J3TAM_0 VBOOT SWITCHING VNBT3 VSSA sky130_fd_pr__nfet_01v8_6J3TAM
+Xsky130_fd_pr__nfet_01v8_6J3TAM_1 VBOOT VNBT3 SWITCHING VSSA sky130_fd_pr__nfet_01v8_6J3TAM
+Xsky130_fd_pr__nfet_01v8_6J3TAM_2 VNBT1 VSSA VNBT3 VSSA sky130_fd_pr__nfet_01v8_6J3TAM
+Xsky130_fd_pr__nfet_01v8_6J3TAM_3 VNBT1 VNBT3 VSSA VSSA sky130_fd_pr__nfet_01v8_6J3TAM
+Xsky130_fd_pr__nfet_01v8_6J3TAM_4 VSSA VSSA VSSA VSSA sky130_fd_pr__nfet_01v8_6J3TAM
+Xsky130_fd_pr__nfet_01v8_6J3TAM_5 VSSA VSSA VSSA VSSA sky130_fd_pr__nfet_01v8_6J3TAM
+Xsky130_fd_pr__nfet_01v8_6J3TAM_6 SWITCHING SWITCHING SWITCHING VSSA sky130_fd_pr__nfet_01v8_6J3TAM
+.ends
+

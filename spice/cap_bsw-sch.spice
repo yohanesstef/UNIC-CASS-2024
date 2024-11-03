@@ -1,0 +1,8 @@
+** sch_path: /home/yohanes/sky130_projects/UNIC-CASS-2024/xschem/cap_bsw.sch
+.subckt cap_bsw VPBT1 VNBT1 VPBT2 VPBT3 VNBT3 CLKS
+*.PININFO VPBT1:I VNBT1:I VPBT2:I VPBT3:I VNBT3:I CLKS:I
+XC1 VPBT1 VNBT1 sky130_fd_pr__cap_mim_m3_1 W=2 L=2 m=1
+XC2 VPBT2 CLKS sky130_fd_pr__cap_mim_m3_1 W=2 L=2 m=1
+XC3 VPBT3 VNBT3 sky130_fd_pr__cap_mim_m3_1 W=2 L=2 m=2
+.ends
+.end

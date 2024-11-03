@@ -14,6 +14,19 @@ Circuit 1: sky130_fd_pr__pfet_01v8         |Circuit 2: sky130_fd_pr__pfet_01v8
 Cell pin lists are equivalent.
 Device classes sky130_fd_pr__pfet_01v8 and sky130_fd_pr__pfet_01v8 are equivalent.
 
+Circuit 1 cell sky130_fd_pr__cap_mim_m3_1 and Circuit 2 cell sky130_fd_pr__cap_mim_m3_1 are black boxes.
+Warning: Equate pins:  cell sky130_fd_pr__cap_mim_m3_1 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_pr__cap_mim_m3_1 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_pr__cap_mim_m3_1      |Circuit 2: sky130_fd_pr__cap_mim_m3_1      
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_pr__cap_mim_m3_1 and sky130_fd_pr__cap_mim_m3_1 are equivalent.
+
 Circuit 1 cell sky130_fd_pr__nfet_01v8 and Circuit 2 cell sky130_fd_pr__nfet_01v8 are black boxes.
 Warning: Equate pins:  cell sky130_fd_pr__nfet_01v8 is a placeholder, treated as a black box.
 Warning: Equate pins:  cell sky130_fd_pr__nfet_01v8 is a placeholder, treated as a black box.
@@ -29,61 +42,201 @@ Circuit 1: sky130_fd_pr__nfet_01v8         |Circuit 2: sky130_fd_pr__nfet_01v8
 Cell pin lists are equivalent.
 Device classes sky130_fd_pr__nfet_01v8 and sky130_fd_pr__nfet_01v8 are equivalent.
 
-Circuit 1 cell sky130_fd_pr__cap_mim_m3_1 and Circuit 2 cell sky130_fd_pr__cap_mim_m3_1 are black boxes.
-Warning: Equate pins:  cell sky130_fd_pr__cap_mim_m3_1 is a placeholder, treated as a black box.
-Warning: Equate pins:  cell sky130_fd_pr__cap_mim_m3_1 is a placeholder, treated as a black box.
+Circuit 1 cell sky130_fd_sc_hd__inv_1 is a black box; will not flatten Circuit 2
+Warning: Equate pins:  cell sky130_fd_sc_hd__inv_1 is a placeholder, treated as a black box.
 
 Subcircuit pins:
-Circuit 1: sky130_fd_pr__cap_mim_m3_1      |Circuit 2: sky130_fd_pr__cap_mim_m3_1      
+Circuit 1: sky130_fd_sc_hd__inv_1          |Circuit 2: sky130_fd_sc_hd__inv_1          
 -------------------------------------------|-------------------------------------------
-1                                          |1                                          
-2                                          |2                                          
+(no matching pin)                          |A                                          
+(no matching pin)                          |VGND                                       
+(no matching pin)                          |VNB                                        
+(no matching pin)                          |VPB                                        
+(no matching pin)                          |VPWR                                       
+(no matching pin)                          |Y                                          
+1                                          |(no matching pin)                          
+2                                          |(no matching pin)                          
+3                                          |(no matching pin)                          
+4                                          |(no matching pin)                          
+5                                          |(no matching pin)                          
+6                                          |(no matching pin)                          
+---------------------------------------------------------------------------------------
+Cell pin lists for sky130_fd_sc_hd__inv_1 and sky130_fd_sc_hd__inv_1 altered to match.
+Device classes sky130_fd_sc_hd__inv_1 and sky130_fd_sc_hd__inv_1 are equivalent.
+Flattening unmatched subcell sky130_fd_pr__nfet_01v8_QS6TK8 in circuit ncell_bsw_sw (1)(8 instances)
+Flattening unmatched subcell sky130_fd_pr__nfet_01v8_6J3TAM in circuit ncell_bsw_sw (1)(8 instances)
+
+Class ncell_bsw_sw (1):  Merged 9 parallel devices.
+Subcircuit summary:
+Circuit 1: ncell_bsw_sw                    |Circuit 2: ncell_bsw_sw                    
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__nfet_01v8 (16->7)            |sky130_fd_pr__nfet_01v8 (16->7)            
+Number of devices: 7                       |Number of devices: 7                       
+Number of nets: 7                          |Number of nets: 7                          
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: ncell_bsw_sw                    |Circuit 2: ncell_bsw_sw                    
+-------------------------------------------|-------------------------------------------
+SWITCHING                                  |SWITCHING                                  
+VO                                         |VO                                         
+VNBT1                                      |VNBT1                                      
+VSSA                                       |VSSA                                       
+VBOOT                                      |VBOOT                                      
+VNBT3                                      |VNBT3                                      
+VI                                         |VI                                         
 ---------------------------------------------------------------------------------------
 Cell pin lists are equivalent.
-Device classes sky130_fd_pr__cap_mim_m3_1 and sky130_fd_pr__cap_mim_m3_1 are equivalent.
-Flattening unmatched subcell sky130_fd_pr__pfet_01v8_LCNWMQ in circuit sample-n-hold-layout (0)(3 instances)
-Flattening unmatched subcell sky130_fd_pr__nfet_01v8_L78EGD in circuit sample-n-hold-layout (0)(9 instances)
-Flattening unmatched subcell sky130_fd_pr__nfet_01v8_TK2CNP in circuit sample-n-hold-layout (0)(1 instance)
-Flattening unmatched subcell sky130_fd_pr__pfet_01v8_M4BBJH in circuit sample-n-hold-layout (0)(1 instance)
-Flattening unmatched subcell sky130_fd_pr__nfet_01v8_7XY3PK in circuit sample-n-hold-layout (0)(2 instances)
-Flattening unmatched subcell sky130_fd_pr__cap_mim_m3_1_5XYVA6 in circuit sample-n-hold-layout (0)(1 instance)
-Flattening unmatched subcell sky130_fd_pr__cap_mim_m3_1_5XY9G7 in circuit sample-n-hold-layout (0)(1 instance)
-Flattening unmatched subcell sky130_fd_pr__cap_mim_m3_1_QEFW4K in circuit sample-n-hold-layout (0)(1 instance)
+Device classes ncell_bsw_sw and ncell_bsw_sw are equivalent.
+Flattening unmatched subcell sky130_fd_pr__pfet_01v8_275TTJ in circuit pcell_bsw_dischrg (1)(8 instances)
 
+Class pcell_bsw_dischrg (0):  Merged 3 parallel devices.
+Class pcell_bsw_dischrg (1):  Merged 6 parallel devices.
 Subcircuit summary:
-Circuit 1: sample-n-hold-layout            |Circuit 2: t_h_bootstrap_switch            
+Circuit 1: pcell_bsw_dischrg               |Circuit 2: pcell_bsw_dischrg               
 -------------------------------------------|-------------------------------------------
-sky130_fd_pr__pfet_01v8 (4)                |sky130_fd_pr__pfet_01v8 (4)                
-sky130_fd_pr__nfet_01v8 (12)               |sky130_fd_pr__nfet_01v8 (12)               
-sky130_fd_pr__cap_mim_m3_1 (3)             |sky130_fd_pr__cap_mim_m3_1 (3)             
-Number of devices: 19                      |Number of devices: 19                      
-Number of nets: 14                         |Number of nets: 14                         
+sky130_fd_pr__pfet_01v8 (8->2)             |sky130_fd_pr__pfet_01v8 (8->2)             
+Number of devices: 2                       |Number of devices: 2                       
+Number of nets: 3                          |Number of nets: 3                          
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: pcell_bsw_dischrg               |Circuit 2: pcell_bsw_dischrg               
+-------------------------------------------|-------------------------------------------
+VPBT3                                      |VPBT3                                      
+SWITCHING                                  |SWITCHING                                  
+VBOOT                                      |VBOOT                                      
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes pcell_bsw_dischrg and pcell_bsw_dischrg are equivalent.
+Flattening unmatched subcell sky130_fd_pr__cap_mim_m3_1_VCTT89 in circuit cap_bsw (1)(4 instances)
+
+Class cap_bsw (1):  Merged 1 parallel devices.
+Subcircuit summary:
+Circuit 1: cap_bsw                         |Circuit 2: cap_bsw                         
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__cap_mim_m3_1 (4->3)          |sky130_fd_pr__cap_mim_m3_1 (4->3)          
+Number of devices: 3                       |Number of devices: 3                       
+Number of nets: 6                          |Number of nets: 6                          
+---------------------------------------------------------------------------------------
+Resolving symmetries by property value.
+Resolving symmetries by pin name.
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: cap_bsw                         |Circuit 2: cap_bsw                         
+-------------------------------------------|-------------------------------------------
+VNBT3                                      |VNBT3                                      
+VNBT1                                      |VNBT1                                      
+CLKS                                       |CLKS                                       
+VPBT3                                      |VPBT3                                      
+VPBT1                                      |VPBT1                                      
+VPBT2                                      |VPBT2                                      
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes cap_bsw and cap_bsw are equivalent.
+Flattening unmatched subcell sky130_fd_pr__nfet_01v8_6J3TAM in circuit ncell_bsw_dischrg (1)(8 instances)
+
+Class ncell_bsw_dischrg (1):  Merged 4 parallel devices.
+Subcircuit summary:
+Circuit 1: ncell_bsw_dischrg               |Circuit 2: ncell_bsw_dischrg               
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__nfet_01v8 (8->4)             |sky130_fd_pr__nfet_01v8 (8->4)             
+Number of devices: 4                       |Number of devices: 4                       
+Number of nets: 5                          |Number of nets: 5                          
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: ncell_bsw_dischrg               |Circuit 2: ncell_bsw_dischrg               
+-------------------------------------------|-------------------------------------------
+VSSA                                       |VSSA                                       
+CLKSB                                      |CLKSB                                      
+VDDA                                       |VDDA                                       
+VBOOT                                      |VBOOT                                      
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes ncell_bsw_dischrg and ncell_bsw_dischrg are equivalent.
+Flattening unmatched subcell sky130_fd_pr__nfet_01v8_6J3TAM in circuit ncell_bsw (1)(16 instances)
+
+Class ncell_bsw (1):  Merged 9 parallel devices.
+Subcircuit summary:
+Circuit 1: ncell_bsw                       |Circuit 2: ncell_bsw                       
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__nfet_01v8 (14->7)            |sky130_fd_pr__nfet_01v8 (16->7)            
+Number of devices: 7                       |Number of devices: 7                       
+Number of nets: 5                          |Number of nets: 5                          
 ---------------------------------------------------------------------------------------
 Netlists match uniquely with property errors.
-sky130_fd_pr__cap_mim_m3_1_5XYVA6:XC1/sky130_fd_pr__cap_mim_m3_1:0 vs. sky130_fd_pr__cap_mim_m3_1:C1:
- w circuit1: 7.07   circuit2: 8   (delta=12.3%, cutoff=1%)
- l circuit1: 7.07   circuit2: 6.25   (delta=12.3%, cutoff=1%)
-sky130_fd_pr__cap_mim_m3_1_5XY9G7:XC2/sky130_fd_pr__cap_mim_m3_1:0 vs. sky130_fd_pr__cap_mim_m3_1:C2:
- w circuit1: 7.07   circuit2: 8   (delta=12.3%, cutoff=1%)
- l circuit1: 7.07   circuit2: 6.25   (delta=12.3%, cutoff=1%)
-sky130_fd_pr__cap_mim_m3_1_QEFW4K:XC3/sky130_fd_pr__cap_mim_m3_1:0 vs. sky130_fd_pr__cap_mim_m3_1:C3:
- w circuit1: 22.31   circuit2: 25   (delta=11.4%, cutoff=1%)
- l circuit1: 22.31   circuit2: 20   (delta=10.9%, cutoff=1%)
+sky130_fd_pr__nfet_01v8:M7 vs. sky130_fd_pr__nfet_01v8_6J3TAM_0/sky130_fd_pr__nfet_01v8:0:
+ W circuit1: 1   circuit2: 2   (delta=66.7%, cutoff=1%)
 
 Subcircuit pins:
-Circuit 1: sample-n-hold-layout            |Circuit 2: t_h_bootstrap_switch            
+Circuit 1: ncell_bsw                       |Circuit 2: ncell_bsw                       
 -------------------------------------------|-------------------------------------------
-Vout                                       |Vout                                       
-GND                                        |GND                                        
-VDD                                        |VDD                                        
-vdata                                      |vdata                                      
-clk                                        |clk                                        
+VPBT3                                      |VPBT3                                      
+VSSA                                       |VSSA                                       
+VPBT2                                      |VPBT2                                      
+VPBT1                                      |VPBT1                                      
+VDDA                                       |VDDA                                       
 ---------------------------------------------------------------------------------------
 Cell pin lists are equivalent.
-Device classes sample-n-hold-layout and t_h_bootstrap_switch are equivalent.
+Device classes ncell_bsw and ncell_bsw are equivalent.
+Flattening unmatched subcell sh_bsw-prelay in circuit sh_bsw_diff (0)(2 instances)
+Flattening unmatched subcell sh_bsw in circuit sh_bsw_diff (1)(2 instances)
 
-Final result: Circuits match uniquely.
-Property errors were found.
+Subcircuit summary:
+Circuit 1: sh_bsw_diff                     |Circuit 2: sh_bsw_diff                     
+-------------------------------------------|-------------------------------------------
+sky130_fd_sc_hd__inv_1 (2)                 |sky130_fd_sc_hd__inv_1 (2)                 
+ncell_bsw_sw (2)                           |ncell_bsw_sw (2)                           
+pcell_bsw_dischrg (2)                      |pcell_bsw_dischrg (2)                      
+cap_bsw (2)                                |cap_bsw (2)                                
+ncell_bsw_dischrg (2)                      |ncell_bsw_dischrg (2)                      
+ncell_bsw (2)                              |ncell_bsw (2)                              
+Number of devices: 12                      |Number of devices: 12                      
+Number of nets: 32                         |Number of nets: 32                         
+---------------------------------------------------------------------------------------
+NET mismatches: Class fragments follow (with fanout counts):
+Circuit 1: sh_bsw_diff                     |Circuit 2: sh_bsw_diff                     
+
+---------------------------------------------------------------------------------------
+Net: CLKSB                                 |Net: CLKSB                                 
+  ncell_bsw_sw/VNBT1 = 2                   |  ncell_bsw_sw/VNBT1 = 2                   
+  cap_bsw/VNBT1 = 2                        |  cap_bsw/VNBT1 = 2                        
+  ncell_bsw_dischrg/CLKSB = 2              |  ncell_bsw_dischrg/CLKSB = 2              
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Net: CLKS                                  |Net: CLKS                                  
+  sky130_fd_sc_hd__inv_1/1 = 2             |  sky130_fd_sc_hd__inv_1/A = 2             
+  cap_bsw/CLKS = 2                         |  cap_bsw/CLKS = 2                         
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Net: VSSA                                  |Net: VSSA                                  
+  sky130_fd_sc_hd__inv_1/3 = 2             |  sky130_fd_sc_hd__inv_1/VNB = 2           
+  ncell_bsw_sw/VSSA = 2                    |  ncell_bsw_sw/VSSA = 2                    
+  ncell_bsw_dischrg/VSSA = 2               |  ncell_bsw_dischrg/VSSA = 2               
+  ncell_bsw/VSSA = 2                       |  ncell_bsw/VSSA = 2                       
+                                           |                                           
+Net: VDDA                                  |Net: VDDA                                  
+  sky130_fd_sc_hd__inv_1/4 = 2             |  sky130_fd_sc_hd__inv_1/VPB = 2           
+  sky130_fd_sc_hd__inv_1/5 = 2             |  sky130_fd_sc_hd__inv_1/VPWR = 2          
+  ncell_bsw_dischrg/VDDA = 2               |  ncell_bsw_dischrg/VDDA = 2               
+  ncell_bsw/VDDA = 2                       |  ncell_bsw/VDDA = 2                       
+---------------------------------------------------------------------------------------
+Netlists do not match.
+
+Subcircuit pins:
+Circuit 1: sh_bsw_diff                     |Circuit 2: sh_bsw_diff                     
+-------------------------------------------|-------------------------------------------
+Cell pin lists are equivalent.
+Device classes sh_bsw_diff and sh_bsw_diff are equivalent.
+
+Final result: Netlists do not match.
 
 The following cells had property errors:
- sample-n-hold-layout
+ ncell_bsw

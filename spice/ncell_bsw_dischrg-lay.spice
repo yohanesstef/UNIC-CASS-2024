@@ -1,0 +1,17 @@
+* NGSPICE file created from ncell_bsw_dischrg.ext - technology: sky130A
+
+.subckt sky130_fd_pr__nfet_01v8_6J3TAM a_n15_n76# a_n73_n50# a_15_n50# VSUBS
+X0 a_15_n50# a_n15_n76# a_n73_n50# VSUBS sky130_fd_pr__nfet_01v8 ad=0.145 pd=1.58 as=0.145 ps=1.58 w=0.5 l=0.15
+.ends
+
+.subckt ncell_bsw_dischrg VDDA CLKSB VBOOT VSSA
+Xsky130_fd_pr__nfet_01v8_6J3TAM_0 VBOOT VBOOT VBOOT VSSA sky130_fd_pr__nfet_01v8_6J3TAM
+Xsky130_fd_pr__nfet_01v8_6J3TAM_1 VSSA VSSA VSSA VSSA sky130_fd_pr__nfet_01v8_6J3TAM
+Xsky130_fd_pr__nfet_01v8_6J3TAM_2 CLKSB VSSA a_179_n1156# VSSA sky130_fd_pr__nfet_01v8_6J3TAM
+Xsky130_fd_pr__nfet_01v8_6J3TAM_3 VDDA a_179_n1156# VBOOT VSSA sky130_fd_pr__nfet_01v8_6J3TAM
+Xsky130_fd_pr__nfet_01v8_6J3TAM_4 VBOOT VBOOT VBOOT VSSA sky130_fd_pr__nfet_01v8_6J3TAM
+Xsky130_fd_pr__nfet_01v8_6J3TAM_5 VDDA VBOOT a_179_n1156# VSSA sky130_fd_pr__nfet_01v8_6J3TAM
+Xsky130_fd_pr__nfet_01v8_6J3TAM_6 CLKSB a_179_n1156# VSSA VSSA sky130_fd_pr__nfet_01v8_6J3TAM
+Xsky130_fd_pr__nfet_01v8_6J3TAM_7 VSSA VSSA VSSA VSSA sky130_fd_pr__nfet_01v8_6J3TAM
+.ends
+
