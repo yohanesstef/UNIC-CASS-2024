@@ -100,23 +100,19 @@ Xsky130_fd_pr__nfet_01v8_6J3TAM_8 VDDA VDDA VDDA VSSA sky130_fd_pr__nfet_01v8_6J
 Xsky130_fd_pr__nfet_01v8_6J3TAM_9 VDDA VDDA VDDA VSSA sky130_fd_pr__nfet_01v8_6J3TAM
 .ends
 
-.subckt sh_bsw3 ncell_bsw_dischrg_0/VDDA inv_bsw_0/IN inv_bsw_0/VPB ncell_bsw_sw_1/VO
-+ ncell_bsw_sw_1/VI cap_bsw_1/VNBT1 inv_bsw_0/VPWR VSUBS
-Xinv_bsw_0 inv_bsw_0/IN inv_bsw_0/OUT inv_bsw_0/VPWR inv_bsw_0/VPB inv_bsw_0/VGND
-+ VSUBS inv_bsw
+.subckt sh_bsw3 VI VO ncell_bsw_dischrg_0/VDDA inv_bsw_0/VPB CLKS CLKSB VDDA VSSA
+Xinv_bsw_0 CLKS inv_bsw_0/OUT VDDA inv_bsw_0/VPB inv_bsw_0/VGND VSSA inv_bsw
 Xpcell_bsw_dischrg_0 cap_bsw_1/VPBT3 inv_bsw_0/OUT ncell_bsw_sw_1/VBOOT pcell_bsw_dischrg
-Xcap_bsw_1 cap_bsw_1/VPBT1 cap_bsw_1/VNBT1 cap_bsw_1/VPBT2 cap_bsw_1/VPBT3 inv_bsw_0/VGND
-+ inv_bsw_0/IN cap_bsw
-Xncell_bsw_sw_1 ncell_bsw_sw_1/VI ncell_bsw_sw_1/VBOOT cap_bsw_1/VNBT1 inv_bsw_0/VGND
-+ inv_bsw_0/OUT VSUBS ncell_bsw_sw_1/VO ncell_bsw_sw
-Xncell_bsw_dischrg_0 ncell_bsw_dischrg_0/VDDA cap_bsw_1/VNBT1 ncell_bsw_sw_1/VBOOT
-+ VSUBS ncell_bsw_dischrg
-Xncell_bsw_1 inv_bsw_0/VPWR cap_bsw_1/VPBT1 cap_bsw_1/VPBT2 cap_bsw_1/VPBT3 VSUBS
-+ ncell_bsw
+Xcap_bsw_1 cap_bsw_1/VPBT1 CLKSB cap_bsw_1/VPBT2 cap_bsw_1/VPBT3 inv_bsw_0/VGND CLKS
++ cap_bsw
+Xncell_bsw_sw_1 VI ncell_bsw_sw_1/VBOOT CLKSB inv_bsw_0/VGND inv_bsw_0/OUT VSSA VO
++ ncell_bsw_sw
+Xncell_bsw_dischrg_0 ncell_bsw_dischrg_0/VDDA CLKSB ncell_bsw_sw_1/VBOOT VSSA ncell_bsw_dischrg
+Xncell_bsw_1 VDDA cap_bsw_1/VPBT1 cap_bsw_1/VPBT2 cap_bsw_1/VPBT3 VSSA ncell_bsw
 .ends
 
 .subckt sh_bsw4 VDDA CLKS CLKSB VIP VIN VSSA VCP VCN
-Xsh_bsw3_0 VDDA CLKS VDDA VCP VIP CLKSB VDDA VSSA sh_bsw3
-Xsh_bsw3_1 VDDA CLKS VDDA VCN VIN CLKSB VDDA VSSA sh_bsw3
+Xsh_bsw3_0 VIP VCP VDDA VDDA CLKS CLKSB VDDA VSSA sh_bsw3
+Xsh_bsw3_1 VIN VCN VDDA VDDA CLKS CLKSB VDDA VSSA sh_bsw3
 .ends
 

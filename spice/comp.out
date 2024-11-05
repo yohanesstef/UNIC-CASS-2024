@@ -210,10 +210,10 @@ Netlists match uniquely.
 Subcircuit pins:
 Circuit 1: sh_bsw_diff                     |Circuit 2: sh_bsw4                         
 -------------------------------------------|-------------------------------------------
-VCN                                        |VCN                                        
-VCP                                        |VCP                                        
 VIN                                        |VIN                                        
 VIP                                        |VIP                                        
+VCN                                        |VCN                                        
+VCP                                        |VCP                                        
 CLKSB                                      |CLKSB                                      
 CLKS                                       |CLKS                                       
 VDDA                                       |VDDA                                       

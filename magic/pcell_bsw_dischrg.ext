@@ -22,23 +22,23 @@ node "SWITCHING" 264 43.4742 954 -152 v0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 node "a_771_n179#" 206 20.375 771 -179 p 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4644 312 0 0 6018 422 0 0 0 0 0 0 0 0 0 0 0 0
 node "VPBT3" 9539 1814.34 954 92 li 0 0 0 0 407484 2560 0 0 72624 4272 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4644 312 0 0 93092 5476 0 0 0 0 0 0 0 0 0 0 0 0
 substrate "VSUBS" 0 0 -1073741817 -1073741817 space 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-cap "VPBT3" "m1_1016_n307#" 50.1856
-cap "a_771_n179#" "VBOOT" 5.93339
-cap "VBOOT" "m1_861_n381#" 24.7125
-cap "VPBT3" "SWITCHING" 185.231
-cap "SWITCHING" "m1_1016_n307#" 13.8632
-cap "VPBT3" "a_771_n179#" 153.649
-cap "VPBT3" "m1_861_n381#" 59.0197
-cap "a_771_n179#" "m1_1016_n307#" 0.734685
-cap "m1_1016_n307#" "m1_861_n381#" 24.7125
-cap "a_771_n179#" "SWITCHING" 39.9524
-cap "SWITCHING" "m1_861_n381#" 16.7352
-cap "VPBT3" "VBOOT" 39.6082
+cap "m1_1016_n307#" "a_771_n179#" 0.734685
 cap "VBOOT" "m1_1016_n307#" 120.072
-cap "SWITCHING" "VBOOT" 13.8632
-cap "sky130_fd_pr__pfet_01v8_275TTJ_0/a_n15_n76#" "sky130_fd_pr__pfet_01v8_275TTJ_0/a_15_n50#" 80.3833
+cap "VBOOT" "a_771_n179#" 5.93339
+cap "SWITCHING" "m1_861_n381#" 16.7352
+cap "VPBT3" "m1_861_n381#" 59.0197
+cap "m1_1016_n307#" "m1_861_n381#" 24.7125
+cap "SWITCHING" "VPBT3" 185.231
+cap "VBOOT" "m1_861_n381#" 24.7125
+cap "SWITCHING" "m1_1016_n307#" 13.8632
+cap "VPBT3" "m1_1016_n307#" 50.1856
+cap "SWITCHING" "a_771_n179#" 39.9524
+cap "VBOOT" "SWITCHING" 13.8632
+cap "VPBT3" "a_771_n179#" 153.649
+cap "VBOOT" "VPBT3" 39.6082
+cap "sky130_fd_pr__pfet_01v8_275TTJ_0/a_15_n50#" "sky130_fd_pr__pfet_01v8_275TTJ_0/a_n73_n50#" 20.3275
 cap "sky130_fd_pr__pfet_01v8_275TTJ_0/a_n15_n76#" "sky130_fd_pr__pfet_01v8_275TTJ_0/a_n73_n50#" 0.47021
-cap "sky130_fd_pr__pfet_01v8_275TTJ_0/a_n73_n50#" "sky130_fd_pr__pfet_01v8_275TTJ_0/a_15_n50#" 20.3275
+cap "sky130_fd_pr__pfet_01v8_275TTJ_0/a_15_n50#" "sky130_fd_pr__pfet_01v8_275TTJ_0/a_n15_n76#" 80.3833
 merge "sky130_fd_pr__pfet_01v8_275TTJ_0/VSUBS" "sky130_fd_pr__pfet_01v8_275TTJ_1/VSUBS" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 merge "sky130_fd_pr__pfet_01v8_275TTJ_1/VSUBS" "sky130_fd_pr__pfet_01v8_275TTJ_2/VSUBS"
 merge "sky130_fd_pr__pfet_01v8_275TTJ_2/VSUBS" "sky130_fd_pr__pfet_01v8_275TTJ_3/VSUBS"

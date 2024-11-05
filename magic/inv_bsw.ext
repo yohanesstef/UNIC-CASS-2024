@@ -18,23 +18,23 @@ node "OUT" 0 66.7113 151 174 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 node "IN" 150 167.587 74 174 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 5070 318 0 0 2244 200 3480 236 0 0 0 0 0 0 0 0 0 0
 node "VPB" 3459 117.298 106 510 li 0 0 0 0 17896 620 0 0 4964 360 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4964 360 0 0 0 0 0 0 0 0 0 0 0 0
 substrate "VNB" 0 0 106 -62 li 0 0 0 0 0 0 0 0 0 0 4964 360 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4964 360 0 0 0 0 0 0 0 0 0 0 0 0
-cap "IN" "OUT" 36.1222
-cap "VPB" "OUT" 1.14057
+cap "OUT" "VPB" 1.14057
 cap "VPB" "IN" 7.74852
+cap "OUT" "IN" 36.1222
 cap "sky130_fd_pr__nfet_01v8_RH3MT7_1/a_n15_n76#" "VPWR" 40.6909
-cap "sky130_fd_pr__nfet_01v8_RH3MT7_1/a_15_n50#" "VNB" 13.5693
-cap "VPWR" "sky130_fd_pr__pfet_01v8_2XU92K_1/w_n109_n162#" 14.2351
-cap "sky130_fd_pr__nfet_01v8_RH3MT7_1/a_15_n50#" "sky130_fd_pr__nfet_01v8_RH3MT7_1/a_n15_n76#" 1.493
+cap "VNB" "sky130_fd_pr__nfet_01v8_RH3MT7_1/a_15_n50#" 13.5693
+cap "sky130_fd_pr__pfet_01v8_2XU92K_1/w_n109_n162#" "sky130_fd_pr__nfet_01v8_RH3MT7_1/a_15_n50#" 17.8211
+cap "sky130_fd_pr__nfet_01v8_RH3MT7_1/a_n15_n76#" "sky130_fd_pr__nfet_01v8_RH3MT7_1/a_15_n50#" 1.493
 cap "sky130_fd_pr__nfet_01v8_RH3MT7_1/a_15_n50#" "VGND" 0.21287
-cap "sky130_fd_pr__nfet_01v8_RH3MT7_1/a_15_n50#" "sky130_fd_pr__pfet_01v8_2XU92K_1/w_n109_n162#" 17.8211
-cap "sky130_fd_pr__nfet_01v8_RH3MT7_1/a_n15_n76#" "VNB" -3.88305
-cap "VGND" "VNB" 14.1994
-cap "sky130_fd_pr__pfet_01v8_2XU92K_1/w_n109_n162#" "VNB" -1.17134
 cap "sky130_fd_pr__nfet_01v8_RH3MT7_1/a_15_n50#" "VPWR" 0.21287
-cap "VGND" "sky130_fd_pr__nfet_01v8_RH3MT7_1/a_n15_n76#" 39.4337
-cap "sky130_fd_pr__nfet_01v8_RH3MT7_1/a_n15_n76#" "sky130_fd_pr__pfet_01v8_2XU92K_1/w_n109_n162#" 24.7732
-cap "VPWR" "VNB" 0.26262
-cap "VGND" "sky130_fd_pr__pfet_01v8_2XU92K_1/w_n109_n162#" 0.103048
+cap "VNB" "sky130_fd_pr__pfet_01v8_2XU92K_1/w_n109_n162#" -1.17134
+cap "VNB" "sky130_fd_pr__nfet_01v8_RH3MT7_1/a_n15_n76#" -3.88305
+cap "sky130_fd_pr__pfet_01v8_2XU92K_1/w_n109_n162#" "sky130_fd_pr__nfet_01v8_RH3MT7_1/a_n15_n76#" 24.7732
+cap "VNB" "VGND" 14.1994
+cap "sky130_fd_pr__pfet_01v8_2XU92K_1/w_n109_n162#" "VGND" 0.103048
+cap "sky130_fd_pr__nfet_01v8_RH3MT7_1/a_n15_n76#" "VGND" 39.4337
+cap "VNB" "VPWR" 0.26262
+cap "sky130_fd_pr__pfet_01v8_2XU92K_1/w_n109_n162#" "VPWR" 14.2351
 merge "sky130_fd_pr__nfet_01v8_RH3MT7_1/a_n15_n76#" "sky130_fd_pr__pfet_01v8_2XU92K_1/a_n15_n126#" -86.6467 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -30 -122 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 merge "sky130_fd_pr__pfet_01v8_2XU92K_1/a_n15_n126#" "IN"
 merge "sky130_fd_pr__nfet_01v8_RH3MT7_1/a_n73_n50#" "VGND" -21.7663 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0

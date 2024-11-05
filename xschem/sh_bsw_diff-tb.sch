@@ -13,8 +13,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=0.00057799082
-x2=0.00090011336
+x1=0.00010518108
+x2=0.00052461146
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -37,8 +37,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=0.00057799082
-x2=0.00090011336
+x1=0.00010518108
+x2=0.00052461146
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -58,8 +58,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=0.00057799082
-x2=0.00090011336
+x1=0.00010518108
+x2=0.00052461146
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -80,8 +80,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=0.00057799082
-x2=0.00090011336
+x1=0.00010518108
+x2=0.00052461146
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -95,6 +95,50 @@ logy=0
 color="8 7"
 node="vcn
 vin"}
+B 2 1780 -1100 2580 -700 {flags=graph
+y1=-1.303708
+y2=3.9714538
+ypos1=0
+ypos2=2
+divy=5
+subdivy=1
+unity=1
+x1=0.00010518108
+x2=0.00052461146
+divx=5
+subdivx=1
+xlabmag=1.0
+ylabmag=1.0
+
+
+dataset=-1
+unitx=1
+logx=0
+logy=0
+color=8
+node=x2.x1.vboot}
+B 2 1780 -700 2580 -300 {flags=graph
+y1=-4.0004368
+y2=3.5242429
+ypos1=0
+ypos2=2
+divy=5
+subdivy=1
+unity=1
+x1=0.00010518108
+x2=0.00052461146
+divx=5
+subdivx=1
+xlabmag=1.0
+ylabmag=1.0
+
+
+dataset=-1
+unitx=1
+logx=0
+logy=0
+color=8
+node=x2.x2.vboot}
 N 890 -120 950 -120 {
 lab=GND}
 C {devices/launcher.sym} 240 -260 0 0 {name=h5
@@ -130,7 +174,7 @@ simulator=ngspice
 only_toplevel=false 
 value="  
   .param fin=9.3e3 in_delay=\{10e-9\} in_period=\{1/fin\} vcn_delay=\{in_period/2\}
-  .param fclk=\{20e3\} tclk=\{1/fclk\} thclk=\{tclk/2\}
+  .param fclk=\{50e3\} tclk=\{1/fclk\} thclk=\{tclk/2\}
   .option wnflag=1
   .option safecurrents
 

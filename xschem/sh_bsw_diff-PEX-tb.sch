@@ -6,15 +6,15 @@ V {}
 S {}
 E {}
 B 2 180 -700 980 -300 {flags=graph
-y1=-5.2e-06
-y2=1
+y1=-0.0019
+y2=1.8
 ypos1=0
 ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=0.00047771973
-x2=0.00079984227
+x1=2.6165884e-06
+x2=0.00082977452
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -30,15 +30,15 @@ logx=0
 logy=0
 }
 B 2 180 -1100 980 -700 {flags=graph
-y1=-0.51566736
-y2=2.4703167
+y1=0
+y2=1.8
 ypos1=0
 ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=0.00047771973
-x2=0.00079984227
+x1=2.6165884e-06
+x2=0.00082977452
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -51,15 +51,15 @@ logx=0
 logy=0
 }
 B 2 980 -1100 1780 -700 {flags=graph
-y1=-0.0018
-y2=1.1
+y1=-7.7e-08
+y2=1.8
 ypos1=0
 ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=0.00047771973
-x2=0.00079984227
+x1=2.6165884e-06
+x2=0.00082977452
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -73,15 +73,15 @@ logx=0
 logy=0
 }
 B 2 980 -700 1780 -300 {flags=graph
-y1=-0.0018
-y2=1.1
+y1=-0.0019
+y2=1.8
 ypos1=0
 ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=0.00047771973
-x2=0.00079984227
+x1=2.6165884e-06
+x2=0.00082977452
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -95,6 +95,51 @@ logy=0
 color="8 7"
 node="vcn
 vin"}
+B 2 1780 -1100 2580 -700 {flags=graph
+y1=-0.2
+y2=1.9
+ypos1=0
+ypos2=2
+divy=5
+subdivy=1
+unity=1
+x1=2.6165884e-06
+x2=0.00082977452
+divx=5
+subdivx=1
+xlabmag=1.0
+ylabmag=1.0
+
+
+dataset=-1
+unitx=1
+logx=0
+logy=0
+
+color=8
+node=x1.sh_bsw3_1/ncell_bsw_sw_1/vboot}
+B 2 1780 -700 2580 -300 {flags=graph
+y1=-0.2
+y2=1.9
+ypos1=0
+ypos2=2
+divy=5
+subdivy=1
+unity=1
+x1=2.6165884e-06
+x2=0.00082977452
+divx=5
+subdivx=1
+xlabmag=1.0
+ylabmag=1.0
+
+
+dataset=-1
+unitx=1
+logx=0
+logy=0
+color=8
+node=x1.sh_bsw3_0/ncell_bsw_sw_1/vboot}
 N 890 -120 950 -120 {
 lab=GND}
 C {devices/launcher.sym} 240 -260 0 0 {name=h5
@@ -112,7 +157,7 @@ tclcommand="textwindow $netlist_dir/sample-n-hold-circuit-tb.raw"
 C {devices/lab_pin.sym} 410 -160 0 0 {name=p1 sig_type=std_logic lab=clk}
 C {devices/lab_pin.sym} 410 -120 0 0 {name=p2 sig_type=std_logic lab=VIP}
 C {devices/lab_pin.sym} 410 -180 0 0 {name=p3 sig_type=std_logic lab=VDD}
-C {devices/lab_pin.sym} 410 -80 0 0 {name=p4 sig_type=std_logic lab=GND}
+C {devices/lab_pin.sym} 410 -80 2 1 {name=p4 sig_type=std_logic lab=GND}
 C {devices/lab_pin.sym} 710 -180 0 1 {name=p5 sig_type=std_logic lab=VCP}
 C {devices/title.sym} 340 -40 0 0 {name=l1 author="Yohanes Stefanus"}
 C {sky130_fd_pr/corner.sym} 20 -560 0 0 {*name=CORNER only_toplevel=false corner=tt
@@ -144,7 +189,7 @@ value="
   .control
      reset
      save all
-     tran 10n 2m uic
+     tran 10n 1m uic
      write sh_bsw_diff-PEX-tb.raw
     quit 0
   .endc
@@ -152,17 +197,17 @@ value="
 C {devices/lab_pin.sym} 410 -140 0 0 {name=p6 sig_type=std_logic lab=clkb}
 C {devices/capa-2.sym} 950 -150 0 0 {name=C1
 m=1
-value=1p
+value=0.1p
 footprint=1206
 device=polarized_capacitor}
 C {devices/lab_pin.sym} 410 -100 0 0 {name=p7 sig_type=std_logic lab=VIN}
 C {devices/lab_pin.sym} 710 -160 0 1 {name=p8 sig_type=std_logic lab=VCN}
-C {devices/lab_pin.sym} 890 -120 0 0 {name=p9 sig_type=std_logic lab=GND}
 C {devices/capa-2.sym} 890 -150 0 0 {name=C2
 m=1
-value=1p
+value=0.1p
 footprint=1206
 device=polarized_capacitor}
 C {devices/lab_pin.sym} 950 -180 0 1 {name=p10 sig_type=std_logic lab=VCP}
 C {devices/lab_pin.sym} 890 -180 0 0 {name=p11 sig_type=std_logic lab=VCN}
 C {sh_bsw_diff-pex.sym} 560 -130 0 0 {name=x1}
+C {devices/lab_pin.sym} 890 -120 2 1 {name=p9 sig_type=std_logic lab=GND}
