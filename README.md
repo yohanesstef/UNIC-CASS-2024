@@ -33,8 +33,7 @@ The tracking signal (vout) match with the input signal (left bottom graph) when 
 ![Screenshot from 2024-11-03 22-31-49](https://github.com/user-attachments/assets/43cc6b5b-1e29-4e2f-aa7b-ff88ef3271b8)
 
 Version 2:
-![image](https://github.com/user-attachments/assets/6afeb0b7-a74a-43ce-96b8-1827cf440860)
-
+![image](https://github.com/user-attachments/assets/4c755791-358e-4e7d-81d5-921534d5fa55)
 
 This layout is using common centroid method for better matching. There are also two T/H bootstrap switch for detecting differential input.
 
