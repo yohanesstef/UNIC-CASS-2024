@@ -1,7 +1,35 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1730641970
+timestamp 1730728865
+<< error_s >>
+rect 930 -945 1082 -453
+rect 602 -1049 1082 -945
+rect 1170 -945 1322 -453
+rect 2629 -626 2640 -518
+rect 2657 -598 2668 -546
+rect 2651 -801 2759 -778
+rect 2679 -829 2731 -806
+rect 1170 -1049 1650 -945
+rect 602 -1125 1650 -1049
+rect 602 -1365 1082 -1185
+rect 930 -1864 1082 -1365
+rect 602 -1957 681 -1864
+rect 741 -1957 1082 -1864
+rect 1170 -1365 1650 -1185
+rect 1170 -1934 1322 -1365
+rect 2083 -1445 2086 -1387
+rect 2111 -1391 2117 -1385
+rect 2157 -1391 2163 -1385
+rect 2105 -1397 2169 -1391
+rect 2111 -1449 2163 -1397
+rect 2699 -1593 2723 -1338
+rect 2727 -1621 2751 -1366
+rect 1170 -1957 1552 -1934
+rect 678 -2174 681 -2104
+rect 741 -2174 744 -2104
+rect 1249 -2174 1309 -1957
+rect 1246 -2197 1312 -2174
 << nwell >>
 rect 2591 -842 2637 -679
 rect 3846 -1344 4198 -1232
@@ -290,26 +318,26 @@ rect 1508 -2033 1574 -2032
 rect 1508 -2097 1509 -2033
 rect 1573 -2097 1574 -2033
 rect 1508 -2098 1574 -2097
-use cap_bsw  cap_bsw_1 ~/sky130_projects/UNIC-CASS-2024/magic
+use cap_bsw  cap_bsw_1
 timestamp 1730459124
 transform 0 -1 516 1 0 -3419
 box 1462 -1134 3066 -86
-use ncell_bsw  ncell_bsw_1 ~/sky130_projects/UNIC-CASS-2024/magic
-timestamp 1730554222
+use ncell_bsw  ncell_bsw_1
+timestamp 1730727801
 transform 1 0 -1493 0 1 -281
 box 4653 -1676 5339 -261
-use ncell_bsw_dischrg  ncell_bsw_dischrg_1 ~/sky130_projects/UNIC-CASS-2024/magic
-timestamp 1730562594
+use ncell_bsw_dischrg  ncell_bsw_dischrg_1
+timestamp 1730727801
 transform -1 0 2198 0 -1 -1730
 box -138 -1725 548 -824
-use ncell_bsw_sw  ncell_bsw_sw_1 ~/sky130_projects/UNIC-CASS-2024/magic
-timestamp 1730612622
+use ncell_bsw_sw  ncell_bsw_sw_1
+timestamp 1730728865
 transform -1 0 2593 0 -1 -4705
-box -567 -3799 943 -2748
+box -503 -3662 879 -2886
 use pcell_bsw_dischrg  pcell_bsw_dischrg_1
-timestamp 1730638662
+timestamp 1730722715
 transform 1 0 1748 0 1 -420
-box 588 -486 1320 178
+box 611 -449 1297 145
 use sky130_fd_sc_hd__inv_1  sky130_fd_sc_hd__inv_1_0 $PDKPATH/libs.ref/sky130_fd_sc_hd/mag
 timestamp 1710522493
 transform 1 0 3884 0 1 -1909

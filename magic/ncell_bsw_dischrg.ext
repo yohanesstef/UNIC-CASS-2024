@@ -1,4 +1,4 @@
-timestamp 1730562594
+timestamp 1730741927
 version 8.3
 tech sky130A
 style ngspice()
@@ -16,31 +16,31 @@ port "VDDA" 1 105 -1276 106 -1276 m1
 port "VBOOT" 3 -26 -1219 -26 -1219 m2
 port "CLKSB" 2 208 -979 209 -979 m2
 port "VSSA" 4 203 -1672 203 -1672 li
-node "m1_188_n1376#" 1 85.7215 188 -1376 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 8772 584 0 0 0 0 0 0 0 0 0 0
-node "VDDA" 315 319.034 105 -1276 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 10338 538 0 0 7548 512 8004 508 0 0 0 0 0 0 0 0 0 0
-node "a_179_n1156#" 148 0 179 -1156 ndif 0 0 0 0 0 0 0 0 3328 232 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-node "VBOOT" 533 1069.71 -26 -1219 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 11586 722 0 0 4488 400 40270 2254 38428 1582 0 0 0 0 0 0 0 0
-node "CLKSB" 487 577.829 208 -979 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 10806 670 0 0 4488 400 9054 556 34060 1414 0 0 0 0 0 0 0 0
-substrate "VSSA" 0 0 203 -1672 li 0 0 0 0 0 0 0 0 0 0 93500 5500 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 11586 722 0 0 99042 5962 34530 1706 0 0 0 0 0 0 0 0 0 0
+node "m1_188_n1376#" 1 91.7928 188 -1376 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 8772 584 0 0 0 0 0 0 0 0 0 0
+node "VDDA" 315 324.236 105 -1276 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 10338 538 0 0 7548 512 8004 508 0 0 0 0 0 0 0 0 0 0
+node "a_179_n1156#" 148 2.28896 179 -1156 ndif 0 0 0 0 0 0 0 0 3328 232 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "VBOOT" 533 943.604 -26 -1219 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 11586 722 0 0 4488 400 40270 2254 38428 1582 0 0 0 0 0 0 0 0
+node "CLKSB" 487 532.123 208 -979 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 10806 670 0 0 4488 400 9054 556 34060 1414 0 0 0 0 0 0 0 0
+substrate "VSSA" 0 0 203 -1672 li 0 0 0 0 0 0 0 0 0 0 93500 5500 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 11586 722 0 0 147806 6922 0 0 0 0 0 0 0 0 0 0 0 0
+cap "a_179_n1156#" "CLKSB" 2.11124
+cap "CLKSB" "VBOOT" 309.508
+cap "VDDA" "VBOOT" 41.8824
+cap "VDDA" "CLKSB" 42.7742
 cap "a_179_n1156#" "m1_188_n1376#" 1.80692
-cap "VBOOT" "VDDA" 34.8486
-cap "CLKSB" "VDDA" 42.7742
-cap "CLKSB" "VBOOT" 308.68
+cap "m1_188_n1376#" "VBOOT" 2.34592
+cap "m1_188_n1376#" "CLKSB" 67.7149
 cap "VDDA" "m1_188_n1376#" 67.4144
-cap "VBOOT" "m1_188_n1376#" 2.34592
-cap "CLKSB" "m1_188_n1376#" 67.7149
-cap "CLKSB" "a_179_n1156#" 2.11124
-cap "sky130_fd_pr__nfet_01v8_6J3TAM_0/a_15_n50#" "sky130_fd_pr__nfet_01v8_6J3TAM_2/a_15_n50#" 1.21048
-cap "sky130_fd_pr__nfet_01v8_6J3TAM_1/a_n73_n50#" "sky130_fd_pr__nfet_01v8_6J3TAM_2/a_15_n50#" 3.38442
-cap "sky130_fd_pr__nfet_01v8_6J3TAM_2/a_n15_n76#" "sky130_fd_pr__nfet_01v8_6J3TAM_2/a_15_n50#" 65.4558
-cap "sky130_fd_pr__nfet_01v8_6J3TAM_1/a_n73_n50#" "sky130_fd_pr__nfet_01v8_6J3TAM_0/a_15_n50#" 117.288
-cap "sky130_fd_pr__nfet_01v8_6J3TAM_3/a_n15_n76#" "sky130_fd_pr__nfet_01v8_6J3TAM_2/a_15_n50#" 22.3357
+cap "sky130_fd_pr__nfet_01v8_6J3TAM_1/a_15_n50#" "sky130_fd_pr__nfet_01v8_6J3TAM_3/a_n15_n76#" 22.2895
 cap "sky130_fd_pr__nfet_01v8_6J3TAM_2/a_n15_n76#" "sky130_fd_pr__nfet_01v8_6J3TAM_0/a_15_n50#" 26.5578
-cap "sky130_fd_pr__nfet_01v8_6J3TAM_0/a_15_n50#" "sky130_fd_pr__nfet_01v8_6J3TAM_3/a_n15_n76#" 70.2338
-cap "sky130_fd_pr__nfet_01v8_6J3TAM_1/a_n73_n50#" "sky130_fd_pr__nfet_01v8_6J3TAM_2/a_n15_n76#" 53.9924
-cap "sky130_fd_pr__nfet_01v8_6J3TAM_1/a_n73_n50#" "sky130_fd_pr__nfet_01v8_6J3TAM_3/a_n15_n76#" 30.7326
+cap "sky130_fd_pr__nfet_01v8_6J3TAM_2/a_15_n50#" "sky130_fd_pr__nfet_01v8_6J3TAM_0/a_15_n50#" 1.21048
+cap "sky130_fd_pr__nfet_01v8_6J3TAM_1/a_15_n50#" "sky130_fd_pr__nfet_01v8_6J3TAM_2/a_n15_n76#" 49.3162
+cap "sky130_fd_pr__nfet_01v8_6J3TAM_1/a_15_n50#" "sky130_fd_pr__nfet_01v8_6J3TAM_2/a_15_n50#" -1.92564
 cap "sky130_fd_pr__nfet_01v8_6J3TAM_2/a_n15_n76#" "sky130_fd_pr__nfet_01v8_6J3TAM_3/a_n15_n76#" 48.9058
-merge "sky130_fd_pr__nfet_01v8_6J3TAM_0/a_15_n50#" "sky130_fd_pr__nfet_01v8_6J3TAM_0/a_n73_n50#" -492.116 0 0 0 0 0 0 0 0 -11600 -632 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -780 -172 0 0 -7344 -568 -10322 -922 0 0 0 0 0 0 0 0 0 0
+cap "sky130_fd_pr__nfet_01v8_6J3TAM_2/a_15_n50#" "sky130_fd_pr__nfet_01v8_6J3TAM_3/a_n15_n76#" 22.3357
+cap "sky130_fd_pr__nfet_01v8_6J3TAM_1/a_15_n50#" "sky130_fd_pr__nfet_01v8_6J3TAM_0/a_15_n50#" 132.444
+cap "sky130_fd_pr__nfet_01v8_6J3TAM_2/a_15_n50#" "sky130_fd_pr__nfet_01v8_6J3TAM_2/a_n15_n76#" 65.4558
+cap "sky130_fd_pr__nfet_01v8_6J3TAM_0/a_15_n50#" "sky130_fd_pr__nfet_01v8_6J3TAM_3/a_n15_n76#" 66.2463
+merge "sky130_fd_pr__nfet_01v8_6J3TAM_0/a_15_n50#" "sky130_fd_pr__nfet_01v8_6J3TAM_0/a_n73_n50#" -492.373 0 0 0 0 0 0 0 0 -11600 -632 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -780 -172 0 0 -7344 -568 -10322 -922 0 0 0 0 0 0 0 0 0 0
 merge "sky130_fd_pr__nfet_01v8_6J3TAM_0/a_n73_n50#" "sky130_fd_pr__nfet_01v8_6J3TAM_0/a_n15_n76#"
 merge "sky130_fd_pr__nfet_01v8_6J3TAM_0/a_n15_n76#" "sky130_fd_pr__nfet_01v8_6J3TAM_3/a_15_n50#"
 merge "sky130_fd_pr__nfet_01v8_6J3TAM_3/a_15_n50#" "sky130_fd_pr__nfet_01v8_6J3TAM_4/a_n73_n50#"
@@ -48,10 +48,10 @@ merge "sky130_fd_pr__nfet_01v8_6J3TAM_4/a_n73_n50#" "sky130_fd_pr__nfet_01v8_6J3
 merge "sky130_fd_pr__nfet_01v8_6J3TAM_4/a_15_n50#" "sky130_fd_pr__nfet_01v8_6J3TAM_4/a_n15_n76#"
 merge "sky130_fd_pr__nfet_01v8_6J3TAM_4/a_n15_n76#" "sky130_fd_pr__nfet_01v8_6J3TAM_5/a_n73_n50#"
 merge "sky130_fd_pr__nfet_01v8_6J3TAM_5/a_n73_n50#" "VBOOT"
-merge "sky130_fd_pr__nfet_01v8_6J3TAM_0/VSUBS" "sky130_fd_pr__nfet_01v8_6J3TAM_1/VSUBS" -541.238 0 0 0 0 0 0 0 0 -11600 -632 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -780 -172 0 0 -7344 -568 -10186 -914 0 0 0 0 0 0 0 0 0 0
-merge "sky130_fd_pr__nfet_01v8_6J3TAM_1/VSUBS" "sky130_fd_pr__nfet_01v8_6J3TAM_1/a_n73_n50#"
-merge "sky130_fd_pr__nfet_01v8_6J3TAM_1/a_n73_n50#" "sky130_fd_pr__nfet_01v8_6J3TAM_1/a_15_n50#"
-merge "sky130_fd_pr__nfet_01v8_6J3TAM_1/a_15_n50#" "sky130_fd_pr__nfet_01v8_6J3TAM_1/a_n15_n76#"
+merge "sky130_fd_pr__nfet_01v8_6J3TAM_0/VSUBS" "sky130_fd_pr__nfet_01v8_6J3TAM_1/VSUBS" -557.893 0 0 0 0 0 0 0 0 -11600 -632 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -780 -172 0 0 -21216 -1656 -9200 -584 0 0 0 0 0 0 0 0 0 0
+merge "sky130_fd_pr__nfet_01v8_6J3TAM_1/VSUBS" "sky130_fd_pr__nfet_01v8_6J3TAM_1/a_15_n50#"
+merge "sky130_fd_pr__nfet_01v8_6J3TAM_1/a_15_n50#" "sky130_fd_pr__nfet_01v8_6J3TAM_1/a_n73_n50#"
+merge "sky130_fd_pr__nfet_01v8_6J3TAM_1/a_n73_n50#" "sky130_fd_pr__nfet_01v8_6J3TAM_1/a_n15_n76#"
 merge "sky130_fd_pr__nfet_01v8_6J3TAM_1/a_n15_n76#" "sky130_fd_pr__nfet_01v8_6J3TAM_2/VSUBS"
 merge "sky130_fd_pr__nfet_01v8_6J3TAM_2/VSUBS" "sky130_fd_pr__nfet_01v8_6J3TAM_2/a_n73_n50#"
 merge "sky130_fd_pr__nfet_01v8_6J3TAM_2/a_n73_n50#" "sky130_fd_pr__nfet_01v8_6J3TAM_3/VSUBS"
@@ -61,15 +61,15 @@ merge "sky130_fd_pr__nfet_01v8_6J3TAM_5/VSUBS" "sky130_fd_pr__nfet_01v8_6J3TAM_6
 merge "sky130_fd_pr__nfet_01v8_6J3TAM_6/VSUBS" "sky130_fd_pr__nfet_01v8_6J3TAM_6/a_15_n50#"
 merge "sky130_fd_pr__nfet_01v8_6J3TAM_6/a_15_n50#" "sky130_fd_pr__nfet_01v8_6J3TAM_7/VSUBS"
 merge "sky130_fd_pr__nfet_01v8_6J3TAM_7/VSUBS" "sky130_fd_pr__nfet_01v8_6J3TAM_7/a_15_n50#"
-merge "sky130_fd_pr__nfet_01v8_6J3TAM_7/a_15_n50#" "sky130_fd_pr__nfet_01v8_6J3TAM_7/a_n73_n50#"
-merge "sky130_fd_pr__nfet_01v8_6J3TAM_7/a_n73_n50#" "sky130_fd_pr__nfet_01v8_6J3TAM_7/a_n15_n76#"
-merge "sky130_fd_pr__nfet_01v8_6J3TAM_7/a_n15_n76#" "VSSA"
-merge "sky130_fd_pr__nfet_01v8_6J3TAM_3/a_n15_n76#" "sky130_fd_pr__nfet_01v8_6J3TAM_5/a_n15_n76#" -110.91 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -30 -122 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "sky130_fd_pr__nfet_01v8_6J3TAM_7/a_15_n50#" "sky130_fd_pr__nfet_01v8_6J3TAM_7/a_n15_n76#"
+merge "sky130_fd_pr__nfet_01v8_6J3TAM_7/a_n15_n76#" "sky130_fd_pr__nfet_01v8_6J3TAM_7/a_n73_n50#"
+merge "sky130_fd_pr__nfet_01v8_6J3TAM_7/a_n73_n50#" "VSSA"
+merge "sky130_fd_pr__nfet_01v8_6J3TAM_3/a_n15_n76#" "sky130_fd_pr__nfet_01v8_6J3TAM_5/a_n15_n76#" -107.695 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -30 -122 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 merge "sky130_fd_pr__nfet_01v8_6J3TAM_5/a_n15_n76#" "VDDA"
-merge "sky130_fd_pr__nfet_01v8_6J3TAM_2/a_15_n50#" "sky130_fd_pr__nfet_01v8_6J3TAM_3/a_n73_n50#" -317.323 0 0 0 0 0 0 0 0 -14928 -864 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -7344 -568 -11104 -832 0 0 0 0 0 0 0 0 0 0
+merge "sky130_fd_pr__nfet_01v8_6J3TAM_2/a_15_n50#" "sky130_fd_pr__nfet_01v8_6J3TAM_3/a_n73_n50#" -314.293 0 0 0 0 0 0 0 0 -14928 -864 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -7344 -568 -11104 -832 0 0 0 0 0 0 0 0 0 0
 merge "sky130_fd_pr__nfet_01v8_6J3TAM_3/a_n73_n50#" "a_179_n1156#"
 merge "a_179_n1156#" "sky130_fd_pr__nfet_01v8_6J3TAM_5/a_15_n50#"
 merge "sky130_fd_pr__nfet_01v8_6J3TAM_5/a_15_n50#" "sky130_fd_pr__nfet_01v8_6J3TAM_6/a_n73_n50#"
 merge "sky130_fd_pr__nfet_01v8_6J3TAM_6/a_n73_n50#" "m1_188_n1376#"
-merge "sky130_fd_pr__nfet_01v8_6J3TAM_2/a_n15_n76#" "sky130_fd_pr__nfet_01v8_6J3TAM_6/a_n15_n76#" -108.569 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -120 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "sky130_fd_pr__nfet_01v8_6J3TAM_2/a_n15_n76#" "sky130_fd_pr__nfet_01v8_6J3TAM_6/a_n15_n76#" -103.149 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -120 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 merge "sky130_fd_pr__nfet_01v8_6J3TAM_6/a_n15_n76#" "CLKSB"

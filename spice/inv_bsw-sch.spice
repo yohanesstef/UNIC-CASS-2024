@@ -1,0 +1,7 @@
+** sch_path: /home/yohanes/sky130_projects/UNIC-CASS-2024/xschem/inv_bsw.sch
+.subckt inv_bsw IN OUT VPWR VPB VGND VNB
+*.PININFO IN:I OUT:O VPWR:I VPB:I VGND:I VNB:I
+XM2 OUT IN VGND VNB sky130_fd_pr__nfet_01v8 L=0.15 W=0.5 nf=1 m=1
+XM1 OUT IN VPWR VPB sky130_fd_pr__pfet_01v8 L=0.15 W=1 nf=1 m=1
+.ends
+.end

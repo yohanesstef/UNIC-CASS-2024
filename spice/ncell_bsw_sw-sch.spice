@@ -1,19 +1,12 @@
 ** sch_path: /home/yohanes/sky130_projects/UNIC-CASS-2024/xschem/ncell_bsw_sw.sch
 .subckt ncell_bsw_sw VI VBOOT VNBT1 VNBT3 SWITCHING VSSA VO
 *.PININFO VI:I VBOOT:I VNBT1:I VNBT3:I SWITCHING:I VSSA:I VO:O
-XM1 VI VBOOT VNBT3 VSSA sky130_fd_pr__nfet_01v8 L=0.3 W=0.5 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
-+ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=2 m=2
-XM2 VO VBOOT VI VSSA sky130_fd_pr__nfet_01v8 L=0.3 W=0.5 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
-+ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=4 m=4
-XM3 VNBT3 VBOOT SWITCHING VSSA sky130_fd_pr__nfet_01v8 L=0.15 W=0.5 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
-+ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=2 m=2
-XM4 VSSA VNBT1 VNBT3 VSSA sky130_fd_pr__nfet_01v8 L=0.15 W=0.5 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
-+ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=2 m=2
-XM5 VI VI VI VSSA sky130_fd_pr__nfet_01v8 L=0.3 W=0.5 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
-+ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=2 m=2
-XM6 VSSA VSSA VSSA VSSA sky130_fd_pr__nfet_01v8 L=0.15 W=0.5 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
-+ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=2 m=2
-XM7 SWITCHING SWITCHING SWITCHING VSSA sky130_fd_pr__nfet_01v8 L=0.15 W=0.5 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
-+ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=2 m=2
+XM1 VI VBOOT VNBT3 VSSA sky130_fd_pr__nfet_01v8 L=0.3 W=0.5 nf=1 m=2
+XM2 VO VBOOT VI VSSA sky130_fd_pr__nfet_01v8 L=0.3 W=0.5 nf=1 m=4
+XM3 VNBT3 VBOOT SWITCHING VSSA sky130_fd_pr__nfet_01v8 L=0.15 W=0.5 nf=1 m=2
+XM4 VSSA VNBT1 VNBT3 VSSA sky130_fd_pr__nfet_01v8 L=0.15 W=0.5 nf=1 m=2
+XM5 VI VI VI VSSA sky130_fd_pr__nfet_01v8 L=0.3 W=0.5 nf=1 m=2
+XM6 VSSA VSSA VSSA VSSA sky130_fd_pr__nfet_01v8 L=0.15 W=0.5 nf=1 m=2
+XM7 SWITCHING SWITCHING SWITCHING VSSA sky130_fd_pr__nfet_01v8 L=0.15 W=0.5 nf=1 m=2
 .ends
 .end

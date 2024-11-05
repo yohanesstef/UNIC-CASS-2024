@@ -1,0 +1,15 @@
+* NGSPICE file created from inv_bsw.ext - technology: sky130A
+
+.subckt sky130_fd_pr__pfet_01v8_2XU92K a_n73_n100# w_n109_n162# a_15_n100# a_n15_n126#
+X0 a_15_n100# a_n15_n126# a_n73_n100# w_n109_n162# sky130_fd_pr__pfet_01v8 ad=0.29 pd=2.58 as=0.29 ps=2.58 w=1 l=0.15
+.ends
+
+.subckt sky130_fd_pr__nfet_01v8_RH3MT7 a_n15_n76# a_n73_n50# a_15_n50# VSUBS
+X0 a_15_n50# a_n15_n76# a_n73_n50# VSUBS sky130_fd_pr__nfet_01v8 ad=0.145 pd=1.58 as=0.145 ps=1.58 w=0.5 l=0.15
+.ends
+
+.subckt inv_bsw IN OUT VPWR VPB VGND VNB
+Xsky130_fd_pr__pfet_01v8_2XU92K_1 VPWR VPB OUT IN sky130_fd_pr__pfet_01v8_2XU92K
+Xsky130_fd_pr__nfet_01v8_RH3MT7_1 IN VGND OUT VNB sky130_fd_pr__nfet_01v8_RH3MT7
+.ends
+

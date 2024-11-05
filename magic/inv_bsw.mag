@@ -1,0 +1,65 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1730718786
+<< nwell >>
+rect -3 501 215 563
+rect 33 471 179 501
+<< pwell >>
+rect -3 -123 215 118
+<< psubdiff >>
+rect 33 -79 57 -45
+rect 155 -79 179 -45
+<< nsubdiff >>
+rect 33 493 57 527
+rect 155 493 179 527
+<< psubdiffcont >>
+rect 57 -79 155 -45
+<< nsubdiffcont >>
+rect 57 493 155 527
+<< poly >>
+rect 91 201 121 213
+rect 41 191 121 201
+rect 41 157 57 191
+rect 91 157 121 191
+rect 41 147 121 157
+rect 91 134 121 147
+<< polycont >>
+rect 57 157 91 191
+<< locali >>
+rect 33 493 57 527
+rect 155 493 179 527
+rect 41 157 57 191
+rect 91 157 107 191
+rect 33 -79 57 -45
+rect 155 -79 179 -45
+<< viali >>
+rect 57 157 91 191
+<< metal1 >>
+rect 37 191 97 203
+rect 37 157 57 191
+rect 91 157 97 191
+rect 37 145 97 157
+rect 127 104 173 242
+use sky130_fd_pr__nfet_01v8_RH3MT7  sky130_fd_pr__nfet_01v8_RH3MT7_1
+timestamp 1730718679
+transform 1 0 106 0 1 59
+box -73 -76 73 76
+use sky130_fd_pr__pfet_01v8_2XU92K  sky130_fd_pr__pfet_01v8_2XU92K_1
+timestamp 1730718679
+transform 1 0 106 0 1 339
+box -109 -162 109 162
+<< labels >>
+flabel metal1 s 74 174 74 174 0 FreeSans 160 0 0 0 IN
+port 1 nsew
+flabel metal1 s 151 174 151 174 0 FreeSans 160 0 0 0 OUT
+port 2 nsew
+flabel metal1 s 62 339 62 339 0 FreeSans 160 0 0 0 VPWR
+port 3 nsew
+flabel locali s 106 510 106 510 0 FreeSans 160 0 0 0 VPB
+port 4 nsew
+flabel metal1 s 62 59 62 59 0 FreeSans 160 0 0 0 VGND
+port 5 nsew
+flabel locali s 106 -62 106 -62 0 FreeSans 160 0 0 0 VNB
+port 6 nsew
+<< end >>

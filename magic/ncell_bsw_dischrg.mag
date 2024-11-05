@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1730562594
+timestamp 1730741927
 << pwell >>
 rect -138 -1725 548 -824
 << ndiff >>
@@ -68,54 +68,43 @@ rect 338 -1587 372 -1553
 << locali >>
 rect -102 -894 0 -860
 rect 410 -894 512 -860
-rect -102 -966 -68 -894
-rect -102 -1000 -83 -966
-rect 22 -996 38 -962
+rect -102 -1074 -68 -894
+rect 6 -996 38 -962
 rect 72 -996 88 -962
 rect 146 -996 162 -962
 rect 196 -996 212 -962
 rect 322 -996 338 -962
 rect 372 -996 388 -962
-rect -102 -1074 -68 -1000
+rect 6 -1074 52 -996
 rect 478 -1074 512 -894
+rect -68 -1174 140 -1074
 rect 128 -1292 162 -1258
 rect 248 -1292 282 -1258
+rect 270 -1476 478 -1376
 rect -102 -1655 -68 -1476
-rect 478 -1551 512 -1476
+rect 358 -1553 404 -1476
 rect 22 -1587 38 -1553
 rect 72 -1587 88 -1553
 rect 198 -1587 214 -1553
 rect 248 -1587 264 -1553
 rect 322 -1587 338 -1553
-rect 372 -1587 388 -1553
-rect 500 -1585 512 -1551
-rect 478 -1655 512 -1585
+rect 372 -1587 404 -1553
+rect 478 -1655 512 -1476
 rect -102 -1689 0 -1655
 rect 410 -1689 512 -1655
 << viali >>
-rect -83 -1000 -49 -966
-rect 38 -996 72 -962
 rect 162 -996 196 -962
 rect 338 -996 372 -962
 rect 94 -1292 128 -1258
 rect 282 -1292 316 -1258
 rect 38 -1587 72 -1553
 rect 214 -1587 248 -1553
-rect 338 -1587 372 -1553
-rect 466 -1585 500 -1551
 << metal1 >>
 rect -58 -927 -52 -875
 rect 0 -888 6 -875
 rect 0 -922 316 -888
 rect 0 -927 6 -922
 rect 156 -953 198 -950
-rect -102 -962 128 -955
-rect -102 -966 38 -962
-rect -102 -1000 -83 -966
-rect -49 -996 38 -966
-rect 72 -996 128 -962
-rect -49 -1000 128 -996
-rect -102 -1011 128 -1000
 rect 156 -962 179 -953
 rect 156 -996 162 -962
 rect 156 -1005 179 -996
@@ -126,8 +115,6 @@ rect 282 -996 338 -962
 rect 372 -996 392 -962
 rect 282 -1002 392 -996
 rect 156 -1008 198 -1005
-rect 18 -1074 52 -1011
-rect 94 -1086 128 -1011
 rect 282 -1074 316 -1002
 rect 358 -1074 392 -1002
 rect 68 -1258 137 -1246
@@ -147,20 +134,11 @@ rect 0 -1587 38 -1553
 rect 72 -1587 128 -1553
 rect 0 -1593 128 -1587
 rect 179 -1541 231 -1538
-rect 282 -1541 316 -1466
-rect 358 -1541 392 -1469
 rect 179 -1544 248 -1541
 rect 231 -1547 248 -1544
 rect 231 -1553 254 -1547
 rect 248 -1587 254 -1553
 rect 231 -1593 254 -1587
-rect 282 -1551 512 -1541
-rect 282 -1553 466 -1551
-rect 282 -1587 338 -1553
-rect 372 -1585 466 -1553
-rect 500 -1585 512 -1551
-rect 372 -1587 512 -1585
-rect 282 -1593 512 -1587
 rect 231 -1596 248 -1593
 rect 179 -1599 248 -1596
 rect 179 -1602 231 -1599
@@ -183,36 +161,36 @@ rect -52 -1602 0 -1593
 rect 179 -953 231 -947
 rect 179 -1544 231 -1005
 rect 179 -1602 231 -1596
-use sky130_fd_pr__nfet_01v8_6J3TAM  sky130_fd_pr__nfet_01v8_6J3TAM_0 ~/sky130_projects/UNIC-CASS-2024/magic
-timestamp 1730478237
+use sky130_fd_pr__nfet_01v8_6J3TAM  sky130_fd_pr__nfet_01v8_6J3TAM_0
+timestamp 1730727801
 transform 1 0 337 0 1 -1124
 box -73 -76 73 76
 use sky130_fd_pr__nfet_01v8_6J3TAM  sky130_fd_pr__nfet_01v8_6J3TAM_1
-timestamp 1730478237
+timestamp 1730727801
 transform 1 0 73 0 1 -1124
 box -73 -76 73 76
 use sky130_fd_pr__nfet_01v8_6J3TAM  sky130_fd_pr__nfet_01v8_6J3TAM_2
-timestamp 1730478237
+timestamp 1730727801
 transform 1 0 161 0 1 -1124
 box -73 -76 73 76
 use sky130_fd_pr__nfet_01v8_6J3TAM  sky130_fd_pr__nfet_01v8_6J3TAM_3
-timestamp 1730478237
+timestamp 1730727801
 transform 1 0 249 0 1 -1124
 box -73 -76 73 76
 use sky130_fd_pr__nfet_01v8_6J3TAM  sky130_fd_pr__nfet_01v8_6J3TAM_4
-timestamp 1730478237
+timestamp 1730727801
 transform 1 0 73 0 1 -1426
 box -73 -76 73 76
 use sky130_fd_pr__nfet_01v8_6J3TAM  sky130_fd_pr__nfet_01v8_6J3TAM_5
-timestamp 1730478237
+timestamp 1730727801
 transform 1 0 161 0 1 -1426
 box -73 -76 73 76
 use sky130_fd_pr__nfet_01v8_6J3TAM  sky130_fd_pr__nfet_01v8_6J3TAM_6
-timestamp 1730478237
+timestamp 1730727801
 transform 1 0 249 0 1 -1426
 box -73 -76 73 76
 use sky130_fd_pr__nfet_01v8_6J3TAM  sky130_fd_pr__nfet_01v8_6J3TAM_7
-timestamp 1730478237
+timestamp 1730727801
 transform 1 0 337 0 1 -1426
 box -73 -76 73 76
 << labels >>

@@ -1,11 +1,15 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1730459124
+timestamp 1730777901
 << metal3 >>
 rect 2966 -654 3066 -566
 << metal4 >>
 rect 2504 -915 2564 -435
+use sky130_fd_pr__cap_mim_m3_1_UCPR8Z  sky130_fd_pr__cap_mim_m3_1_UCPR8Z_0
+timestamp 1730777901
+transform 1 0 1848 0 1 -326
+box -386 -240 386 240
 use sky130_fd_pr__cap_mim_m3_1_VCTT89  sky130_fd_pr__cap_mim_m3_1_VCTT89_0
 timestamp 1730459124
 transform 1 0 2680 0 1 -894
@@ -13,10 +17,6 @@ box -386 -240 386 240
 use sky130_fd_pr__cap_mim_m3_1_VCTT89  sky130_fd_pr__cap_mim_m3_1_VCTT89_1
 timestamp 1730459124
 transform 1 0 2680 0 1 -326
-box -386 -240 386 240
-use sky130_fd_pr__cap_mim_m3_1_VCTT89  XC1
-timestamp 1730459124
-transform 1 0 1848 0 1 -326
 box -386 -240 386 240
 use sky130_fd_pr__cap_mim_m3_1_VCTT89  XC2
 timestamp 1730459124

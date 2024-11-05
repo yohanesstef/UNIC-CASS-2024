@@ -1,0 +1,508 @@
+timestamp 1730780526
+version 8.3
+tech sky130A
+style ngspice()
+scale 1000 1 500000
+resistclasses 4400000 2200000 950000 3050000 120000 197000 114000 191000 120000 197000 114000 191000 48200 319800 2000000 48200 48200 12800 125 125 47 47 29 5
+use sh_bsw3 sh_bsw3_1 1 0 1277 0 1 392
+use sh_bsw3 sh_bsw3_0 -1 0 4275 0 -1 2708
+port "VCN" 8 2775 144 2775 144 m2
+port "VCP" 7 2776 2956 2776 2956 m2
+port "VIN" 5 2626 249 2626 249 m1
+port "VIP" 4 2626 2850 2626 2850 m1
+port "CLKSB" 3 545 50 545 50 m1
+port "CLKS" 2 1113 153 1113 153 m1
+port "VDDA" 1 1277 3178 1277 3178 m1
+port "VSSA" 6 1277 -86 1277 -86 m1
+node "VCN" 0 0 2775 144 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "VCP" 0 0 2776 2956 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "VIN" 0 0 2626 249 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "VIP" 0 0 2626 2850 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "CLKSB" 0 0 545 50 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "CLKS" 0 0 1113 153 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "m1_3795_809#" 2 388.589 3795 809 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 5280 292 49660 2014 0 0 0 0 0 0 0 0
+node "m1_1575_130#" 17 2402.84 1575 130 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 210184 8292 148304 5808 0 0 0 0 0 0 0 0
+node "m1_621_3022#" 11 1631.07 621 3022 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 68172 2726 164456 6370 0 0 0 0 0 0 0 0
+node "VDDA" 9 2353.47 1277 3178 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 470704 6528 129220 5178 0 0 0 0 0 0 0 0
+node "li_1313_234#" 37 144.288 1313 234 v0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 3332 264 10814 522 0 0 0 0 0 0 0 0 0 0
+node "VSSA" 28 1710.19 1277 -86 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 19788 592 492540 6972 135800 1788 0 0 0 0 0 0 0 0
+node "li_3795_809#" 38 118.597 3795 809 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 12936 524 0 0 0 0 0 0 0 0 0 0 0 0
+node "li_1561_2225#" 38 118.597 1561 2225 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 12936 524 0 0 0 0 0 0 0 0 0 0 0 0
+node "li_4205_2768#" 37 143.21 4205 2768 v0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 3332 264 10078 490 0 0 0 0 0 0 0 0 0 0
+node "w_1301_216#" 2850 19.044 1301 216 nw 0 0 0 0 6348 368 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+substrate "VSUBS" 0 0 -1073741817 -1073741817 space 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+cap "m1_3795_809#" "li_3795_809#" 33.3987
+cap "li_1313_234#" "VSSA" 22.6567
+cap "m1_3795_809#" "m1_1575_130#" 48.3008
+cap "m1_621_3022#" "m1_1575_130#" 0.44161
+cap "m1_3795_809#" "VDDA" 2.37877
+cap "li_3795_809#" "VSSA" 0.373392
+cap "m1_621_3022#" "VDDA" 506.636
+cap "VSSA" "m1_1575_130#" 838.288
+cap "li_1313_234#" "w_1301_216#" 4.35808
+cap "VSSA" "VDDA" 0.0571126
+cap "VDDA" "li_1561_2225#" 30.0226
+cap "m1_3795_809#" "VSSA" 0.294803
+cap "m1_621_3022#" "li_1561_2225#" 0.815293
+cap "li_3795_809#" "m1_1575_130#" 0.90312
+cap "li_4205_2768#" "m1_1575_130#" 6.8202
+cap "m1_621_3022#" "li_1313_234#" 0.55024
+cap "VDDA" "m1_1575_130#" 25.2203
+cap "VDDA" "li_4205_2768#" 21.861
+cap "CLKSB" "sh_bsw3_1/cap_bsw_1/VPBT1" 129.85
+cap "CLKSB" "sh_bsw3_1/cap_bsw_1/VPBT3" 2.07327
+cap "VSSA" "sh_bsw3_1/inv_bsw_0/VPWR" -15.1675
+cap "CLKS" "sh_bsw3_1/inv_bsw_0/VNB" -1.63782
+cap "sh_bsw3_1/inv_bsw_0/VPWR" "VIN" 0.0503342
+cap "sh_bsw3_1/cap_bsw_1/VNBT3" "sh_bsw3_1/cap_bsw_1/VPBT1" -0.172528
+cap "CLKSB" "VSSA" 67.6923
+cap "CLKSB" "sh_bsw3_1/inv_bsw_0/VPWR" 9.23116
+cap "CLKS" "sh_bsw3_1/cap_bsw_1/VPBT2" -4.06498
+cap "sh_bsw3_1/inv_bsw_0/VPWR" "sh_bsw3_1/inv_bsw_0/OUT" 9.12293
+cap "sh_bsw3_1/inv_bsw_0/VNB" "sh_bsw3_1/cap_bsw_1/VPBT1" -0.199603
+cap "sh_bsw3_1/cap_bsw_1/VNBT3" "sh_bsw3_1/inv_bsw_0/VPWR" 0.0968997
+cap "CLKSB" "sh_bsw3_1/inv_bsw_0/OUT" 0.378064
+cap "VSSA" "sh_bsw3_1/inv_bsw_0/VNB" 0.290275
+cap "sh_bsw3_1/inv_bsw_0/VPWR" "sh_bsw3_1/inv_bsw_0/VNB" 5.60322
+cap "CLKS" "sh_bsw3_1/cap_bsw_1/VPBT1" -9.81669
+cap "sh_bsw3_1/cap_bsw_1/VPBT2" "sh_bsw3_1/cap_bsw_1/VPBT1" -7.20946
+cap "sh_bsw3_1/cap_bsw_1/VNBT3" "CLKSB" 6.36127
+cap "CLKSB" "sh_bsw3_1/inv_bsw_0/VNB" 1.89028
+cap "CLKS" "VSSA" 0.243283
+cap "CLKS" "sh_bsw3_1/inv_bsw_0/VPWR" 51.8453
+cap "VSSA" "sh_bsw3_1/cap_bsw_1/VPBT2" 1.33229
+cap "sh_bsw3_1/cap_bsw_1/VPBT2" "sh_bsw3_1/inv_bsw_0/VPWR" 4.87077
+cap "sh_bsw3_1/cap_bsw_1/VPBT3" "sh_bsw3_1/cap_bsw_1/VPBT1" -0.296711
+cap "VCN" "sh_bsw3_1/inv_bsw_0/VPWR" 0.00828904
+cap "CLKSB" "CLKS" 207.996
+cap "CLKSB" "sh_bsw3_1/cap_bsw_1/VPBT2" 31.5061
+cap "VSSA" "sh_bsw3_1/cap_bsw_1/VPBT1" 0.263691
+cap "sh_bsw3_1/inv_bsw_0/VPWR" "sh_bsw3_1/cap_bsw_1/VPBT1" 4.84489
+cap "sh_bsw3_0/ncell_bsw_sw_1/VBOOT" "sh_bsw3_1/cap_bsw_1/VPBT1" 0.0119891
+cap "VCN" "CLKS" 23.1242
+cap "sh_bsw3_1/cap_bsw_1/VPBT3" "CLKS" 0.0343074
+cap "sh_bsw3_0/ncell_bsw_sw_1/VO" "VCN" 0.932002
+cap "sh_bsw3_1/inv_bsw_0/VNB" "VIN" 1.81298
+cap "VIN" "CLKSB" -38.5251
+cap "sh_bsw3_1/ncell_bsw_sw_1/VBOOT" "VCN" -1.42109e-14
+cap "sh_bsw3_1/cap_bsw_1/VPBT3" "sh_bsw3_1/ncell_bsw_sw_1/VBOOT" -5.68434e-14
+cap "sh_bsw3_1/cap_bsw_1/VPBT1" "CLKS" -0.45478
+cap "sh_bsw3_0/ncell_bsw_sw_1/VBOOT" "CLKSB" 0.125789
+cap "sh_bsw3_1/inv_bsw_0/VPWR" "VIN" 0.0301853
+cap "sh_bsw3_0/ncell_bsw_sw_1/VNBT1" "sh_bsw3_1/ncell_bsw_sw_1/VBOOT" 0.395198
+cap "sh_bsw3_0/ncell_bsw_sw_1/VBOOT" "sh_bsw3_1/inv_bsw_0/VPWR" 0.0969578
+cap "sh_bsw3_0/inv_bsw_0/OUT" "CLKSB" 0.0530194
+cap "CLKSB" "CLKS" 529.261
+cap "sh_bsw3_1/inv_bsw_0/VNB" "CLKS" -290.139
+cap "sh_bsw3_1/inv_bsw_0/VPWR" "CLKS" 1.91149
+cap "sh_bsw3_0/ncell_bsw_sw_1/VNBT1" "VCN" 0.0261005
+cap "sh_bsw3_0/ncell_bsw_sw_1/VNBT3" "sh_bsw3_1/cap_bsw_1/VNBT3" 1.63803
+cap "sh_bsw3_1/ncell_bsw_sw_1/VBOOT" "CLKSB" -0.000247642
+cap "sh_bsw3_1/inv_bsw_0/VNB" "sh_bsw3_1/ncell_bsw_sw_1/VBOOT" 0.551504
+cap "sh_bsw3_1/inv_bsw_0/VNB" "VCN" 2.31155
+cap "CLKSB" "VCN" -2.698
+cap "sh_bsw3_1/cap_bsw_1/VPBT3" "CLKSB" 0.127849
+cap "sh_bsw3_1/inv_bsw_0/VNB" "sh_bsw3_1/cap_bsw_1/VPBT3" 0.0655046
+cap "sh_bsw3_1/ncell_bsw_sw_1/VBOOT" "sh_bsw3_1/ncell_bsw_dischrg_0/VDDA" 0.0727619
+cap "sh_bsw3_1/cap_bsw_1/VPBT1" "CLKSB" 0.345973
+cap "sh_bsw3_1/inv_bsw_0/VNB" "sh_bsw3_1/cap_bsw_1/VPBT1" 0.415366
+cap "sh_bsw3_0/ncell_bsw_sw_1/VBOOT" "sh_bsw3_1/inv_bsw_0/OUT" 0.00126424
+cap "sh_bsw3_0/ncell_bsw_dischrg_0/sky130_fd_pr__nfet_01v8_6J3TAM_3/a_n73_n50#" "sh_bsw3_1/cap_bsw_1/VPBT1" 0.0236606
+cap "sh_bsw3_1/inv_bsw_0/VPWR" "sh_bsw3_1/cap_bsw_1/VPBT1" 0.892968
+cap "sh_bsw3_1/ncell_bsw_sw_1/VBOOT" "sh_bsw3_1/ncell_bsw_dischrg_0/sky130_fd_pr__nfet_01v8_6J3TAM_6/a_n73_n50#" -0.0655249
+cap "sh_bsw3_1/inv_bsw_0/OUT" "CLKS" 165.181
+cap "sh_bsw3_1/inv_bsw_0/VNB" "CLKSB" 803.091
+cap "sh_bsw3_1/inv_bsw_0/VPWR" "CLKSB" 6.1431
+cap "sh_bsw3_1/inv_bsw_0/VNB" "sh_bsw3_1/inv_bsw_0/VPWR" -2.84736
+cap "sh_bsw3_0/ncell_bsw_sw_1/VBOOT" "sh_bsw3_1/cap_bsw_1/VNBT3" 0.119499
+cap "sh_bsw3_0/ncell_bsw_sw_1/VNBT3" "sh_bsw3_1/ncell_bsw_sw_1/VBOOT" 0.00448762
+cap "sh_bsw3_0/ncell_bsw_sw_1/VI" "VIN" 1.08989
+cap "sh_bsw3_0/ncell_bsw_dischrg_0/CLKSB" "sh_bsw3_1/cap_bsw_1/VPBT1" 0.0516121
+cap "sh_bsw3_1/cap_bsw_1/VNBT3" "CLKS" 178.546
+cap "sh_bsw3_1/ncell_bsw_sw_1/VBOOT" "sh_bsw3_1/cap_bsw_1/VNBT3" -0.22295
+cap "sh_bsw3_1/cap_bsw_1/VPBT2" "CLKS" 0.543598
+cap "sh_bsw3_0/ncell_bsw_sw_1/VBOOT" "VIN" 0.0852795
+cap "sh_bsw3_0/ncell_bsw_sw_1/VI" "sh_bsw3_1/ncell_bsw_sw_1/VBOOT" 0.522143
+cap "sh_bsw3_1/cap_bsw_1/VNBT3" "VCN" -1.42109e-14
+cap "VIN" "CLKS" 87.1513
+cap "sh_bsw3_0/ncell_bsw_sw_1/VNBT1" "sh_bsw3_1/cap_bsw_1/VNBT3" 0.0505398
+cap "sh_bsw3_0/ncell_bsw_sw_1/VBOOT" "CLKS" 0.00251264
+cap "sh_bsw3_1/ncell_bsw_sw_1/VBOOT" "VIN" 5.68434e-14
+cap "sh_bsw3_1/inv_bsw_0/OUT" "CLKSB" -103.971
+cap "sh_bsw3_1/inv_bsw_0/VNB" "sh_bsw3_1/inv_bsw_0/OUT" 0.919916
+cap "sh_bsw3_1/inv_bsw_0/VPWR" "sh_bsw3_1/inv_bsw_0/OUT" 6.49504
+cap "sh_bsw3_0/ncell_bsw_sw_1/VBOOT" "sh_bsw3_1/ncell_bsw_sw_1/VBOOT" 11.3968
+cap "VIN" "VCN" -2.21643
+cap "CLKSB" "sh_bsw3_1/cap_bsw_1/VNBT3" -70.5232
+cap "sh_bsw3_1/inv_bsw_0/VNB" "sh_bsw3_1/cap_bsw_1/VNBT3" 4.80061
+cap "sh_bsw3_1/ncell_bsw_sw_1/VBOOT" "CLKS" 0.324513
+cap "sh_bsw3_0/ncell_bsw_sw_1/VBOOT" "VCN" 0.0734005
+cap "sh_bsw3_0/ncell_bsw_sw_1/VNBT1" "VIN" 0.0288771
+cap "sh_bsw3_0/inv_bsw_0/OUT" "sh_bsw3_1/ncell_bsw_sw_1/VBOOT" 0.00201406
+cap "sh_bsw3_1/cap_bsw_1/VPBT3" "sh_bsw3_0/ncell_bsw_sw_1/VBOOT" 0.589286
+cap "sh_bsw3_1/cap_bsw_1/VPBT2" "CLKSB" 0.00198332
+cap "sh_bsw3_1/inv_bsw_0/VNB" "sh_bsw3_1/cap_bsw_1/VPBT2" 0.949231
+cap "sh_bsw3_1/inv_bsw_0/VPWR" "sh_bsw3_1/cap_bsw_1/VNBT3" 1.11022e-16
+cap "sh_bsw3_1/inv_bsw_0/VPWR" "sh_bsw3_1/cap_bsw_1/VPBT2" 5.68434e-14
+cap "sh_bsw3_0/ncell_bsw_sw_1/VI" "VIN" 1.09086
+cap "sh_bsw3_1/inv_bsw_0/OUT" "sh_bsw3_1/ncell_bsw_sw_1/VBOOT" -2.62992
+cap "sh_bsw3_0/cap_bsw_1/VNBT3" "sh_bsw3_1/ncell_bsw_sw_1/VBOOT" 115.245
+cap "sh_bsw3_1/inv_bsw_0/VNB" "sh_bsw3_1/ncell_bsw_sw_1/VBOOT" 27.8376
+cap "sh_bsw3_0/cap_bsw_1/VPBT3" "sh_bsw3_1/ncell_bsw_sw_1/VBOOT" 64.5191
+cap "VCN" "sh_bsw3_1/ncell_bsw_dischrg_0/sky130_fd_pr__nfet_01v8_6J3TAM_6/a_n73_n50#" -0.00183028
+cap "sh_bsw3_1/inv_bsw_0/VGND" "sh_bsw3_1/inv_bsw_0/IN" 0.526489
+cap "sh_bsw3_1/ncell_bsw_sw_1/VBOOT" "sh_bsw3_1/inv_bsw_0/VGND" -0.238981
+cap "sh_bsw3_0/cap_bsw_1/VPBT2" "sh_bsw3_1/ncell_bsw_sw_1/VNBT1" 2.35714
+cap "sh_bsw3_1/ncell_bsw_dischrg_0/VDDA" "sh_bsw3_1/ncell_bsw_sw_1/VNBT1" 227.197
+cap "sh_bsw3_1/inv_bsw_0/VNB" "VCN" 5.70432
+cap "sh_bsw3_0/ncell_bsw_sw_1/VNBT1" "sh_bsw3_1/inv_bsw_0/OUT" 0.0130256
+cap "sh_bsw3_0/ncell_bsw_sw_1/VI" "sh_bsw3_1/ncell_bsw_sw_1/VBOOT" 0.0357687
+cap "sh_bsw3_0/ncell_bsw_sw_1/VNBT1" "sh_bsw3_1/inv_bsw_0/VNB" 0.000922483
+cap "VIN" "sh_bsw3_1/inv_bsw_0/IN" 66.8416
+cap "sh_bsw3_1/ncell_bsw_sw_1/VNBT1" "sh_bsw3_1/ncell_bsw_dischrg_0/sky130_fd_pr__nfet_01v8_6J3TAM_6/a_n73_n50#" -0.0397467
+cap "sh_bsw3_0/ncell_bsw_sw_1/VBOOT" "sh_bsw3_1/inv_bsw_0/OUT" 0.62523
+cap "sh_bsw3_1/ncell_bsw_sw_1/VBOOT" "VIN" -0.0737545
+cap "sh_bsw3_0/cap_bsw_1/VNBT3" "sh_bsw3_1/ncell_bsw_sw_1/VNBT1" 0.9898
+cap "sh_bsw3_1/inv_bsw_0/VNB" "sh_bsw3_0/ncell_bsw_sw_1/VBOOT" 0.00109078
+cap "sh_bsw3_1/inv_bsw_0/OUT" "sh_bsw3_1/ncell_bsw_sw_1/VNBT1" -81.5808
+cap "sh_bsw3_0/cap_bsw_1/VPBT2" "sh_bsw3_1/ncell_bsw_dischrg_0/VDDA" 0.0820248
+cap "sh_bsw3_0/ncell_bsw_sw_1/VNBT1" "sh_bsw3_1/inv_bsw_0/VGND" 0.0285785
+cap "sh_bsw3_1/inv_bsw_0/VNB" "sh_bsw3_1/ncell_bsw_sw_1/VNBT1" 820.01
+cap "sh_bsw3_1/ncell_bsw_1/VPBT2" "sh_bsw3_1/inv_bsw_0/VNB" 0.0973451
+cap "sh_bsw3_0/cap_bsw_1/VPBT3" "sh_bsw3_1/ncell_bsw_sw_1/VNBT1" 3.7826
+cap "sh_bsw3_0/ncell_bsw_sw_1/VBOOT" "sh_bsw3_1/inv_bsw_0/VGND" 1.04422
+cap "sh_bsw3_1/ncell_bsw_sw_1/VNBT1" "sh_bsw3_1/inv_bsw_0/VGND" -0.081821
+cap "sh_bsw3_1/ncell_bsw_sw_1/VBOOT" "sh_bsw3_1/inv_bsw_0/IN" 31.2625
+cap "sh_bsw3_1/ncell_bsw_dischrg_0/VDDA" "sh_bsw3_1/ncell_bsw_dischrg_0/sky130_fd_pr__nfet_01v8_6J3TAM_6/a_n73_n50#" 26.9447
+cap "VIN" "VCN" -0.23579
+cap "sh_bsw3_0/inv_bsw_0/OUT" "sh_bsw3_1/inv_bsw_0/OUT" 0.727892
+cap "sh_bsw3_0/ncell_bsw_sw_1/VNBT1" "VIN" 0.0606455
+cap "sh_bsw3_0/cap_bsw_1/VNBT3" "sh_bsw3_1/ncell_bsw_dischrg_0/VDDA" 1.31143
+cap "sh_bsw3_1/inv_bsw_0/VNB" "sh_bsw3_0/inv_bsw_0/OUT" 2.63755
+cap "sh_bsw3_1/inv_bsw_0/VNB" "sh_bsw3_1/ncell_bsw_dischrg_0/VDDA" 73.8854
+cap "sh_bsw3_0/cap_bsw_1/VPBT3" "sh_bsw3_1/ncell_bsw_dischrg_0/VDDA" 0.00864798
+cap "VCN" "sh_bsw3_1/inv_bsw_0/IN" 13.0067
+cap "sh_bsw3_0/ncell_bsw_sw_1/VBOOT" "VIN" 0.629037
+cap "VIN" "sh_bsw3_1/ncell_bsw_sw_1/VNBT1" -32.939
+cap "sh_bsw3_1/ncell_bsw_sw_1/VBOOT" "VCN" -0.00891165
+cap "sh_bsw3_1/ncell_bsw_dischrg_0/VDDA" "sh_bsw3_1/inv_bsw_0/VGND" 0.00446805
+cap "sh_bsw3_0/ncell_bsw_sw_1/VO" "VCN" 0.0999709
+cap "sh_bsw3_1/inv_bsw_0/VNB" "sh_bsw3_1/ncell_bsw_dischrg_0/sky130_fd_pr__nfet_01v8_6J3TAM_6/a_n73_n50#" -0.362263
+cap "sh_bsw3_0/ncell_bsw_sw_1/VNBT1" "sh_bsw3_1/ncell_bsw_sw_1/VBOOT" 0.0149627
+cap "sh_bsw3_1/inv_bsw_0/VNB" "sh_bsw3_1/inv_bsw_0/OUT" 78.4483
+cap "sh_bsw3_0/cap_bsw_1/VNBT3" "sh_bsw3_1/inv_bsw_0/VNB" 3.51889
+cap "sh_bsw3_0/cap_bsw_1/VPBT3" "sh_bsw3_1/inv_bsw_0/OUT" 0.697385
+cap "sh_bsw3_0/cap_bsw_1/VPBT3" "sh_bsw3_1/inv_bsw_0/VNB" 42.2902
+cap "sh_bsw3_1/ncell_bsw_sw_1/VNBT1" "sh_bsw3_1/inv_bsw_0/IN" 596.559
+cap "sh_bsw3_1/inv_bsw_0/VGND" "sh_bsw3_1/ncell_bsw_dischrg_0/sky130_fd_pr__nfet_01v8_6J3TAM_6/a_n73_n50#" -0.00329971
+cap "sh_bsw3_0/ncell_bsw_sw_1/VBOOT" "sh_bsw3_1/ncell_bsw_sw_1/VBOOT" 20.6966
+cap "sh_bsw3_1/ncell_bsw_sw_1/VBOOT" "sh_bsw3_1/ncell_bsw_sw_1/VNBT1" -110.743
+cap "sh_bsw3_0/cap_bsw_1/VPBT1" "sh_bsw3_1/ncell_bsw_dischrg_0/VDDA" 0.732941
+cap "sh_bsw3_1/ncell_bsw_dischrg_0/VDDA" "VIN" 0.00475505
+cap "sh_bsw3_0/ncell_bsw_sw_1/VNBT1" "VCN" 0.00277664
+cap "sh_bsw3_0/cap_bsw_1/VNBT3" "sh_bsw3_1/inv_bsw_0/VGND" 1.63668
+cap "sh_bsw3_1/inv_bsw_0/VNB" "sh_bsw3_1/inv_bsw_0/VGND" 6.79854
+cap "sh_bsw3_0/cap_bsw_1/VPBT3" "sh_bsw3_1/inv_bsw_0/VGND" 2.78126
+cap "sh_bsw3_0/ncell_bsw_sw_1/VBOOT" "VCN" 0.00780856
+cap "sh_bsw3_1/ncell_bsw_dischrg_0/VDDA" "sh_bsw3_1/inv_bsw_0/IN" -11.4353
+cap "sh_bsw3_1/ncell_bsw_sw_1/VNBT1" "VCN" -3.4685
+cap "VIN" "sh_bsw3_1/ncell_bsw_dischrg_0/sky130_fd_pr__nfet_01v8_6J3TAM_6/a_n73_n50#" -0.00377949
+cap "sh_bsw3_0/inv_bsw_0/OUT" "sh_bsw3_1/ncell_bsw_sw_1/VBOOT" 12.1104
+cap "sh_bsw3_0/ncell_bsw_sw_1/VNBT1" "sh_bsw3_1/ncell_bsw_sw_1/VNBT1" 0.0261916
+cap "sh_bsw3_0/cap_bsw_1/VPBT2" "sh_bsw3_1/ncell_bsw_sw_1/VBOOT" 2.35714
+cap "sh_bsw3_1/ncell_bsw_sw_1/VBOOT" "sh_bsw3_1/ncell_bsw_dischrg_0/VDDA" 214.784
+cap "sh_bsw3_0/cap_bsw_1/VPBT1" "sh_bsw3_1/inv_bsw_0/VNB" 2.35714
+cap "sh_bsw3_1/inv_bsw_0/VNB" "VIN" 9.15994
+cap "sh_bsw3_0/cap_bsw_1/VPBT3" "VIN" 5.44967
+cap "sh_bsw3_1/ncell_bsw_dischrg_0/sky130_fd_pr__nfet_01v8_6J3TAM_6/a_n73_n50#" "sh_bsw3_1/inv_bsw_0/IN" 0.147016
+cap "sh_bsw3_0/ncell_bsw_sw_1/VBOOT" "sh_bsw3_1/ncell_bsw_sw_1/VNBT1" 1.24447
+cap "sh_bsw3_1/inv_bsw_0/OUT" "sh_bsw3_1/inv_bsw_0/IN" 105.65
+cap "sh_bsw3_1/ncell_bsw_dischrg_0/VDDA" "VCN" 0.00228459
+cap "sh_bsw3_1/ncell_bsw_sw_1/VBOOT" "sh_bsw3_1/ncell_bsw_dischrg_0/sky130_fd_pr__nfet_01v8_6J3TAM_6/a_n73_n50#" -0.244218
+cap "sh_bsw3_0/cap_bsw_1/VNBT3" "sh_bsw3_1/inv_bsw_0/IN" 1.27368
+cap "sh_bsw3_1/inv_bsw_0/VNB" "sh_bsw3_1/inv_bsw_0/IN" -287.328
+cap "sh_bsw3_1/ncell_bsw_sw_1/VSSA" "sh_bsw3_0/cap_bsw_1/VNBT3" 9.26132
+cap "sh_bsw3_0/cap_bsw_1/VNBT3" "m1_1575_130#" 112.27
+cap "m1_1575_130#" "sh_bsw3_1/ncell_bsw_dischrg_0/VBOOT" 1.22817
+cap "m1_1575_130#" "sh_bsw3_1/ncell_bsw_dischrg_0/CLKSB" 27.2959
+cap "sh_bsw3_0/cap_bsw_1/VNBT3" "sh_bsw3_0/cap_bsw_1/VPBT1" -0.193949
+cap "sh_bsw3_0/cap_bsw_1/VNBT3" "sh_bsw3_1/ncell_bsw_dischrg_0/VBOOT" 12.6902
+cap "m1_1575_130#" "sh_bsw3_1/ncell_bsw_dischrg_0/VDDA" -8.44542
+cap "sh_bsw3_1/ncell_bsw_sw_1/VSSA" "sh_bsw3_1/ncell_bsw_dischrg_0/VDDA" 2.22777
+cap "sh_bsw3_0/cap_bsw_1/VNBT3" "sh_bsw3_1/ncell_bsw_dischrg_0/CLKSB" 1.65
+cap "sh_bsw3_0/cap_bsw_1/VPBT3" "m1_1575_130#" 0.0250197
+cap "m1_1575_130#" "sh_bsw3_1/ncell_bsw_dischrg_0/sky130_fd_pr__nfet_01v8_6J3TAM_6/a_n73_n50#" 0.0342448
+cap "sh_bsw3_1/ncell_bsw_sw_1/VSSA" "m1_1575_130#" -0.546272
+cap "sh_bsw3_0/cap_bsw_1/VNBT3" "sh_bsw3_1/ncell_bsw_dischrg_0/VDDA" 1.32385
+cap "sh_bsw3_1/cap_bsw_1/VPBT3" "sh_bsw3_0/pcell_bsw_dischrg_0/VPBT3" 0.0502461
+cap "sh_bsw3_1/cap_bsw_1/VPBT3" "VSSA" 0.0398839
+cap "sh_bsw3_1/cap_bsw_1/VNBT3" "sh_bsw3_1/inv_bsw_0/VPWR" 9.26359
+cap "sh_bsw3_1/cap_bsw_1/VNBT3" "sh_bsw3_1/cap_bsw_1/VPBT2" -0.476023
+cap "sh_bsw3_0/ncell_bsw_dischrg_0/sky130_fd_pr__nfet_01v8_6J3TAM_3/a_n73_n50#" "CLKSB" 0.034069
+cap "sh_bsw3_1/inv_bsw_0/VNB" "sh_bsw3_1/inv_bsw_0/VPWR" 2.79036
+cap "sh_bsw3_1/cap_bsw_1/VPBT3" "sh_bsw3_1/inv_bsw_0/VPWR" 0.402845
+cap "sh_bsw3_1/cap_bsw_1/VPBT2" "CLKSB" 1.50126
+cap "sh_bsw3_1/inv_bsw_0/VPWR" "CLKSB" -19.9769
+cap "sh_bsw3_1/inv_bsw_0/VNB" "sh_bsw3_1/cap_bsw_1/VNBT3" 28.607
+cap "sh_bsw3_0/ncell_bsw_dischrg_0/VBOOT" "sh_bsw3_1/cap_bsw_1/VNBT3" 12.7074
+cap "sh_bsw3_1/cap_bsw_1/VPBT3" "sh_bsw3_1/cap_bsw_1/VNBT3" -0.306603
+cap "sh_bsw3_1/cap_bsw_1/VNBT3" "sh_bsw3_1/cap_bsw_1/VPBT1" -0.244377
+cap "sh_bsw3_1/cap_bsw_1/VNBT3" "CLKSB" 441
+cap "sh_bsw3_1/inv_bsw_0/VNB" "sh_bsw3_1/cap_bsw_1/VPBT1" 0.393061
+cap "sh_bsw3_1/inv_bsw_0/VNB" "CLKSB" 6.189
+cap "sh_bsw3_0/ncell_bsw_dischrg_0/VBOOT" "CLKSB" 1.21747
+cap "sh_bsw3_1/cap_bsw_1/VPBT1" "CLKSB" 1.1966
+cap "sh_bsw3_1/cap_bsw_1/VPBT3" "CLKSB" 44.5615
+cap "sh_bsw3_1/cap_bsw_1/VPBT3" "sh_bsw3_1/cap_bsw_1/VPBT1" -0.548343
+cap "sh_bsw3_1/cap_bsw_1/VPBT3" "sh_bsw3_0/inv_bsw_0/VGND" 3.15914
+cap "sh_bsw3_1/inv_bsw_0/VNB" "sh_bsw3_1/cap_bsw_1/VNBT3" 38.5618
+cap "CLKSB" "VCP" 0.0261005
+cap "CLKSB" "sh_bsw3_1/ncell_bsw_sw_1/VBOOT" 2.29902
+cap "sh_bsw3_1/cap_bsw_1/VPBT1" "sh_bsw3_1/cap_bsw_1/VNBT3" 3.55271e-15
+cap "sh_bsw3_1/inv_bsw_0/VNB" "sh_bsw3_0/ncell_bsw_sw_1/VBOOT" -8.35117
+cap "sh_bsw3_1/inv_bsw_0/VPWR" "CLKSB" 402.327
+cap "sh_bsw3_1/cap_bsw_1/VPBT3" "sh_bsw3_1/cap_bsw_1/VPBT2" -0.056636
+cap "sh_bsw3_0/inv_bsw_0/OUT" "CLKSB" -3.96199
+cap "VIP" "sh_bsw3_1/ncell_bsw_sw_1/VBOOT" 0.629037
+cap "sh_bsw3_0/ncell_bsw_1/VPBT3" "sh_bsw3_1/cap_bsw_1/VNBT3" 1.33006
+cap "sh_bsw3_0/ncell_bsw_sw_1/VBOOT" "sh_bsw3_1/cap_bsw_1/VPBT1" 0.523929
+cap "CLKSB" "sh_bsw3_1/inv_bsw_0/OUT" 0.0388514
+cap "sh_bsw3_1/inv_bsw_0/VPWR" "VIP" 0.00950333
+cap "sh_bsw3_1/inv_bsw_0/VNB" "sh_bsw3_1/ncell_bsw_sw_1/VBOOT" 0.797306
+cap "CLKSB" "sh_bsw3_0/inv_bsw_0/VGND" 0.0285785
+cap "sh_bsw3_1/inv_bsw_0/VNB" "sh_bsw3_1/inv_bsw_0/VPWR" 82.3282
+cap "sh_bsw3_1/inv_bsw_0/VNB" "sh_bsw3_0/inv_bsw_0/OUT" -2.84217e-14
+cap "sh_bsw3_1/cap_bsw_1/VPBT3" "sh_bsw3_0/ncell_bsw_1/VPBT2" 0.00519476
+cap "sh_bsw3_1/inv_bsw_0/VPWR" "sh_bsw3_1/cap_bsw_1/VPBT1" 12.0979
+cap "sh_bsw3_1/inv_bsw_0/VNB" "sh_bsw3_1/inv_bsw_0/OUT" 3.31899
+cap "sh_bsw3_0/ncell_bsw_1/VPBT3" "sh_bsw3_1/ncell_bsw_sw_1/VBOOT" 13.0213
+cap "sh_bsw3_0/inv_bsw_0/OUT" "sh_bsw3_1/cap_bsw_1/VPBT1" 0.0382869
+cap "CLKSB" "sh_bsw3_1/cap_bsw_1/VPBT2" 4.99667
+cap "sh_bsw3_0/ncell_bsw_sw_1/VBOOT" "sh_bsw3_1/cap_bsw_1/VNBT3" 271.48
+cap "sh_bsw3_1/inv_bsw_0/VPWR" "sh_bsw3_0/ncell_bsw_1/VPBT3" 0.985048
+cap "CLKSB" "sh_bsw3_1/cap_bsw_1/VPBT3" 4.458
+cap "sh_bsw3_0/ncell_bsw_1/VPBT3" "sh_bsw3_1/inv_bsw_0/OUT" 1.04915
+cap "CLKSB" "sh_bsw3_0/ncell_bsw_dischrg_0/sky130_fd_pr__nfet_01v8_6J3TAM_3/a_n73_n50#" 0.0945594
+cap "sh_bsw3_1/cap_bsw_1/VPBT3" "VIP" 5.44967
+cap "sh_bsw3_1/inv_bsw_0/VNB" "sh_bsw3_1/cap_bsw_1/VPBT2" 0.982911
+cap "sh_bsw3_1/inv_bsw_0/VPWR" "sh_bsw3_1/cap_bsw_1/VNBT3" 135.081
+cap "sh_bsw3_0/inv_bsw_0/OUT" "sh_bsw3_1/cap_bsw_1/VNBT3" 0.00589704
+cap "sh_bsw3_0/ncell_bsw_sw_1/VBOOT" "sh_bsw3_1/ncell_bsw_sw_1/VBOOT" 44.57
+cap "sh_bsw3_1/inv_bsw_0/VNB" "sh_bsw3_1/cap_bsw_1/VPBT3" 74.8913
+cap "sh_bsw3_1/cap_bsw_1/VPBT2" "sh_bsw3_1/cap_bsw_1/VPBT1" -0.320481
+cap "sh_bsw3_1/inv_bsw_0/VPWR" "sh_bsw3_0/ncell_bsw_sw_1/VBOOT" 373.611
+cap "sh_bsw3_1/cap_bsw_1/VPBT3" "sh_bsw3_1/cap_bsw_1/VPBT1" -0.0590373
+cap "VCP" "sh_bsw3_1/ncell_bsw_sw_1/VBOOT" 0.0734005
+cap "VIP" "VIN" 1.09086
+cap "sh_bsw3_0/inv_bsw_0/VGND" "sh_bsw3_1/cap_bsw_1/VNBT3" 1.64521
+cap "sh_bsw3_0/ncell_bsw_sw_1/VBOOT" "sh_bsw3_1/inv_bsw_0/OUT" 21.9406
+cap "sh_bsw3_1/cap_bsw_1/VPBT3" "sh_bsw3_0/ncell_bsw_1/VPBT3" 35.8523
+cap "sh_bsw3_0/ncell_bsw_sw_1/VBOOT" "CLKS" 0.00364162
+cap "sh_bsw3_1/inv_bsw_0/VPWR" "sh_bsw3_1/ncell_bsw_sw_1/VBOOT" 0.490853
+cap "CLKSB" "VIP" 0.0606455
+cap "sh_bsw3_0/inv_bsw_0/OUT" "sh_bsw3_1/ncell_bsw_sw_1/VBOOT" 1.52855
+cap "sh_bsw3_1/cap_bsw_1/VPBT2" "sh_bsw3_1/cap_bsw_1/VNBT3" -1.43141
+cap "sh_bsw3_1/inv_bsw_0/VNB" "CLKSB" -12.5427
+cap "sh_bsw3_1/inv_bsw_0/VPWR" "sh_bsw3_0/inv_bsw_0/OUT" 4.97455
+cap "sh_bsw3_1/ncell_bsw_sw_1/VBOOT" "CLKS" 0.0161503
+cap "sh_bsw3_1/cap_bsw_1/VPBT3" "sh_bsw3_0/ncell_bsw_1/VPBT1" 0.0944051
+cap "sh_bsw3_1/inv_bsw_0/VPWR" "sh_bsw3_1/inv_bsw_0/OUT" 0.110258
+cap "sh_bsw3_0/inv_bsw_0/VGND" "sh_bsw3_1/ncell_bsw_sw_1/VBOOT" 6.29029
+cap "sh_bsw3_1/cap_bsw_1/VPBT3" "sh_bsw3_1/cap_bsw_1/VNBT3" -2.84217e-14
+cap "sh_bsw3_1/inv_bsw_0/VPWR" "CLKS" 0.0407068
+cap "sh_bsw3_0/ncell_bsw_sw_1/VBOOT" "sh_bsw3_1/cap_bsw_1/VPBT2" 17.5624
+cap "CLKSB" "sh_bsw3_1/cap_bsw_1/VPBT1" 0.0610423
+cap "sh_bsw3_0/inv_bsw_0/OUT" "sh_bsw3_1/inv_bsw_0/OUT" 2.29102
+cap "sh_bsw3_1/inv_bsw_0/VNB" "VIP" 0.0213622
+cap "sh_bsw3_1/inv_bsw_0/VPWR" "sh_bsw3_0/inv_bsw_0/VGND" 0.0478047
+cap "sh_bsw3_0/ncell_bsw_sw_1/VBOOT" "sh_bsw3_1/cap_bsw_1/VPBT3" 84.7807
+cap "sh_bsw3_1/inv_bsw_0/OUT" "CLKS" 0.0202349
+cap "VCP" "VCN" 0.932002
+cap "sh_bsw3_0/ncell_bsw_sw_1/VBOOT" "sh_bsw3_0/ncell_bsw_dischrg_0/sky130_fd_pr__nfet_01v8_6J3TAM_3/a_n73_n50#" -0.138226
+cap "sh_bsw3_1/inv_bsw_0/VPWR" "sh_bsw3_1/cap_bsw_1/VPBT2" 75.2653
+cap "sh_bsw3_1/inv_bsw_0/VNB" "sh_bsw3_1/cap_bsw_1/VPBT1" 5.50988
+cap "sh_bsw3_1/cap_bsw_1/VPBT3" "sh_bsw3_1/ncell_bsw_sw_1/VBOOT" 6.82121e-13
+cap "CLKSB" "sh_bsw3_1/cap_bsw_1/VNBT3" 1.47336
+cap "sh_bsw3_0/ncell_bsw_sw_1/VBOOT" "VIN" 0.0357687
+cap "sh_bsw3_1/inv_bsw_0/VPWR" "sh_bsw3_1/cap_bsw_1/VPBT3" 1.94417
+cap "sh_bsw3_0/inv_bsw_0/OUT" "sh_bsw3_1/cap_bsw_1/VPBT3" 1.36745
+cap "sh_bsw3_1/inv_bsw_0/VPWR" "sh_bsw3_0/ncell_bsw_dischrg_0/sky130_fd_pr__nfet_01v8_6J3TAM_3/a_n73_n50#" 31.3434
+cap "sh_bsw3_0/ncell_bsw_1/VPBT3" "sh_bsw3_1/cap_bsw_1/VPBT1" 1.20802
+cap "CLKSB" "sh_bsw3_0/ncell_bsw_sw_1/VBOOT" -156.185
+cap "sh_bsw3_1/cap_bsw_1/VPBT3" "CLKS" 0.0829214
+cap "sh_bsw3_0/ncell_bsw_sw_1/VBOOT" "VIP" -5.68434e-14
+cap "sh_bsw3_1/inv_bsw_0/VPWR" "sh_bsw3_1/ncell_bsw_sw_1/VBOOT" 3.17432
+cap "sh_bsw3_0/cap_bsw_1/VNBT3" "sh_bsw3_1/inv_bsw_0/IN" 1.29514
+cap "sh_bsw3_0/cap_bsw_1/VPBT1" "sh_bsw3_1/ncell_bsw_sw_1/VBOOT" 0.535918
+cap "sh_bsw3_1/inv_bsw_0/VNB" "sh_bsw3_1/inv_bsw_0/VPWR" 9.63642
+cap "sh_bsw3_0/cap_bsw_1/VPBT3" "sh_bsw3_1/ncell_bsw_sw_1/VNBT1" 0.492781
+cap "sh_bsw3_1/inv_bsw_0/VNB" "sh_bsw3_0/cap_bsw_1/VPBT1" 3.5579
+cap "sh_bsw3_1/inv_bsw_0/VPWR" "sh_bsw3_0/cap_bsw_1/VPBT2" 76.2596
+cap "VCP" "sh_bsw3_1/ncell_bsw_sw_1/VBOOT" 0.00780856
+cap "VIP" "VIN" 1.08989
+cap "sh_bsw3_0/ncell_bsw_sw_1/VBOOT" "sh_bsw3_1/inv_bsw_0/VGND" 5.25055
+cap "sh_bsw3_0/cap_bsw_1/VPBT2" "sh_bsw3_0/cap_bsw_1/VPBT1" -0.320481
+cap "sh_bsw3_1/ncell_bsw_1/VPBT3" "sh_bsw3_0/ncell_bsw_sw_1/VBOOT" 13.0213
+cap "sh_bsw3_1/inv_bsw_0/VPWR" "sh_bsw3_0/cap_bsw_1/VNBT3" 135.212
+cap "sh_bsw3_0/cap_bsw_1/VPBT1" "sh_bsw3_1/ncell_bsw_dischrg_0/sky130_fd_pr__nfet_01v8_6J3TAM_6/a_n73_n50#" 0.0236606
+cap "sh_bsw3_0/cap_bsw_1/VPBT3" "sh_bsw3_1/ncell_bsw_1/VPBT2" 0.00519476
+cap "sh_bsw3_1/ncell_bsw_sw_1/VNBT1" "sh_bsw3_0/inv_bsw_0/OUT" 0.0172725
+cap "sh_bsw3_0/cap_bsw_1/VNBT3" "sh_bsw3_0/cap_bsw_1/VPBT1" -0.0504288
+cap "sh_bsw3_1/inv_bsw_0/VPWR" "VIP" 0.307024
+cap "sh_bsw3_0/ncell_bsw_sw_1/VBOOT" "sh_bsw3_1/inv_bsw_0/IN" 0.0524076
+cap "sh_bsw3_1/inv_bsw_0/VPWR" "sh_bsw3_0/cap_bsw_1/VNBT1" 0.655294
+cap "sh_bsw3_0/cap_bsw_1/VNBT3" "sh_bsw3_1/inv_bsw_0/OUT" 0.00589704
+cap "sh_bsw3_0/cap_bsw_1/VPBT3" "sh_bsw3_1/ncell_bsw_sw_1/VBOOT" 20.8509
+cap "sh_bsw3_0/cap_bsw_1/VPBT1" "sh_bsw3_0/cap_bsw_1/VNBT1" -2.31973
+cap "sh_bsw3_0/ncell_bsw_sw_1/VBOOT" "VIN" 0.522143
+cap "sh_bsw3_1/inv_bsw_0/VNB" "sh_bsw3_0/cap_bsw_1/VPBT3" 38.7993
+cap "sh_bsw3_1/inv_bsw_0/VPWR" "sh_bsw3_1/ncell_bsw_1/VPBT3" 0.985726
+cap "sh_bsw3_1/inv_bsw_0/OUT" "sh_bsw3_0/cap_bsw_1/VNBT1" 0.0530194
+cap "sh_bsw3_1/ncell_bsw_sw_1/VBOOT" "sh_bsw3_0/inv_bsw_0/OUT" 9.83144
+cap "sh_bsw3_0/cap_bsw_1/VPBT3" "sh_bsw3_0/cap_bsw_1/VPBT2" -0.0568645
+cap "sh_bsw3_1/ncell_bsw_1/VPBT3" "sh_bsw3_0/cap_bsw_1/VPBT1" 1.20802
+cap "sh_bsw3_1/inv_bsw_0/VPWR" "sh_bsw3_0/ncell_bsw_sw_1/VBOOT" 0.959183
+cap "sh_bsw3_1/inv_bsw_0/VNB" "sh_bsw3_0/inv_bsw_0/OUT" 3.21093
+cap "sh_bsw3_1/inv_bsw_0/VPWR" "sh_bsw3_1/inv_bsw_0/IN" -3.0255
+cap "sh_bsw3_0/cap_bsw_1/VPBT1" "sh_bsw3_1/inv_bsw_0/IN" 11.2941
+cap "sh_bsw3_0/ncell_bsw_sw_1/VBOOT" "sh_bsw3_1/inv_bsw_0/OUT" 0.905329
+cap "sh_bsw3_0/cap_bsw_1/VPBT2" "sh_bsw3_1/ncell_bsw_sw_1/VNBT1" 2.35714
+cap "sh_bsw3_0/cap_bsw_1/VNBT3" "sh_bsw3_1/ncell_bsw_sw_1/VNBT1" 0.0589498
+cap "sh_bsw3_0/cap_bsw_1/VPBT3" "sh_bsw3_1/inv_bsw_0/VGND" 0.377884
+cap "sh_bsw3_1/ncell_bsw_1/VPBT3" "sh_bsw3_0/cap_bsw_1/VPBT3" 35.8523
+cap "sh_bsw3_1/inv_bsw_0/VPWR" "sh_bsw3_0/cap_bsw_1/VPBT1" 14.9812
+cap "VIP" "sh_bsw3_1/ncell_bsw_sw_1/VNBT1" 0.0288771
+cap "sh_bsw3_0/cap_bsw_1/VPBT3" "sh_bsw3_0/ncell_bsw_sw_1/VBOOT" 1.13687e-12
+cap "sh_bsw3_0/cap_bsw_1/VPBT3" "sh_bsw3_1/ncell_bsw_1/VPBT1" 0.0944051
+cap "sh_bsw3_1/inv_bsw_0/VNB" "sh_bsw3_1/ncell_bsw_sw_1/VBOOT" -0.684812
+cap "sh_bsw3_0/cap_bsw_1/VPBT3" "sh_bsw3_1/inv_bsw_0/IN" 0.362413
+cap "sh_bsw3_1/ncell_bsw_1/VPBT3" "sh_bsw3_0/inv_bsw_0/OUT" 1.04915
+cap "sh_bsw3_0/cap_bsw_1/VPBT2" "sh_bsw3_1/ncell_bsw_sw_1/VBOOT" 15.2052
+cap "sh_bsw3_0/cap_bsw_1/VPBT1" "sh_bsw3_1/inv_bsw_0/OUT" 0.0382869
+cap "sh_bsw3_0/cap_bsw_1/VNBT3" "sh_bsw3_1/ncell_bsw_sw_1/VBOOT" 156.353
+cap "sh_bsw3_1/inv_bsw_0/VNB" "sh_bsw3_0/cap_bsw_1/VPBT2" 0.982911
+cap "sh_bsw3_1/inv_bsw_0/IN" "sh_bsw3_0/inv_bsw_0/OUT" 0.0353978
+cap "VIP" "sh_bsw3_1/ncell_bsw_sw_1/VBOOT" 0.0852795
+cap "sh_bsw3_0/ncell_bsw_sw_1/VBOOT" "sh_bsw3_1/ncell_bsw_sw_1/VNBT1" 1.43324
+cap "sh_bsw3_1/inv_bsw_0/VNB" "sh_bsw3_0/cap_bsw_1/VNBT3" 46.023
+cap "sh_bsw3_1/inv_bsw_0/VPWR" "sh_bsw3_0/cap_bsw_1/VPBT3" 2.00108
+cap "sh_bsw3_1/ncell_bsw_sw_1/VBOOT" "sh_bsw3_0/cap_bsw_1/VNBT1" 0.125789
+cap "sh_bsw3_0/cap_bsw_1/VNBT3" "sh_bsw3_0/cap_bsw_1/VPBT2" -1.43141
+cap "sh_bsw3_0/cap_bsw_1/VPBT3" "sh_bsw3_0/cap_bsw_1/VPBT1" -0.0796645
+cap "sh_bsw3_1/inv_bsw_0/VNB" "VIP" 0.000873376
+cap "sh_bsw3_1/inv_bsw_0/VNB" "sh_bsw3_0/cap_bsw_1/VNBT1" 0.169576
+cap "sh_bsw3_1/inv_bsw_0/VPWR" "sh_bsw3_0/inv_bsw_0/OUT" 0.0859153
+cap "VCP" "VCN" 0.0999709
+cap "sh_bsw3_0/cap_bsw_1/VPBT3" "sh_bsw3_1/inv_bsw_0/OUT" 0.670061
+cap "sh_bsw3_0/cap_bsw_1/VPBT1" "sh_bsw3_0/inv_bsw_0/OUT" 3.55271e-15
+cap "sh_bsw3_0/ncell_bsw_sw_1/VBOOT" "sh_bsw3_1/ncell_bsw_sw_1/VBOOT" 32.9132
+cap "sh_bsw3_0/cap_bsw_1/VPBT1" "sh_bsw3_1/ncell_bsw_sw_1/VNBT1" 0.0617407
+cap "sh_bsw3_1/ncell_bsw_sw_1/VBOOT" "sh_bsw3_1/inv_bsw_0/IN" 0.00627531
+cap "sh_bsw3_1/inv_bsw_0/OUT" "sh_bsw3_0/inv_bsw_0/OUT" 1.56313
+cap "sh_bsw3_1/inv_bsw_0/VNB" "sh_bsw3_0/ncell_bsw_sw_1/VBOOT" 0.890564
+cap "sh_bsw3_0/cap_bsw_1/VNBT3" "sh_bsw3_1/inv_bsw_0/VGND" 1.64656
+cap "sh_bsw3_1/ncell_bsw_1/VPBT3" "sh_bsw3_0/cap_bsw_1/VNBT3" 1.33006
+cap "sh_bsw3_1/inv_bsw_0/VNB" "sh_bsw3_1/inv_bsw_0/IN" 0.00335918
+cap "VCP" "sh_bsw3_1/ncell_bsw_sw_1/VNBT1" 0.00277664
+cap "sh_bsw3_0/cap_bsw_1/VPBT2" "sh_bsw3_1/inv_bsw_0/IN" 0.150026
+cap "sh_bsw3_1/pcell_bsw_dischrg_0/VPBT3" "sh_bsw3_0/cap_bsw_1/VPBT3" 0.0502461
+cap "sh_bsw3_1/ncell_bsw_dischrg_0/VDDA" "sh_bsw3_0/cap_bsw_1/VNBT3" 7.94861
+cap "sh_bsw3_0/cap_bsw_1/VNBT3" "sh_bsw3_1/ncell_bsw_sw_1/VSSA" 13.9354
+cap "sh_bsw3_0/cap_bsw_1/VNBT1" "sh_bsw3_0/cap_bsw_1/VPBT1" -12.3367
+cap "sh_bsw3_0/cap_bsw_1/VPBT1" "sh_bsw3_0/cap_bsw_1/CLKS" 127.879
+cap "sh_bsw3_0/cap_bsw_1/VPBT3" "sh_bsw3_0/cap_bsw_1/CLKS" 46.8069
+cap "sh_bsw3_0/cap_bsw_1/VPBT1" "sh_bsw3_0/cap_bsw_1/VPBT3" -0.825855
+cap "sh_bsw3_1/ncell_bsw_dischrg_0/VDDA" "sh_bsw3_0/cap_bsw_1/VPBT2" 2.38912
+cap "sh_bsw3_0/cap_bsw_1/VPBT2" "sh_bsw3_0/cap_bsw_1/VNBT3" -0.476023
+cap "sh_bsw3_1/ncell_bsw_dischrg_0/VDDA" "sh_bsw3_0/cap_bsw_1/CLKS" -3.30078
+cap "sh_bsw3_0/cap_bsw_1/CLKS" "sh_bsw3_1/ncell_bsw_sw_1/VSSA" 2.8085
+cap "sh_bsw3_1/ncell_bsw_dischrg_0/VBOOT" "sh_bsw3_0/cap_bsw_1/VNBT3" 0.0212222
+cap "sh_bsw3_0/cap_bsw_1/VNBT3" "sh_bsw3_0/cap_bsw_1/CLKS" 343.063
+cap "sh_bsw3_0/cap_bsw_1/VPBT1" "sh_bsw3_1/ncell_bsw_sw_1/VSSA" -0.199603
+cap "sh_bsw3_1/ncell_bsw_dischrg_0/VDDA" "sh_bsw3_0/cap_bsw_1/VPBT3" 0.442729
+cap "sh_bsw3_0/cap_bsw_1/VPBT1" "sh_bsw3_0/cap_bsw_1/VNBT3" -0.172528
+cap "sh_bsw3_0/cap_bsw_1/VPBT3" "sh_bsw3_0/cap_bsw_1/VNBT3" -0.306603
+cap "sh_bsw3_0/cap_bsw_1/VNBT1" "sh_bsw3_0/cap_bsw_1/VPBT2" -3.46161
+cap "sh_bsw3_0/cap_bsw_1/VPBT2" "sh_bsw3_0/cap_bsw_1/CLKS" 37.7118
+cap "sh_bsw3_1/ncell_bsw_dischrg_0/VDDA" "sh_bsw3_1/ncell_bsw_sw_1/VSSA" 0.251181
+cap "sh_bsw3_0/cap_bsw_1/VPBT2" "sh_bsw3_0/cap_bsw_1/VPBT1" -7.20946
+cap "sh_bsw3_0/cap_bsw_1/VNBT1" "sh_bsw3_0/cap_bsw_1/CLKS" 176.258
+cap "sh_bsw3_0/ncell_bsw_dischrg_0/CLKSB" "sh_bsw3_1/ncell_bsw_1/VDDA" -10.4816
+cap "sh_bsw3_0/ncell_bsw_dischrg_0/CLKSB" "sh_bsw3_1/cap_bsw_1/VNBT3" 9.06353
+cap "sh_bsw3_0/ncell_bsw_dischrg_0/CLKSB" "sh_bsw3_1/cap_bsw_1/VPBT3" 0.0208083
+cap "sh_bsw3_1/ncell_bsw_1/VDDA" "sh_bsw3_1/ncell_bsw_1/VSSA" 0.49734
+cap "sh_bsw3_0/ncell_bsw_dischrg_0/CLKSB" "sh_bsw3_1/ncell_bsw_1/VSSA" 2.46934
+cap "sh_bsw3_0/ncell_bsw_sw_1/VNBT1" "VCP" -3.17869
+cap "sh_bsw3_1/ncell_bsw_1/VDDA" "sh_bsw3_0/inv_bsw_0/OUT" 15.9414
+cap "sh_bsw3_1/ncell_bsw_1/VSSA" "sh_bsw3_0/ncell_bsw_sw_1/VNBT1" 1.39988
+cap "sh_bsw3_1/ncell_bsw_1/VDDA" "sh_bsw3_0/inv_bsw_0/VGND" 0.509584
+cap "sh_bsw3_1/ncell_bsw_1/VDDA" "VIP" 5.65664
+cap "sh_bsw3_0/ncell_bsw_sw_1/VNBT1" "sh_bsw3_0/ncell_bsw_sw_1/VBOOT" 0.53312
+cap "sh_bsw3_0/inv_bsw_0/OUT" "sh_bsw3_0/ncell_bsw_sw_1/VNBT1" -12.9506
+cap "sh_bsw3_1/ncell_bsw_1/VDDA" "sh_bsw3_0/ncell_bsw_sw_1/VNBT1" 719.216
+cap "sh_bsw3_0/ncell_bsw_sw_1/VNBT1" "VIP" -3.82921
+cap "sh_bsw3_0/ncell_bsw_sw_1/VNBT1" "sh_bsw3_1/cap_bsw_1/VNBT3" 0.424437
+cap "sh_bsw3_1/ncell_bsw_1/VSSA" "sh_bsw3_0/inv_bsw_0/OUT" -0.311053
+cap "sh_bsw3_1/ncell_bsw_1/VDDA" "VCP" 5.73748
+cap "sh_bsw3_1/ncell_bsw_1/VSSA" "sh_bsw3_1/ncell_bsw_1/VDDA" 7.61214
+cap "sh_bsw3_0/cap_bsw_1/CLKS" "sh_bsw3_0/cap_bsw_1/VPBT1" -2.3876
+cap "sh_bsw3_0/cap_bsw_1/VNBT1" "sh_bsw3_1/ncell_bsw_1/VDDA" 864.464
+cap "sh_bsw3_0/cap_bsw_1/CLKS" "sh_bsw3_1/ncell_bsw_1/VDDA" 73.9757
+cap "sh_bsw3_0/cap_bsw_1/VPBT2" "sh_bsw3_1/ncell_bsw_1/VDDA" 0.179959
+cap "sh_bsw3_0/cap_bsw_1/CLKS" "sh_bsw3_0/cap_bsw_1/VNBT1" -2.55745
+cap "sh_bsw3_1/ncell_bsw_1/VDDA" "VIP" 1.5368
+cap "sh_bsw3_1/ncell_bsw_1/VSSA" "sh_bsw3_1/ncell_bsw_1/VDDA" 3.16334
+cap "sh_bsw3_0/cap_bsw_1/CLKS" "sh_bsw3_0/cap_bsw_1/VPBT2" -0.136223
+cap "sh_bsw3_0/cap_bsw_1/VNBT3" "sh_bsw3_1/ncell_bsw_1/VDDA" 6.4369
+cap "sh_bsw3_0/inv_bsw_0/OUT" "sh_bsw3_1/ncell_bsw_1/VDDA" 17.7274
+cap "sh_bsw3_0/cap_bsw_1/CLKS" "sh_bsw3_1/pcell_bsw_dischrg_0/VBOOT" 0.00251264
+cap "sh_bsw3_0/cap_bsw_1/VPBT1" "sh_bsw3_1/ncell_bsw_1/VDDA" 3.00977
+cap "sh_bsw3_0/cap_bsw_1/CLKS" "VIP" -0.0012995
+cap "sh_bsw3_0/inv_bsw_0/OUT" "sh_bsw3_0/cap_bsw_1/VNBT1" -0.0680499
+cap "sh_bsw3_0/cap_bsw_1/VNBT1" "sh_bsw3_0/cap_bsw_1/VNBT3" -0.00330093
+cap "sh_bsw3_0/cap_bsw_1/CLKS" "sh_bsw3_1/ncell_bsw_1/VSSA" -0.341371
+cap "sh_bsw3_1/ncell_bsw_1/VDDA" "VCP" 0.254199
+cap "sh_bsw3_0/cap_bsw_1/CLKS" "sh_bsw3_0/inv_bsw_0/OUT" -0.414146
+cap "sh_bsw3_0/cap_bsw_1/CLKS" "sh_bsw3_0/cap_bsw_1/VNBT3" -0.0124525
+cap "sh_bsw3_0/cap_bsw_1/CLKS" "sh_bsw3_0/cap_bsw_1/VNBT1" 259.325
+cap "sh_bsw3_0/cap_bsw_1/CLKS" "sh_bsw3_0/inv_bsw_0/OUT" 0.380564
+cap "sh_bsw3_0/cap_bsw_1/CLKS" "sh_bsw3_0/cap_bsw_1/VPBT1" 11.3242
+cap "sh_bsw3_0/cap_bsw_1/CLKS" "sh_bsw3_0/inv_bsw_0/VPWR" 17.3262
+cap "sh_bsw3_0/cap_bsw_1/VPBT2" "sh_bsw3_0/inv_bsw_0/VPWR" 3.5298
+cap "sh_bsw3_0/cap_bsw_1/VPBT1" "sh_bsw3_0/cap_bsw_1/VNBT1" -10.2068
+cap "sh_bsw3_0/inv_bsw_0/VPWR" "sh_bsw3_1/ncell_bsw_sw_1/VSSA" 4.37048
+cap "sh_bsw3_0/inv_bsw_0/VPWR" "sh_bsw3_0/cap_bsw_1/VNBT1" 46.2025
+cap "sh_bsw3_0/cap_bsw_1/CLKS" "sh_bsw3_0/cap_bsw_1/VPBT2" -1.9503
+cap "sh_bsw3_0/cap_bsw_1/CLKS" "sh_bsw3_1/ncell_bsw_sw_1/VSSA" -0.657577
+merge "sh_bsw3_0/VSUBS" "sh_bsw3_1/VSUBS" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "sh_bsw3_1/VSUBS" "VSUBS"
+merge "sh_bsw3_1/ncell_bsw_sw_1/VI" "VIN" -27.5761 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "sh_bsw3_1/ncell_bsw_1/VDDA" "sh_bsw3_0/inv_bsw_0/VPWR" -2004.47 0 0 0 0 -6348 -368 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -18224 -1344 -8946 -746 -22256 -1168 0 0 0 0 0 0 0 0
+merge "sh_bsw3_0/inv_bsw_0/VPWR" "sh_bsw3_0/inv_bsw_0/VPB"
+merge "sh_bsw3_0/inv_bsw_0/VPB" "li_4205_2768#"
+merge "li_4205_2768#" "sh_bsw3_0/ncell_bsw_1/VDDA"
+merge "sh_bsw3_0/ncell_bsw_1/VDDA" "sh_bsw3_1/ncell_bsw_dischrg_0/VDDA"
+merge "sh_bsw3_1/ncell_bsw_dischrg_0/VDDA" "m1_3795_809#"
+merge "m1_3795_809#" "li_3795_809#"
+merge "li_3795_809#" "sh_bsw3_0/ncell_bsw_dischrg_0/VDDA"
+merge "sh_bsw3_0/ncell_bsw_dischrg_0/VDDA" "li_1561_2225#"
+merge "li_1561_2225#" "sh_bsw3_1/inv_bsw_0/VPWR"
+merge "sh_bsw3_1/inv_bsw_0/VPWR" "VDDA"
+merge "VDDA" "sh_bsw3_1/inv_bsw_0/VPB"
+merge "sh_bsw3_1/inv_bsw_0/VPB" "li_1313_234#"
+merge "li_1313_234#" "w_1301_216#"
+merge "sh_bsw3_1/ncell_bsw_sw_1/VO" "VCN" -15.1986 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "sh_bsw3_0/cap_bsw_1/CLKS" "sh_bsw3_0/inv_bsw_0/IN" -1623.33 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -54652 -2362 -57824 -2276 0 0 0 0 0 0 0 0
+merge "sh_bsw3_0/inv_bsw_0/IN" "sh_bsw3_1/inv_bsw_0/IN"
+merge "sh_bsw3_1/inv_bsw_0/IN" "sh_bsw3_1/cap_bsw_1/CLKS"
+merge "sh_bsw3_1/cap_bsw_1/CLKS" "CLKS"
+merge "CLKS" "m1_1575_130#"
+merge "sh_bsw3_0/ncell_bsw_sw_1/VI" "VIP" -15.2031 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "sh_bsw3_0/cap_bsw_1/VNBT1" "sh_bsw3_0/ncell_bsw_sw_1/VNBT1" -1538.75 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -17888 -792 -3700 -248 0 0 0 0 0 0 0 0
+merge "sh_bsw3_0/ncell_bsw_sw_1/VNBT1" "sh_bsw3_0/ncell_bsw_dischrg_0/CLKSB"
+merge "sh_bsw3_0/ncell_bsw_dischrg_0/CLKSB" "sh_bsw3_1/cap_bsw_1/VNBT1"
+merge "sh_bsw3_1/cap_bsw_1/VNBT1" "m1_621_3022#"
+merge "m1_621_3022#" "CLKSB"
+merge "sh_bsw3_1/ncell_bsw_sw_1/VSSA" "sh_bsw3_1/inv_bsw_0/VNB" -988.518 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -408 0 0 0 0 0 0 0 0 0 0 0 0
+merge "sh_bsw3_1/inv_bsw_0/VNB" "VSSA"
+merge "sh_bsw3_0/ncell_bsw_sw_1/VO" "VCP" -4.91665 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0

@@ -10,12 +10,12 @@ x2 VDDA CLKS CLKSB VIN VSSA VCN sh_bsw-prelay
 ** sch_path: /home/yohanes/sky130_projects/UNIC-CASS-2024/xschem/sh_bsw-prelay.sch
 .subckt sh_bsw-prelay VDDA CLKS CLKSB VI VSSA VO
 *.PININFO VDDA:I CLKS:I CLKSB:I VI:I VSSA:I VO:O
-x2 CLKS VNBT3 VSSA VDDA VDDA SWITCHING sky130_fd_sc_hd__inv_1
 x3 VI VBOOT CLKSB VNBT3 SWITCHING VSSA VO ncell_bsw_sw
 x4 VPBT3 VBOOT SWITCHING pcell_bsw_dischrg
 x5 VPBT1 CLKSB VPBT2 VPBT3 VNBT3 CLKS cap_bsw
 x6 VDDA CLKSB VBOOT VSSA ncell_bsw_dischrg
 x1 VDDA VPBT1 VPBT2 VPBT3 VSSA ncell_bsw
+x7 VDDA VDDA CLKS SWITCHING VSSA VNBT3 inv_bsw
 .ends
 
 
@@ -105,6 +105,18 @@ XM6 VPBT3 VPBT3 VPBT3 VSSA sky130_fd_pr__nfet_01v8 L=0.15 W=0.5 nf=1 ad='int((nf
 + pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=2 m=2
 XM7 VDDA VDDA VDDA VSSA sky130_fd_pr__nfet_01v8 L=0.15 W=0.5 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
 + pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=2 m=2
+.ends
+
+
+* expanding   symbol:  inv_bsw.sym # of pins=6
+** sym_path: /home/yohanes/sky130_projects/UNIC-CASS-2024/xschem/inv_bsw.sym
+** sch_path: /home/yohanes/sky130_projects/UNIC-CASS-2024/xschem/inv_bsw.sch
+.subckt inv_bsw VPWR VPB IN OUT VNB VGND
+*.PININFO IN:I OUT:O VPWR:I VPB:I VGND:I VNB:I
+XM2 OUT IN VGND VNB sky130_fd_pr__nfet_01v8 L=0.15 W=0.5 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM1 OUT IN VPWR VPB sky130_fd_pr__pfet_01v8 L=0.15 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
 .ends
 
 .end
