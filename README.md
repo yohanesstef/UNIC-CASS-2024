@@ -25,8 +25,7 @@ Singular input:
 ![image](https://github.com/user-attachments/assets/3285501e-2585-4548-bfe2-cf06336ca43d)
 
 Differential input:
-![image](https://github.com/user-attachments/assets/d8a35e56-429d-4ee4-8bef-9292650972d6)
-
+![image](https://github.com/user-attachments/assets/61828f0f-2ec9-4311-8571-a5ff99fbdb6b)
 
 The tracking signal (vout) match with the input signal (left bottom graph) when in the tracking mode. When sampling clock is 0, the circuit begin to hold the last voltage value from input signal, thus this mode is called hold mode. The boostraped signal can be seen in the top right graph. As can be seen, the circuit always preserve the Vgs (gate source voltage) from the switch transistor so the switch can always active properly.
 
@@ -44,10 +43,7 @@ Singular input:
 ![image](https://github.com/user-attachments/assets/96722b9f-1a03-476a-8e7b-a663f78d3752)
 
 Differential input:
-![image](https://github.com/user-attachments/assets/317a273c-a3d8-489d-b1bc-3be0bf9e6cc4)
-
-
-The post-layout simulation matches the pre-layout simulation. Therefore, this layout can be considered to work properly within the complete SAR ADC chip.
+![image](https://github.com/user-attachments/assets/931b41e6-8ea0-4439-a50d-416f236c8e53)
 
 
 
